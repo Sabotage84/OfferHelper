@@ -53,6 +53,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductClasses\Product.cs" />
+    <Compile Include="ProductClasses\Server.cs" />
     <Compile Include="ProductClasses\TypeOfProduct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
