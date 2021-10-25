@@ -19,5 +19,10 @@ namespace OfferHelperV1.ProductManager
         {
             return products;
         }
+
+        internal static void Save(List<Product> prods)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

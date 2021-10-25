@@ -20,5 +20,10 @@ namespace OfferHelperV1.ProductManager
             GetProdFromXML t = new GetProdFromXML();
             return t.AllProducts();
         }
+
+        public void SaveProducts(List<Product> prods)
+        {
+            GetProdFromXML.Save(prods);
+        }
     }
 }
