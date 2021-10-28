@@ -15,6 +15,7 @@ namespace OfferHelperV1.ProductClasses
         double k;
         int price;
         TypeOfProduct type;
+        int deliveryTime;
 
         public string Name { get => name; set => name = value; }
         public int ID { get => iD; set => iD = value; }
@@ -22,6 +23,7 @@ namespace OfferHelperV1.ProductClasses
         public int InPrice { get => inPrice; set => inPrice = value; }
         public double K { get => k; set => k = value; }
         public int Price { get => price; set => price = value; }
+        public int DeliveryTime { get => deliveryTime; set => deliveryTime = value; }
         internal TypeOfProduct Type { get => type; set => type = value; }
     }
 }

@@ -11,6 +11,7 @@ namespace OfferHelperV1.ProductClasses
         public Server()
         {
             Type = TypeOfProduct.Server;
+            DeliveryTime = 12;
         }
     }
 }
