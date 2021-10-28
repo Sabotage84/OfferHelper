@@ -48,5 +48,20 @@ namespace OfferHelperV1.ProductManager
             }
             return res;
         }
+
+        public string GetProductString(int id)
+        {
+            foreach (var item in products)
+            {
+                if (item.ID==id)
+                {
+                    string str = "";
+                    str += item.Name+"\n";
+                    str += item.Description+"\n";
+                    str += "Цена с НДС " + item.Price.ToString() + "Евро.";
+                }
+            }
+            return "Объект не найден!";
+        }
     }
 }
