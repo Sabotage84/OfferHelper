@@ -86,5 +86,16 @@ namespace OfferHelperV1.ProductManager
             return res;
 
         }
+
+        public string GetDeliveryTimeString(List<Product> lst)
+        {
+            string res = "";
+            int t = GetCorrectDeliveryTime(lst);
+            res += "Срок поставки ";
+            res += t.ToString();
+            res += "рабочих дн.";
+            return res;
+        }
+
     }
 }
