@@ -11,6 +11,7 @@ namespace OfferHelperV1.ProductClasses
         public Cable()
         {
             Type = TypeOfProduct.Cable;
+            DeliveryTime = 40;
         }
     }
 }

@@ -63,5 +63,28 @@ namespace OfferHelperV1.ProductManager
             }
             return "Объект не найден!";
         }
+
+        public int GetCorrectDeliveryTime(List<Product> lst)
+        {
+            int res = 60;
+            try
+            {
+                if (lst.Count >= 1)
+                {
+                   res = lst[0].DeliveryTime;
+                }
+                foreach (var item in lst)
+                {
+                    if (item.DeliveryTime > res)
+                        res = item.DeliveryTime;
+                }
+            }
+            catch (Exception)
+            {
+                System.Windows.Forms.MessageBox.Show("Test error del time");
+            }
+            return res;
+
+        }
     }
 }

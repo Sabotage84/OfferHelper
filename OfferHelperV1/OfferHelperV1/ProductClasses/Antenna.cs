@@ -11,6 +11,7 @@ namespace OfferHelperV1.ProductClasses
         public Antenna()
         {
             Type = TypeOfProduct.Antenna;
+            DeliveryTime = 15;
         }
     }
 }
