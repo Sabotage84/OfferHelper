@@ -25,5 +25,19 @@ namespace OfferHelperV1.ProductClasses
         public int Price { get => price; set => price = value; }
         public int DeliveryTime { get => deliveryTime; set => deliveryTime = value; }
         internal TypeOfProduct Type { get => type; set => type = value; }
+
+        public override bool Equals(object obj)
+        {
+            Product p = obj as Product;
+            if (p!=null)
+                return Equals(p.ID,ID);
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
