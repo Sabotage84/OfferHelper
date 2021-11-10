@@ -23,7 +23,12 @@ namespace OfferHelperV1.ProductManager
 
         public void SaveProducts(List<Product> prods)
         {
-            GetProdFromXML.Save(prods);
+            if (prods != null)
+            {
+                GetProdFromXML.Save(prods);
+            }
+            else
+                System.Windows.Forms.MessageBox.Show("Недьзя сохранить пустой список всех продуктов!");
         }
 
         public Product GetProductByID(int id)
