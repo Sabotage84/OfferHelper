@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="ProductClasses\Antenna.cs" />
     <Compile Include="ProductClasses\Cable.cs" />
+    <Compile Include="ProductClasses\Misc.cs" />
     <Compile Include="ProductClasses\Product.cs" />
     <Compile Include="ProductClasses\Server.cs" />
     <Compile Include="ProductClasses\TypeOfProduct.cs" />

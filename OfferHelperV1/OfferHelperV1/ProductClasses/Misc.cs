@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace OfferHelperV1.ProductClasses
 {
-    enum TypeOfProduct
+    class Misc:Product
     {
-        Server,
-        Antenna,
-        Cable,
-        Reciver,
-        Miscs
+        public Misc()
+        {
+            Type = TypeOfProduct.Miscs;
+            DeliveryTime = 60;
+        }
+
+
+
+
     }
 }
