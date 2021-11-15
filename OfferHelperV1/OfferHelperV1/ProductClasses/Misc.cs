@@ -14,6 +14,13 @@ namespace OfferHelperV1.ProductClasses
             DeliveryTime = 60;
         }
 
+        public Misc(int id, int delTime=60)
+        {
+            Type = TypeOfProduct.Miscs;
+            ID = id;
+            DeliveryTime = delTime;
+        }
+
 
 
 

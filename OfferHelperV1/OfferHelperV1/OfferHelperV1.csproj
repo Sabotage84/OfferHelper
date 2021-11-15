@@ -58,6 +58,7 @@
     <Compile Include="ProductClasses\Misc.cs" />
     <Compile Include="ProductClasses\Product.cs" />
     <Compile Include="ProductClasses\Server.cs" />
+    <Compile Include="ProductClasses\Services.cs" />
     <Compile Include="ProductClasses\TypeOfProduct.cs" />
     <Compile Include="ProductManager\GetProdFromXML.cs" />
     <Compile Include="ProductManager\ProductManager.cs" />
