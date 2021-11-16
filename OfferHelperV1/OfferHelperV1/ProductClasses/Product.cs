@@ -39,5 +39,18 @@ namespace OfferHelperV1.ProductClasses
         {
             return base.GetHashCode();
         }
+
+        public Product(int dt = 60, TypeOfProduct t= TypeOfProduct.Miscs)
+        {
+            type = t;
+            deliveryTime = dt;
+        }
+
+        public Product(int id, int dt = 60, TypeOfProduct t= TypeOfProduct.Miscs) : this(dt, t)
+        {
+            ID = id;
+        }
+
+
     }
 }
