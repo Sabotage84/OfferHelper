@@ -8,10 +8,15 @@ namespace OfferHelperV1.ProductClasses
 {
     class Antenna:Product
     {
-        public Antenna()
+        public Antenna(int dt = 40, TypeOfProduct t = TypeOfProduct.Antenna) :base()
         {
-            Type = TypeOfProduct.Antenna;
-            DeliveryTime = 15;
+           
         }
+
+        public Antenna(int id, int dt = 40, TypeOfProduct t = TypeOfProduct.Antenna) : base()
+        {
+
+        }
+
     }
 }
