@@ -8,10 +8,14 @@ namespace OfferHelperV1.ProductClasses
 {
     class Cable:Product
     {
-        public Cable()
+        public Cable(int dt = 40, TypeOfProduct t = TypeOfProduct.Cable):base(dt,t)
         {
-            Type = TypeOfProduct.Cable;
-            DeliveryTime = 40;
+            
+        }
+
+        public Cable(int id, int dt = 40, TypeOfProduct t = TypeOfProduct.Cable):base(id,dt,t)
+        {
+
         }
     }
 }
