@@ -8,10 +8,14 @@ namespace OfferHelperV1.ProductClasses
 {
     class Server:Product
     {
-        public Server()
+        public Server(int dt = 40, TypeOfProduct t = TypeOfProduct.Server) : base(dt, t)
         {
-            Type = TypeOfProduct.Server;
-            DeliveryTime = 60;
+
+        }
+
+        public Server(int id, int dt = 40, TypeOfProduct t = TypeOfProduct.Server) : base(id, dt, t)
+        {
+
         }
     }
 }
