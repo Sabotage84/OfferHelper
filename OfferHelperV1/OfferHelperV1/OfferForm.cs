@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace OfferHelperV1
 {
-    public partial class Form1 : Form
+    public partial class OfferForm : Form
     {
-        public Form1()
+        public OfferForm()
         {
             InitializeComponent();
-        }
-
-        private void MakeOffer_btn_Click(object sender, EventArgs e)
-        {
-            OfferForm of = new OfferForm();
-            of.ShowDialog();
         }
     }
 }
