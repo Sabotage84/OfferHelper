@@ -54,6 +54,24 @@ namespace OfferHelperV1.ProductManager
             return res;
         }
 
+
+        public List<Product> GetProductsByProp(string str)
+        {
+            List<Product> res = new List<Product>();
+            foreach (var item in products)
+            {
+                if (item.Name.Contains(str))
+                {
+                    res.Add(item);
+                }
+                else if (item.Description.Contains(str))
+                {
+                    res.Add(item);
+                }
+            }
+            return res;
+        }
+
         public string GetProductString(int id)
         {
             foreach (var item in products)
