@@ -33,6 +33,8 @@ namespace OfferHelperV1
             this.SearchAll_txtBx = new System.Windows.Forms.TextBox();
             this.Servers_lstBx = new System.Windows.Forms.ListBox();
             this.Servsrs_lbl = new System.Windows.Forms.Label();
+            this.Recivers_lbl = new System.Windows.Forms.Label();
+            this.Recivers_lstBx = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -69,11 +71,31 @@ namespace OfferHelperV1
             this.Servsrs_lbl.TabIndex = 3;
             this.Servsrs_lbl.Text = "Серверы";
             // 
+            // Recivers_lbl
+            // 
+            this.Recivers_lbl.AutoSize = true;
+            this.Recivers_lbl.Location = new System.Drawing.Point(14, 316);
+            this.Recivers_lbl.Name = "Recivers_lbl";
+            this.Recivers_lbl.Size = new System.Drawing.Size(82, 17);
+            this.Recivers_lbl.TabIndex = 4;
+            this.Recivers_lbl.Text = "Приемники";
+            // 
+            // Recivers_lstBx
+            // 
+            this.Recivers_lstBx.FormattingEnabled = true;
+            this.Recivers_lstBx.ItemHeight = 16;
+            this.Recivers_lstBx.Location = new System.Drawing.Point(12, 336);
+            this.Recivers_lstBx.Name = "Recivers_lstBx";
+            this.Recivers_lstBx.Size = new System.Drawing.Size(176, 148);
+            this.Recivers_lstBx.TabIndex = 5;
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 503);
+            this.Controls.Add(this.Recivers_lstBx);
+            this.Controls.Add(this.Recivers_lbl);
             this.Controls.Add(this.Servsrs_lbl);
             this.Controls.Add(this.Servers_lstBx);
             this.Controls.Add(this.SearchAll_txtBx);
@@ -91,5 +113,7 @@ namespace OfferHelperV1
         private System.Windows.Forms.TextBox SearchAll_txtBx;
         private System.Windows.Forms.ListBox Servers_lstBx;
         private System.Windows.Forms.Label Servsrs_lbl;
+        private System.Windows.Forms.Label Recivers_lbl;
+        private System.Windows.Forms.ListBox Recivers_lstBx;
     }
 }
