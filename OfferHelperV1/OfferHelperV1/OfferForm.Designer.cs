@@ -35,6 +35,10 @@ namespace OfferHelperV1
             this.Servsrs_lbl = new System.Windows.Forms.Label();
             this.Recivers_lbl = new System.Windows.Forms.Label();
             this.Recivers_lstBx = new System.Windows.Forms.ListBox();
+            this.Antennas_lbl = new System.Windows.Forms.Label();
+            this.Cables_lbl = new System.Windows.Forms.Label();
+            this.Antennas_lstBx = new System.Windows.Forms.ListBox();
+            this.Cables_lstBx = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -89,11 +93,51 @@ namespace OfferHelperV1
             this.Recivers_lstBx.Size = new System.Drawing.Size(176, 148);
             this.Recivers_lstBx.TabIndex = 5;
             // 
+            // Antennas_lbl
+            // 
+            this.Antennas_lbl.AutoSize = true;
+            this.Antennas_lbl.Location = new System.Drawing.Point(299, 94);
+            this.Antennas_lbl.Name = "Antennas_lbl";
+            this.Antennas_lbl.Size = new System.Drawing.Size(66, 17);
+            this.Antennas_lbl.TabIndex = 6;
+            this.Antennas_lbl.Text = "Антенны";
+            // 
+            // Cables_lbl
+            // 
+            this.Cables_lbl.AutoSize = true;
+            this.Cables_lbl.Location = new System.Drawing.Point(299, 274);
+            this.Cables_lbl.Name = "Cables_lbl";
+            this.Cables_lbl.Size = new System.Drawing.Size(57, 17);
+            this.Cables_lbl.TabIndex = 7;
+            this.Cables_lbl.Text = "Кабели";
+            // 
+            // Antennas_lstBx
+            // 
+            this.Antennas_lstBx.FormattingEnabled = true;
+            this.Antennas_lstBx.ItemHeight = 16;
+            this.Antennas_lstBx.Location = new System.Drawing.Point(302, 114);
+            this.Antennas_lstBx.Name = "Antennas_lstBx";
+            this.Antennas_lstBx.Size = new System.Drawing.Size(176, 132);
+            this.Antennas_lstBx.TabIndex = 8;
+            // 
+            // Cables_lstBx
+            // 
+            this.Cables_lstBx.FormattingEnabled = true;
+            this.Cables_lstBx.ItemHeight = 16;
+            this.Cables_lstBx.Location = new System.Drawing.Point(302, 294);
+            this.Cables_lstBx.Name = "Cables_lstBx";
+            this.Cables_lstBx.Size = new System.Drawing.Size(176, 100);
+            this.Cables_lstBx.TabIndex = 9;
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 503);
+            this.Controls.Add(this.Cables_lstBx);
+            this.Controls.Add(this.Antennas_lstBx);
+            this.Controls.Add(this.Cables_lbl);
+            this.Controls.Add(this.Antennas_lbl);
             this.Controls.Add(this.Recivers_lstBx);
             this.Controls.Add(this.Recivers_lbl);
             this.Controls.Add(this.Servsrs_lbl);
@@ -115,5 +159,9 @@ namespace OfferHelperV1
         private System.Windows.Forms.Label Servsrs_lbl;
         private System.Windows.Forms.Label Recivers_lbl;
         private System.Windows.Forms.ListBox Recivers_lstBx;
+        private System.Windows.Forms.Label Antennas_lbl;
+        private System.Windows.Forms.Label Cables_lbl;
+        private System.Windows.Forms.ListBox Antennas_lstBx;
+        private System.Windows.Forms.ListBox Cables_lstBx;
     }
 }
