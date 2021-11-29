@@ -39,6 +39,9 @@ namespace OfferHelperV1
             this.Cables_lbl = new System.Windows.Forms.Label();
             this.Antennas_lstBx = new System.Windows.Forms.ListBox();
             this.Cables_lstBx = new System.Windows.Forms.ListBox();
+            this.Verification_chkBx = new System.Windows.Forms.CheckBox();
+            this.ResultText_txtBx = new System.Windows.Forms.TextBox();
+            this.ResultText_lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -129,11 +132,41 @@ namespace OfferHelperV1
             this.Cables_lstBx.Size = new System.Drawing.Size(176, 100);
             this.Cables_lstBx.TabIndex = 9;
             // 
+            // Verification_chkBx
+            // 
+            this.Verification_chkBx.AutoSize = true;
+            this.Verification_chkBx.Location = new System.Drawing.Point(302, 432);
+            this.Verification_chkBx.Name = "Verification_chkBx";
+            this.Verification_chkBx.Size = new System.Drawing.Size(86, 21);
+            this.Verification_chkBx.TabIndex = 10;
+            this.Verification_chkBx.Text = "Поверка";
+            this.Verification_chkBx.UseVisualStyleBackColor = true;
+            // 
+            // ResultText_txtBx
+            // 
+            this.ResultText_txtBx.Location = new System.Drawing.Point(530, 114);
+            this.ResultText_txtBx.Multiline = true;
+            this.ResultText_txtBx.Name = "ResultText_txtBx";
+            this.ResultText_txtBx.Size = new System.Drawing.Size(272, 280);
+            this.ResultText_txtBx.TabIndex = 11;
+            // 
+            // ResultText_lbl
+            // 
+            this.ResultText_lbl.AutoSize = true;
+            this.ResultText_lbl.Location = new System.Drawing.Point(527, 94);
+            this.ResultText_lbl.Name = "ResultText_lbl";
+            this.ResultText_lbl.Size = new System.Drawing.Size(69, 17);
+            this.ResultText_lbl.TabIndex = 12;
+            this.ResultText_lbl.Text = "Текст КП";
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 503);
+            this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.ResultText_lbl);
+            this.Controls.Add(this.ResultText_txtBx);
+            this.Controls.Add(this.Verification_chkBx);
             this.Controls.Add(this.Cables_lstBx);
             this.Controls.Add(this.Antennas_lstBx);
             this.Controls.Add(this.Cables_lbl);
@@ -163,5 +196,8 @@ namespace OfferHelperV1
         private System.Windows.Forms.Label Cables_lbl;
         private System.Windows.Forms.ListBox Antennas_lstBx;
         private System.Windows.Forms.ListBox Cables_lstBx;
+        private System.Windows.Forms.CheckBox Verification_chkBx;
+        private System.Windows.Forms.TextBox ResultText_txtBx;
+        private System.Windows.Forms.Label ResultText_lbl;
     }
 }
