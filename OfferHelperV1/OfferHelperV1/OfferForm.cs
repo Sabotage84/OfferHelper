@@ -16,5 +16,10 @@ namespace OfferHelperV1
         {
             InitializeComponent();
         }
+
+        private void AddServerToOffer_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

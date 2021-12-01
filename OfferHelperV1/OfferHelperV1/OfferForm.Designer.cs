@@ -42,6 +42,7 @@ namespace OfferHelperV1
             this.Verification_chkBx = new System.Windows.Forms.CheckBox();
             this.ResultText_txtBx = new System.Windows.Forms.TextBox();
             this.ResultText_lbl = new System.Windows.Forms.Label();
+            this.AddServerToOffer_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -159,11 +160,22 @@ namespace OfferHelperV1
             this.ResultText_lbl.TabIndex = 12;
             this.ResultText_lbl.Text = "Текст КП";
             // 
+            // AddServerToOffer_btn
+            // 
+            this.AddServerToOffer_btn.Location = new System.Drawing.Point(194, 150);
+            this.AddServerToOffer_btn.Name = "AddServerToOffer_btn";
+            this.AddServerToOffer_btn.Size = new System.Drawing.Size(41, 29);
+            this.AddServerToOffer_btn.TabIndex = 13;
+            this.AddServerToOffer_btn.Text = "->";
+            this.AddServerToOffer_btn.UseVisualStyleBackColor = true;
+            this.AddServerToOffer_btn.Click += new System.EventHandler(this.AddServerToOffer_btn_Click);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.AddServerToOffer_btn);
             this.Controls.Add(this.ResultText_lbl);
             this.Controls.Add(this.ResultText_txtBx);
             this.Controls.Add(this.Verification_chkBx);
@@ -199,5 +211,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.CheckBox Verification_chkBx;
         private System.Windows.Forms.TextBox ResultText_txtBx;
         private System.Windows.Forms.Label ResultText_lbl;
+        private System.Windows.Forms.Button AddServerToOffer_btn;
     }
 }
