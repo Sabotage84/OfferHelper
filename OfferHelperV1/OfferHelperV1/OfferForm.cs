@@ -21,5 +21,10 @@ namespace OfferHelperV1
         {
 
         }
+
+        private void ReciverAddToOffer_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

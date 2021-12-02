@@ -43,6 +43,7 @@ namespace OfferHelperV1
             this.ResultText_txtBx = new System.Windows.Forms.TextBox();
             this.ResultText_lbl = new System.Windows.Forms.Label();
             this.AddServerToOffer_btn = new System.Windows.Forms.Button();
+            this.ReciverAddToOffer_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -145,16 +146,16 @@ namespace OfferHelperV1
             // 
             // ResultText_txtBx
             // 
-            this.ResultText_txtBx.Location = new System.Drawing.Point(530, 114);
+            this.ResultText_txtBx.Location = new System.Drawing.Point(530, 265);
             this.ResultText_txtBx.Multiline = true;
             this.ResultText_txtBx.Name = "ResultText_txtBx";
-            this.ResultText_txtBx.Size = new System.Drawing.Size(272, 280);
+            this.ResultText_txtBx.Size = new System.Drawing.Size(272, 188);
             this.ResultText_txtBx.TabIndex = 11;
             // 
             // ResultText_lbl
             // 
             this.ResultText_lbl.AutoSize = true;
-            this.ResultText_lbl.Location = new System.Drawing.Point(527, 94);
+            this.ResultText_lbl.Location = new System.Drawing.Point(527, 245);
             this.ResultText_lbl.Name = "ResultText_lbl";
             this.ResultText_lbl.Size = new System.Drawing.Size(69, 17);
             this.ResultText_lbl.TabIndex = 12;
@@ -164,17 +165,28 @@ namespace OfferHelperV1
             // 
             this.AddServerToOffer_btn.Location = new System.Drawing.Point(194, 150);
             this.AddServerToOffer_btn.Name = "AddServerToOffer_btn";
-            this.AddServerToOffer_btn.Size = new System.Drawing.Size(41, 29);
+            this.AddServerToOffer_btn.Size = new System.Drawing.Size(35, 34);
             this.AddServerToOffer_btn.TabIndex = 13;
             this.AddServerToOffer_btn.Text = "->";
             this.AddServerToOffer_btn.UseVisualStyleBackColor = true;
             this.AddServerToOffer_btn.Click += new System.EventHandler(this.AddServerToOffer_btn_Click);
+            // 
+            // ReciverAddToOffer_btn
+            // 
+            this.ReciverAddToOffer_btn.Location = new System.Drawing.Point(194, 392);
+            this.ReciverAddToOffer_btn.Name = "ReciverAddToOffer_btn";
+            this.ReciverAddToOffer_btn.Size = new System.Drawing.Size(35, 34);
+            this.ReciverAddToOffer_btn.TabIndex = 14;
+            this.ReciverAddToOffer_btn.Text = "->";
+            this.ReciverAddToOffer_btn.UseVisualStyleBackColor = true;
+            this.ReciverAddToOffer_btn.Click += new System.EventHandler(this.ReciverAddToOffer_btn_Click);
             // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.ReciverAddToOffer_btn);
             this.Controls.Add(this.AddServerToOffer_btn);
             this.Controls.Add(this.ResultText_lbl);
             this.Controls.Add(this.ResultText_txtBx);
@@ -212,5 +224,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.TextBox ResultText_txtBx;
         private System.Windows.Forms.Label ResultText_lbl;
         private System.Windows.Forms.Button AddServerToOffer_btn;
+        private System.Windows.Forms.Button ReciverAddToOffer_btn;
     }
 }
