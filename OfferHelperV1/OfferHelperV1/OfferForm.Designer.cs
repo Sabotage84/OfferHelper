@@ -44,6 +44,8 @@ namespace OfferHelperV1
             this.ResultText_lbl = new System.Windows.Forms.Label();
             this.AddServerToOffer_btn = new System.Windows.Forms.Button();
             this.ReciverAddToOffer_btn = new System.Windows.Forms.Button();
+            this.OfferList_lstBx = new System.Windows.Forms.ListBox();
+            this.OfferList_lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -181,11 +183,31 @@ namespace OfferHelperV1
             this.ReciverAddToOffer_btn.UseVisualStyleBackColor = true;
             this.ReciverAddToOffer_btn.Click += new System.EventHandler(this.ReciverAddToOffer_btn_Click);
             // 
+            // OfferList_lstBx
+            // 
+            this.OfferList_lstBx.FormattingEnabled = true;
+            this.OfferList_lstBx.ItemHeight = 16;
+            this.OfferList_lstBx.Location = new System.Drawing.Point(530, 118);
+            this.OfferList_lstBx.Name = "OfferList_lstBx";
+            this.OfferList_lstBx.Size = new System.Drawing.Size(136, 116);
+            this.OfferList_lstBx.TabIndex = 15;
+            // 
+            // OfferList_lbl
+            // 
+            this.OfferList_lbl.AutoSize = true;
+            this.OfferList_lbl.Location = new System.Drawing.Point(527, 98);
+            this.OfferList_lbl.Name = "OfferList_lbl";
+            this.OfferList_lbl.Size = new System.Drawing.Size(139, 17);
+            this.OfferList_lbl.TabIndex = 16;
+            this.OfferList_lbl.Text = "Оборудование в КП";
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.OfferList_lbl);
+            this.Controls.Add(this.OfferList_lstBx);
             this.Controls.Add(this.ReciverAddToOffer_btn);
             this.Controls.Add(this.AddServerToOffer_btn);
             this.Controls.Add(this.ResultText_lbl);
@@ -225,5 +247,7 @@ namespace OfferHelperV1
         private System.Windows.Forms.Label ResultText_lbl;
         private System.Windows.Forms.Button AddServerToOffer_btn;
         private System.Windows.Forms.Button ReciverAddToOffer_btn;
+        private System.Windows.Forms.ListBox OfferList_lstBx;
+        private System.Windows.Forms.Label OfferList_lbl;
     }
 }
