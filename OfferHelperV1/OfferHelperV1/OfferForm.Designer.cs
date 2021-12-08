@@ -46,6 +46,7 @@ namespace OfferHelperV1
             this.ReciverAddToOffer_btn = new System.Windows.Forms.Button();
             this.OfferList_lstBx = new System.Windows.Forms.ListBox();
             this.OfferList_lbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -201,11 +202,22 @@ namespace OfferHelperV1
             this.OfferList_lbl.TabIndex = 16;
             this.OfferList_lbl.Text = "Оборудование в КП";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(315, 468);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "настройка текстов";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.OfferList_lbl);
             this.Controls.Add(this.OfferList_lstBx);
             this.Controls.Add(this.ReciverAddToOffer_btn);
@@ -249,5 +261,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.Button ReciverAddToOffer_btn;
         private System.Windows.Forms.ListBox OfferList_lstBx;
         private System.Windows.Forms.Label OfferList_lbl;
+        private System.Windows.Forms.Button button1;
     }
 }

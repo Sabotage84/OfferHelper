@@ -26,5 +26,11 @@ namespace OfferHelperV1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EditTextTemplates nf = new EditTextTemplates();
+            nf.ShowDialog();
+        }
     }
 }
