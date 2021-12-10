@@ -51,5 +51,15 @@ namespace OfferHelperV1.OfferClasses
         public string Remark { get => remark; set => remark = value; }
         public string VerificationExample { get => verificationExample; set => verificationExample = value; }
         public string DeliveryText { get => deliveryText; set => deliveryText = value; }
+
+        public void LoadTemplates()
+        {
+
+        }
+
+        public void SaveTemplates()
+        {
+
+        }
     }
 }
