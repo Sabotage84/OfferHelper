@@ -31,6 +31,8 @@ namespace OfferHelperV1
         {
             this.Producer_lbl = new System.Windows.Forms.Label();
             this.Producer_txtBx = new System.Windows.Forms.TextBox();
+            this.VerificationExample_lbl = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Producer_lbl
@@ -50,11 +52,30 @@ namespace OfferHelperV1
             this.Producer_txtBx.Size = new System.Drawing.Size(319, 116);
             this.Producer_txtBx.TabIndex = 1;
             // 
+            // VerificationExample_lbl
+            // 
+            this.VerificationExample_lbl.AutoSize = true;
+            this.VerificationExample_lbl.Location = new System.Drawing.Point(22, 192);
+            this.VerificationExample_lbl.Name = "VerificationExample_lbl";
+            this.VerificationExample_lbl.Size = new System.Drawing.Size(64, 17);
+            this.VerificationExample_lbl.TabIndex = 2;
+            this.VerificationExample_lbl.Text = "Поверка";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(25, 212);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(319, 112);
+            this.textBox1.TabIndex = 3;
+            // 
             // EditTextTemplates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 477);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.VerificationExample_lbl);
             this.Controls.Add(this.Producer_txtBx);
             this.Controls.Add(this.Producer_lbl);
             this.Name = "EditTextTemplates";
@@ -69,5 +90,7 @@ namespace OfferHelperV1
 
         private System.Windows.Forms.Label Producer_lbl;
         private System.Windows.Forms.TextBox Producer_txtBx;
+        private System.Windows.Forms.Label VerificationExample_lbl;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
