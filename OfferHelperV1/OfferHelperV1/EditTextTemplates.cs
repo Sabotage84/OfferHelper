@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OfferHelperV1.OfferClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace OfferHelperV1
         public EditTextTemplates()
         {
             InitializeComponent();
+        }
+
+        private void EditTextTemplates_Load(object sender, EventArgs e)
+        {
+            TextTemplates tt = new TextTemplates();
+            Producer_txtBx.Text = tt.Producer;
         }
     }
 }

@@ -47,7 +47,7 @@ namespace OfferHelperV1
             this.Producer_txtBx.Location = new System.Drawing.Point(25, 48);
             this.Producer_txtBx.Multiline = true;
             this.Producer_txtBx.Name = "Producer_txtBx";
-            this.Producer_txtBx.Size = new System.Drawing.Size(230, 83);
+            this.Producer_txtBx.Size = new System.Drawing.Size(319, 116);
             this.Producer_txtBx.TabIndex = 1;
             // 
             // EditTextTemplates
@@ -59,6 +59,7 @@ namespace OfferHelperV1
             this.Controls.Add(this.Producer_lbl);
             this.Name = "EditTextTemplates";
             this.Text = "EditTextTemplates";
+            this.Load += new System.EventHandler(this.EditTextTemplates_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
