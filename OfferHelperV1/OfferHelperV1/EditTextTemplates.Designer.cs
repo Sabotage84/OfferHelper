@@ -35,6 +35,8 @@ namespace OfferHelperV1
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Remark_lbl = new System.Windows.Forms.Label();
             this.Remark_txtBx = new System.Windows.Forms.TextBox();
+            this.DeliveryText_txtBx = new System.Windows.Forms.TextBox();
+            this.DeliveryText_lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Producer_lbl
@@ -88,11 +90,30 @@ namespace OfferHelperV1
             this.Remark_txtBx.Size = new System.Drawing.Size(319, 102);
             this.Remark_txtBx.TabIndex = 5;
             // 
+            // DeliveryText_txtBx
+            // 
+            this.DeliveryText_txtBx.Location = new System.Drawing.Point(453, 48);
+            this.DeliveryText_txtBx.Multiline = true;
+            this.DeliveryText_txtBx.Name = "DeliveryText_txtBx";
+            this.DeliveryText_txtBx.Size = new System.Drawing.Size(301, 116);
+            this.DeliveryText_txtBx.TabIndex = 6;
+            // 
+            // DeliveryText_lbl
+            // 
+            this.DeliveryText_lbl.AutoSize = true;
+            this.DeliveryText_lbl.Location = new System.Drawing.Point(450, 28);
+            this.DeliveryText_lbl.Name = "DeliveryText_lbl";
+            this.DeliveryText_lbl.Size = new System.Drawing.Size(64, 17);
+            this.DeliveryText_lbl.TabIndex = 7;
+            this.DeliveryText_lbl.Text = "Дотавка";
+            // 
             // EditTextTemplates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 477);
+            this.Controls.Add(this.DeliveryText_lbl);
+            this.Controls.Add(this.DeliveryText_txtBx);
             this.Controls.Add(this.Remark_txtBx);
             this.Controls.Add(this.Remark_lbl);
             this.Controls.Add(this.textBox1);
@@ -115,5 +136,7 @@ namespace OfferHelperV1
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Remark_lbl;
         private System.Windows.Forms.TextBox Remark_txtBx;
+        private System.Windows.Forms.TextBox DeliveryText_txtBx;
+        private System.Windows.Forms.Label DeliveryText_lbl;
     }
 }
