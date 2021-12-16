@@ -33,6 +33,8 @@ namespace OfferHelperV1
             this.Producer_txtBx = new System.Windows.Forms.TextBox();
             this.VerificationExample_lbl = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Remark_lbl = new System.Windows.Forms.Label();
+            this.Remark_txtBx = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Producer_lbl
@@ -69,11 +71,30 @@ namespace OfferHelperV1
             this.textBox1.Size = new System.Drawing.Size(319, 112);
             this.textBox1.TabIndex = 3;
             // 
+            // Remark_lbl
+            // 
+            this.Remark_lbl.AutoSize = true;
+            this.Remark_lbl.Location = new System.Drawing.Point(22, 343);
+            this.Remark_lbl.Name = "Remark_lbl";
+            this.Remark_lbl.Size = new System.Drawing.Size(91, 17);
+            this.Remark_lbl.TabIndex = 4;
+            this.Remark_lbl.Text = "Примечание";
+            // 
+            // Remark_txtBx
+            // 
+            this.Remark_txtBx.Location = new System.Drawing.Point(25, 363);
+            this.Remark_txtBx.Multiline = true;
+            this.Remark_txtBx.Name = "Remark_txtBx";
+            this.Remark_txtBx.Size = new System.Drawing.Size(319, 102);
+            this.Remark_txtBx.TabIndex = 5;
+            // 
             // EditTextTemplates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 477);
+            this.Controls.Add(this.Remark_txtBx);
+            this.Controls.Add(this.Remark_lbl);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.VerificationExample_lbl);
             this.Controls.Add(this.Producer_txtBx);
@@ -92,5 +113,7 @@ namespace OfferHelperV1
         private System.Windows.Forms.TextBox Producer_txtBx;
         private System.Windows.Forms.Label VerificationExample_lbl;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label Remark_lbl;
+        private System.Windows.Forms.TextBox Remark_txtBx;
     }
 }
