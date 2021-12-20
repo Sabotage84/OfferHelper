@@ -70,7 +70,7 @@ namespace OfferHelperV1
             this.VerificationExample_txtBx.Location = new System.Drawing.Point(25, 212);
             this.VerificationExample_txtBx.Multiline = true;
             this.VerificationExample_txtBx.Name = "VerificationExample_txtBx";
-            this.VerificationExample_txtBx.Size = new System.Drawing.Size(319, 112);
+            this.VerificationExample_txtBx.Size = new System.Drawing.Size(729, 112);
             this.VerificationExample_txtBx.TabIndex = 3;
             // 
             // Remark_lbl
@@ -87,7 +87,7 @@ namespace OfferHelperV1
             this.Remark_txtBx.Location = new System.Drawing.Point(25, 363);
             this.Remark_txtBx.Multiline = true;
             this.Remark_txtBx.Name = "Remark_txtBx";
-            this.Remark_txtBx.Size = new System.Drawing.Size(319, 102);
+            this.Remark_txtBx.Size = new System.Drawing.Size(729, 102);
             this.Remark_txtBx.TabIndex = 5;
             // 
             // DeliveryText_txtBx
