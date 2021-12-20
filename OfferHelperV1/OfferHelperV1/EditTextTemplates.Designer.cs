@@ -32,7 +32,7 @@ namespace OfferHelperV1
             this.Producer_lbl = new System.Windows.Forms.Label();
             this.Producer_txtBx = new System.Windows.Forms.TextBox();
             this.VerificationExample_lbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.VerificationExample_txtBx = new System.Windows.Forms.TextBox();
             this.Remark_lbl = new System.Windows.Forms.Label();
             this.Remark_txtBx = new System.Windows.Forms.TextBox();
             this.DeliveryText_txtBx = new System.Windows.Forms.TextBox();
@@ -65,13 +65,13 @@ namespace OfferHelperV1
             this.VerificationExample_lbl.TabIndex = 2;
             this.VerificationExample_lbl.Text = "Поверка";
             // 
-            // textBox1
+            // VerificationExample_txtBx
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 212);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 112);
-            this.textBox1.TabIndex = 3;
+            this.VerificationExample_txtBx.Location = new System.Drawing.Point(25, 212);
+            this.VerificationExample_txtBx.Multiline = true;
+            this.VerificationExample_txtBx.Name = "VerificationExample_txtBx";
+            this.VerificationExample_txtBx.Size = new System.Drawing.Size(319, 112);
+            this.VerificationExample_txtBx.TabIndex = 3;
             // 
             // Remark_lbl
             // 
@@ -116,7 +116,7 @@ namespace OfferHelperV1
             this.Controls.Add(this.DeliveryText_txtBx);
             this.Controls.Add(this.Remark_txtBx);
             this.Controls.Add(this.Remark_lbl);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.VerificationExample_txtBx);
             this.Controls.Add(this.VerificationExample_lbl);
             this.Controls.Add(this.Producer_txtBx);
             this.Controls.Add(this.Producer_lbl);
@@ -133,7 +133,7 @@ namespace OfferHelperV1
         private System.Windows.Forms.Label Producer_lbl;
         private System.Windows.Forms.TextBox Producer_txtBx;
         private System.Windows.Forms.Label VerificationExample_lbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox VerificationExample_txtBx;
         private System.Windows.Forms.Label Remark_lbl;
         private System.Windows.Forms.TextBox Remark_txtBx;
         private System.Windows.Forms.TextBox DeliveryText_txtBx;
