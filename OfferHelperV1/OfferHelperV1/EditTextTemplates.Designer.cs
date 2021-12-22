@@ -37,6 +37,7 @@ namespace OfferHelperV1
             this.Remark_txtBx = new System.Windows.Forms.TextBox();
             this.DeliveryText_txtBx = new System.Windows.Forms.TextBox();
             this.DeliveryText_lbl = new System.Windows.Forms.Label();
+            this.SaveEditTextTemplates_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Producer_lbl
@@ -107,11 +108,22 @@ namespace OfferHelperV1
             this.DeliveryText_lbl.TabIndex = 7;
             this.DeliveryText_lbl.Text = "Дотавка";
             // 
+            // SaveEditTextTemplates_btn
+            // 
+            this.SaveEditTextTemplates_btn.Location = new System.Drawing.Point(560, 484);
+            this.SaveEditTextTemplates_btn.Name = "SaveEditTextTemplates_btn";
+            this.SaveEditTextTemplates_btn.Size = new System.Drawing.Size(94, 28);
+            this.SaveEditTextTemplates_btn.TabIndex = 8;
+            this.SaveEditTextTemplates_btn.Text = "Сохронить";
+            this.SaveEditTextTemplates_btn.UseVisualStyleBackColor = true;
+            this.SaveEditTextTemplates_btn.Click += new System.EventHandler(this.SaveEditTextTemplates_btn_Click);
+            // 
             // EditTextTemplates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 477);
+            this.ClientSize = new System.Drawing.Size(860, 524);
+            this.Controls.Add(this.SaveEditTextTemplates_btn);
             this.Controls.Add(this.DeliveryText_lbl);
             this.Controls.Add(this.DeliveryText_txtBx);
             this.Controls.Add(this.Remark_txtBx);
@@ -138,5 +150,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.TextBox Remark_txtBx;
         private System.Windows.Forms.TextBox DeliveryText_txtBx;
         private System.Windows.Forms.Label DeliveryText_lbl;
+        private System.Windows.Forms.Button SaveEditTextTemplates_btn;
     }
 }
