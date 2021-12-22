@@ -32,5 +32,10 @@ namespace OfferHelperV1
         {
 
         }
+
+        private void CancelEditTextTemplates_btn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
