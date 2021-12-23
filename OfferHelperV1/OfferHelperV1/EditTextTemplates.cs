@@ -30,7 +30,7 @@ namespace OfferHelperV1
 
         private void SaveEditTextTemplates_btn_Click(object sender, EventArgs e)
         {
-
+            tt.SaveTemplates();
         }
 
         private void CancelEditTextTemplates_btn_Click(object sender, EventArgs e)
