@@ -32,5 +32,10 @@ namespace OfferHelperV1
             EditTextTemplates nf = new EditTextTemplates();
             nf.ShowDialog();
         }
+
+        private void RemoveFromOfferList_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
