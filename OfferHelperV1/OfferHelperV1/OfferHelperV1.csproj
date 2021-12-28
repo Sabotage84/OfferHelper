@@ -59,6 +59,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OfferClasses\OfferList.cs" />
     <Compile Include="OfferClasses\TextTemplates.cs" />
     <Compile Include="OfferForm.cs">
       <SubType>Form</SubType>
