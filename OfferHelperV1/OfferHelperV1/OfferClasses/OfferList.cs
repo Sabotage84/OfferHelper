@@ -21,13 +21,19 @@ namespace OfferHelperV1.OfferClasses
             items.Remove(p);
         }
 
-        public string GetStringOffer()//TODO add string tampletes
+        public string GetStringOffer()
         {
             string res = "";
+            TextTemplates tt = new TextTemplates();
             foreach (var item in items)
             {
-                res += item.ToString()+"\n";
+                res += item.ToString()+Environment.NewLine;
+
             }
+            res += tt.DeliveryText + Environment.NewLine;
+            res += tt.Remark + Environment.NewLine;
+            res += tt.VerificationExample + Environment.NewLine;
+            res += tt.Producer + Environment.NewLine;
             return res;
         }
     }
