@@ -48,6 +48,7 @@ namespace OfferHelperV1
             this.OfferList_lbl = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.RemoveFromOfferList_btn = new System.Windows.Forms.Button();
+            this.test_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -223,11 +224,22 @@ namespace OfferHelperV1
             this.RemoveFromOfferList_btn.UseVisualStyleBackColor = true;
             this.RemoveFromOfferList_btn.Click += new System.EventHandler(this.RemoveFromOfferList_btn_Click);
             // 
+            // test_btn
+            // 
+            this.test_btn.Location = new System.Drawing.Point(717, 38);
+            this.test_btn.Name = "test_btn";
+            this.test_btn.Size = new System.Drawing.Size(75, 23);
+            this.test_btn.TabIndex = 19;
+            this.test_btn.Text = "TEST";
+            this.test_btn.UseVisualStyleBackColor = true;
+            this.test_btn.Click += new System.EventHandler(this.test_btn_Click);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.test_btn);
             this.Controls.Add(this.RemoveFromOfferList_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.OfferList_lbl);
@@ -275,5 +287,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.Label OfferList_lbl;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button RemoveFromOfferList_btn;
+        private System.Windows.Forms.Button test_btn;
     }
 }

@@ -1,18 +1,26 @@
 ﻿using OfferHelperV1.ProductClasses;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace OfferHelperV1.ProductManager
 {
     class GetProdFromXML
     {
         List<Product> products = new List<Product>();
+
+        XmlSerializer formatter = new XmlSerializer(typeof(List<Product>));
+
         public GetProdFromXML()
         {
-            products.Add(new Server());
+            using (FileStream fs = new FileStream("products.xml", FileMode.OpenOrCreate))
+            {
+                products = (List<Product>)formatter.Deserialize(fs);
+            }
         }
 
         public List<Product> AllProducts()
@@ -20,9 +28,12 @@ namespace OfferHelperV1.ProductManager
             return products;
         }
 
-        internal static void Save(List<Product> prods)
+        public void Save(List<Product> prods)
         {
-            throw new NotImplementedException();
+            using (FileStream fs = new FileStream("products.xml", FileMode.OpenOrCreate))
+            {
+                formatter.Serialize(fs, products);
+            }
         }
     }
 }

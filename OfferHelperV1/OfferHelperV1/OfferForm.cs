@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfferHelperV1.ProductManager;
 
 namespace OfferHelperV1
 {
@@ -35,6 +36,18 @@ namespace OfferHelperV1
 
         private void RemoveFromOfferList_btn_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void test_btn_Click(object sender, EventArgs e)
+        {
+            ProductManagerClass pm = new ProductManagerClass();
+            string test1 = "";
+            foreach (var item in pm.Products)
+            {
+                test1 += item.Name + " ";
+            }
+            MessageBox.Show(test1);
 
         }
     }

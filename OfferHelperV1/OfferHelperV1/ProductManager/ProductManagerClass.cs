@@ -7,12 +7,17 @@ using System.Threading.Tasks;
 
 namespace OfferHelperV1.ProductManager
 {
-    class ProductManager
+    class ProductManagerClass
     {
         List<Product> products = new List<Product>();
-        public ProductManager()
+
+        GetProdFromXML GetLoadFromXML = new GetProdFromXML();
+
+        internal List<Product> Products { get => products; set => products = value; }
+
+        public ProductManagerClass()
         {
-            products = GetProducts();
+            Products = GetProducts();
         }
 
         private List<Product> GetProducts()
@@ -25,7 +30,7 @@ namespace OfferHelperV1.ProductManager
         {
             if (prods != null)
             {
-                GetProdFromXML.Save(prods);
+                GetLoadFromXML.Save(prods);
             }
             else
                 System.Windows.Forms.MessageBox.Show("Недьзя сохранить пустой список всех продуктов!");
@@ -33,7 +38,7 @@ namespace OfferHelperV1.ProductManager
 
         public Product GetProductByID(int id)
         {
-            foreach (var item in products)
+            foreach (var item in Products)
             {
                 if (item.ID == id)
                     return item;
@@ -44,7 +49,7 @@ namespace OfferHelperV1.ProductManager
         public List<Product> GetSameNaneProducts(string str)
         {
             List<Product> res = new List<Product>();
-            foreach (var item in products)
+            foreach (var item in Products)
             {
                 if (item.Name.Contains(str))
                 {
@@ -58,7 +63,7 @@ namespace OfferHelperV1.ProductManager
         public List<Product> GetProductsByProp(string str)
         {
             List<Product> res = new List<Product>();
-            foreach (var item in products)
+            foreach (var item in Products)
             {
                 if (item.Name.Contains(str))
                 {
@@ -74,7 +79,7 @@ namespace OfferHelperV1.ProductManager
 
         public string GetProductString(int id)
         {
-            foreach (var item in products)
+            foreach (var item in Products)
             {
                 if (item.ID==id)
                 {

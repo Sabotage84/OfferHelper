@@ -22,5 +22,10 @@ namespace OfferHelperV1
             OfferForm of = new OfferForm();
             of.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

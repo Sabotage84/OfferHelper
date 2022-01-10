@@ -75,7 +75,7 @@
     <Compile Include="ProductClasses\Services.cs" />
     <Compile Include="ProductClasses\TypeOfProduct.cs" />
     <Compile Include="ProductManager\GetProdFromXML.cs" />
-    <Compile Include="ProductManager\ProductManager.cs" />
+    <Compile Include="ProductManager\ProductManagerClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EditTextTemplates.resx">
