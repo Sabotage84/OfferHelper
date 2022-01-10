@@ -45,10 +45,12 @@ namespace OfferHelperV1
             string test1 = "";
             foreach (var item in pm.Products)
             {
-                test1 += item.Name + " ";
+                test1 += item.ID + " ";
             }
             MessageBox.Show(test1);
 
+            pm.Products.RemoveAt(0);
+            pm.SaveProducts(pm.Products);
         }
     }
 }

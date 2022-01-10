@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace OfferHelperV1.ProductClasses
 {
-    abstract class Product
+    [Serializable,
+        XmlInclude(typeof(Server)),
+        XmlInclude(typeof(Misc)),
+        XmlType]
+    public abstract class Product
     {
         int iD;
         string name;
@@ -24,7 +29,7 @@ namespace OfferHelperV1.ProductClasses
         public double K { get => k; set => k = value; }
         public int Price { get => price; set => price = value; }
         public int DeliveryTime { get => deliveryTime; set => deliveryTime = value; }
-        internal TypeOfProduct Type { get => type; set => type = value; }
+        public TypeOfProduct Type { get => type; set => type = value; }
 
         public override bool Equals(object obj)
         {
@@ -51,6 +56,12 @@ namespace OfferHelperV1.ProductClasses
             ID = id;
         }
 
+        public Product()
+        {
+            deliveryTime = 60;
+            type = TypeOfProduct.Miscs;
+            ID = -1;
+        }
 
     }
 }

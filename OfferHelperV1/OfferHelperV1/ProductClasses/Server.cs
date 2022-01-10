@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OfferHelperV1.ProductClasses
 {
-    class Server:Product
+    [Serializable]
+    public class Server:Product
     {
         public Server(int dt = 40, TypeOfProduct t = TypeOfProduct.Server) : base(dt, t)
         {
@@ -17,5 +18,11 @@ namespace OfferHelperV1.ProductClasses
         {
 
         }
+
+        public Server()
+        {
+
+        }
+
     }
 }

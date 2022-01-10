@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OfferHelperV1.ProductClasses
 {
-    enum TypeOfProduct
+    public enum TypeOfProduct
     {
         Server,
         Antenna,

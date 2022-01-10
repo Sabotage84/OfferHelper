@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OfferHelperV1.ProductClasses
 {
-    class Misc:Product
+    public class Misc:Product
     {
         public Misc()
         {
@@ -21,7 +21,7 @@ namespace OfferHelperV1.ProductClasses
             DeliveryTime = delTime;
         }
 
-
+        
 
 
     }
