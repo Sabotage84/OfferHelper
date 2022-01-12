@@ -125,5 +125,19 @@ namespace OfferHelperV1.ProductManager
             return res;
         }
 
+        public void Remove(Product p)
+        {
+            if (Products.Contains(p))
+                Products.Remove(p);
+            SaveProducts(Products);
+        }
+
+        public void RemoveAt(int i)
+        {
+            if (i>-1 && i<Products.Count)
+                Products.RemoveAt(i);
+            SaveProducts(Products);
+        }
+
     }
 }

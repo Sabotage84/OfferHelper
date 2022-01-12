@@ -49,8 +49,8 @@ namespace OfferHelperV1
             }
             MessageBox.Show(test1);
 
-            pm.Products.RemoveAt(0);
-            pm.SaveProducts(pm.Products);
+            pm.RemoveAt(0);
+            
         }
     }
 }
