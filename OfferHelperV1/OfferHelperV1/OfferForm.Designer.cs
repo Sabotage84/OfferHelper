@@ -49,6 +49,7 @@ namespace OfferHelperV1
             this.button1 = new System.Windows.Forms.Button();
             this.RemoveFromOfferList_btn = new System.Windows.Forms.Button();
             this.test_btn = new System.Windows.Forms.Button();
+            this.EditProduct_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -142,7 +143,7 @@ namespace OfferHelperV1
             // Verification_chkBx
             // 
             this.Verification_chkBx.AutoSize = true;
-            this.Verification_chkBx.Location = new System.Drawing.Point(302, 432);
+            this.Verification_chkBx.Location = new System.Drawing.Point(302, 405);
             this.Verification_chkBx.Name = "Verification_chkBx";
             this.Verification_chkBx.Size = new System.Drawing.Size(86, 21);
             this.Verification_chkBx.TabIndex = 10;
@@ -206,9 +207,9 @@ namespace OfferHelperV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(315, 468);
+            this.button1.Location = new System.Drawing.Point(456, 459);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.Size = new System.Drawing.Size(153, 32);
             this.button1.TabIndex = 17;
             this.button1.Text = "настройка текстов";
             this.button1.UseVisualStyleBackColor = true;
@@ -234,11 +235,22 @@ namespace OfferHelperV1
             this.test_btn.UseVisualStyleBackColor = true;
             this.test_btn.Click += new System.EventHandler(this.test_btn_Click);
             // 
+            // EditProduct_btn
+            // 
+            this.EditProduct_btn.Location = new System.Drawing.Point(263, 459);
+            this.EditProduct_btn.Name = "EditProduct_btn";
+            this.EditProduct_btn.Size = new System.Drawing.Size(187, 32);
+            this.EditProduct_btn.TabIndex = 20;
+            this.EditProduct_btn.Text = "Изменить оборудование";
+            this.EditProduct_btn.UseVisualStyleBackColor = true;
+            this.EditProduct_btn.Click += new System.EventHandler(this.EditProduct_btn_Click);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.EditProduct_btn);
             this.Controls.Add(this.test_btn);
             this.Controls.Add(this.RemoveFromOfferList_btn);
             this.Controls.Add(this.button1);
@@ -288,5 +300,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button RemoveFromOfferList_btn;
         private System.Windows.Forms.Button test_btn;
+        private System.Windows.Forms.Button EditProduct_btn;
     }
 }

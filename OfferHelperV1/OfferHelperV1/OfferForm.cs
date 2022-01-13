@@ -52,5 +52,11 @@ namespace OfferHelperV1
             pm.RemoveAt(0);
             
         }
+
+        private void EditProduct_btn_Click(object sender, EventArgs e)
+        {
+            EditProductForm f = new EditProductForm();
+            f.ShowDialog();
+        }
     }
 }
