@@ -84,6 +84,9 @@
     <Compile Include="ProductManager\ProductManagerClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditProductForm.resx">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditTextTemplates.resx">
       <DependentUpon>EditTextTemplates.cs</DependentUpon>
     </EmbeddedResource>
