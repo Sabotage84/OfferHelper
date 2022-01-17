@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfferHelperV1.ProductClasses;
 using OfferHelperV1.ProductManager;
 
 namespace OfferHelperV1
@@ -55,7 +56,9 @@ namespace OfferHelperV1
 
         private void EditProduct_btn_Click(object sender, EventArgs e)
         {
-            EditProductForm f = new EditProductForm();
+            Product p;
+            p = (Product)Servers_lstBx.SelectedItem;
+            EditProductForm f = new EditProductForm(p);
             f.ShowDialog();
         }
     }

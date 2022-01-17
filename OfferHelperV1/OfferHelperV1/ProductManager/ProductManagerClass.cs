@@ -9,7 +9,7 @@ namespace OfferHelperV1.ProductManager
 {
     class ProductManagerClass
     {
-        List<Product> products = new List<Product>();
+        static List<Product> products = new List<Product>();
 
         GetProdFromXML GetLoadFromXML = new GetProdFromXML();
 
@@ -34,6 +34,11 @@ namespace OfferHelperV1.ProductManager
             }
             else
                 System.Windows.Forms.MessageBox.Show("Недьзя сохранить пустой список всех продуктов!");
+        }
+
+        internal void Edit(Product item1, Product item2)
+        {
+            throw new NotImplementedException();
         }
 
         public Product GetProductByID(int id)

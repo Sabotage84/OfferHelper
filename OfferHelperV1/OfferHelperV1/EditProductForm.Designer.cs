@@ -187,6 +187,7 @@ namespace OfferHelperV1
             this.Save_btn.TabIndex = 17;
             this.Save_btn.Text = "Сохранить";
             this.Save_btn.UseVisualStyleBackColor = true;
+            this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
             // 
             // Cancel_btn
             // 
