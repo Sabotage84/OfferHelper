@@ -30,7 +30,27 @@ namespace OfferHelperV1
 
         private Product GetNewProduct()
         {
-            throw new NotImplementedException();
+            Product newProduct=null;
+            TypeOfProduct t = (TypeOfProduct)Type_cmbBx.SelectedItem;
+            switch (t)
+            {
+                case TypeOfProduct.Server:
+                    break;
+                case TypeOfProduct.Antenna:
+                    break;
+                case TypeOfProduct.Cable:
+                    break;
+                case TypeOfProduct.Reciver:
+                    break;
+                case TypeOfProduct.Miscs:
+                    break;
+                case TypeOfProduct.Service:
+                    break;
+                default:
+                    break;
+            }
+            return newProduct;
+
         }
     }
 }
