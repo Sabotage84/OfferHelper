@@ -36,11 +36,11 @@ namespace OfferHelperV1
             this.Description_lbl = new System.Windows.Forms.Label();
             this.Description_txtBx = new System.Windows.Forms.TextBox();
             this.InPrice_lbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.InPrice_txtBx = new System.Windows.Forms.TextBox();
             this.K_lbl = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.K_txtBx = new System.Windows.Forms.TextBox();
             this.Price_lbl = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Price_txtBx = new System.Windows.Forms.TextBox();
             this.Type_lbl = new System.Windows.Forms.Label();
             this.Type_cmbBx = new System.Windows.Forms.ComboBox();
             this.DeliveryTime_lbl = new System.Windows.Forms.Label();
@@ -107,12 +107,12 @@ namespace OfferHelperV1
             this.InPrice_lbl.TabIndex = 6;
             this.InPrice_lbl.Text = "Входная цена";
             // 
-            // textBox1
+            // InPrice_txtBx
             // 
-            this.textBox1.Location = new System.Drawing.Point(528, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 22);
-            this.textBox1.TabIndex = 7;
+            this.InPrice_txtBx.Location = new System.Drawing.Point(528, 44);
+            this.InPrice_txtBx.Name = "InPrice_txtBx";
+            this.InPrice_txtBx.Size = new System.Drawing.Size(130, 22);
+            this.InPrice_txtBx.TabIndex = 7;
             // 
             // K_lbl
             // 
@@ -123,12 +123,12 @@ namespace OfferHelperV1
             this.K_lbl.TabIndex = 8;
             this.K_lbl.Text = "Коэффициент";
             // 
-            // textBox3
+            // K_txtBx
             // 
-            this.textBox3.Location = new System.Drawing.Point(528, 112);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 22);
-            this.textBox3.TabIndex = 10;
+            this.K_txtBx.Location = new System.Drawing.Point(528, 112);
+            this.K_txtBx.Name = "K_txtBx";
+            this.K_txtBx.Size = new System.Drawing.Size(130, 22);
+            this.K_txtBx.TabIndex = 10;
             // 
             // Price_lbl
             // 
@@ -139,12 +139,12 @@ namespace OfferHelperV1
             this.Price_lbl.TabIndex = 11;
             this.Price_lbl.Text = "Цена";
             // 
-            // textBox4
+            // Price_txtBx
             // 
-            this.textBox4.Location = new System.Drawing.Point(528, 184);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 22);
-            this.textBox4.TabIndex = 12;
+            this.Price_txtBx.Location = new System.Drawing.Point(528, 184);
+            this.Price_txtBx.Name = "Price_txtBx";
+            this.Price_txtBx.Size = new System.Drawing.Size(130, 22);
+            this.Price_txtBx.TabIndex = 12;
             // 
             // Type_lbl
             // 
@@ -209,11 +209,11 @@ namespace OfferHelperV1
             this.Controls.Add(this.DeliveryTime_lbl);
             this.Controls.Add(this.Type_cmbBx);
             this.Controls.Add(this.Type_lbl);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Price_txtBx);
             this.Controls.Add(this.Price_lbl);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.K_txtBx);
             this.Controls.Add(this.K_lbl);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.InPrice_txtBx);
             this.Controls.Add(this.InPrice_lbl);
             this.Controls.Add(this.Description_txtBx);
             this.Controls.Add(this.Description_lbl);
@@ -237,11 +237,11 @@ namespace OfferHelperV1
         private System.Windows.Forms.Label Description_lbl;
         private System.Windows.Forms.TextBox Description_txtBx;
         private System.Windows.Forms.Label InPrice_lbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox InPrice_txtBx;
         private System.Windows.Forms.Label K_lbl;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox K_txtBx;
         private System.Windows.Forms.Label Price_lbl;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Price_txtBx;
         private System.Windows.Forms.Label Type_lbl;
         private System.Windows.Forms.ComboBox Type_cmbBx;
         private System.Windows.Forms.Label DeliveryTime_lbl;

@@ -35,6 +35,7 @@ namespace OfferHelperV1
             switch (t)
             {
                 case TypeOfProduct.Server:
+                    newProduct = new Server(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 case TypeOfProduct.Antenna:
                     break;
@@ -48,6 +49,13 @@ namespace OfferHelperV1
                     break;
                 default:
                     break;
+            }
+            if (newProduct != null)
+            {
+                newProduct.Description = Description_txtBx.Text;
+                newProduct.InPrice = int.Parse(InPrice_txtBx.Text);
+                newProduct.K = int.Parse(K_txtBx.Text);
+                newProduct.Price = int.Parse(Price_txtBx.Text);
             }
             return newProduct;
 
