@@ -44,10 +44,13 @@ namespace OfferHelperV1
                     newProduct = new Cable(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 case TypeOfProduct.Reciver:
+                    newProduct = new Misc(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 case TypeOfProduct.Miscs:
+                    newProduct = new Misc(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 case TypeOfProduct.Service:
+                    newProduct = new Services(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 default:
                     break;
