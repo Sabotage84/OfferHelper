@@ -38,8 +38,10 @@ namespace OfferHelperV1
                     newProduct = new Server(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 case TypeOfProduct.Antenna:
+                    newProduct = new Antenna(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 case TypeOfProduct.Cable:
+                    newProduct = new Cable(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 case TypeOfProduct.Reciver:
                     break;
