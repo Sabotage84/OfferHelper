@@ -53,6 +53,7 @@ namespace OfferHelperV1
                     newProduct = new Services(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                     break;
                 default:
+                    MessageBox.Show("Не получилось изменить модуль!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
             }
             if (newProduct != null)
