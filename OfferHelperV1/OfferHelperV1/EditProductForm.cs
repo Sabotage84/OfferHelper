@@ -31,30 +31,44 @@ namespace OfferHelperV1
         private Product GetNewProduct()
         {
             Product newProduct=null;
-            TypeOfProduct t = (TypeOfProduct)Type_cmbBx.SelectedItem;
-            switch (t)
+            DialogResult f = DialogResult.Yes;
+            TypeOfProduct t = TypeOfProduct.Miscs;
+            try
             {
-                case TypeOfProduct.Server:
-                    newProduct = new Server(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
-                    break;
-                case TypeOfProduct.Antenna:
-                    newProduct = new Antenna(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
-                    break;
-                case TypeOfProduct.Cable:
-                    newProduct = new Cable(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
-                    break;
-                case TypeOfProduct.Reciver:
-                    newProduct = new Misc(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
-                    break;
-                case TypeOfProduct.Miscs:
-                    newProduct = new Misc(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
-                    break;
-                case TypeOfProduct.Service:
-                    newProduct = new Services(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
-                    break;
-                default:
-                    MessageBox.Show("Не получилось изменить модуль!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
+                t = (TypeOfProduct)Type_cmbBx.SelectedItem;
+            }
+            catch (Exception)
+            {
+
+                f = MessageBox.Show("Невозможно определить тип! Будет выбран тип разное","Error",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            }
+
+            if (f == DialogResult.Yes)
+            {
+                switch (t)
+                {
+                    case TypeOfProduct.Server:
+                        newProduct = new Server(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
+                        break;
+                    case TypeOfProduct.Antenna:
+                        newProduct = new Antenna(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
+                        break;
+                    case TypeOfProduct.Cable:
+                        newProduct = new Cable(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
+                        break;
+                    case TypeOfProduct.Reciver:
+                        newProduct = new Misc(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
+                        break;
+                    case TypeOfProduct.Miscs:
+                        newProduct = new Misc(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
+                        break;
+                    case TypeOfProduct.Service:
+                        newProduct = new Services(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
+                        break;
+                    default:
+                        MessageBox.Show("Не получилось изменить модуль!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                }
             }
             if (newProduct != null)
             {
