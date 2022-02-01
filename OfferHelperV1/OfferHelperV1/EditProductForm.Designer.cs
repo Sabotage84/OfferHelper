@@ -162,6 +162,7 @@ namespace OfferHelperV1
             this.Type_cmbBx.Name = "Type_cmbBx";
             this.Type_cmbBx.Size = new System.Drawing.Size(121, 24);
             this.Type_cmbBx.TabIndex = 14;
+            this.Type_cmbBx.SelectedValueChanged += new System.EventHandler(this.Type_cmbBx_SelectedValueChanged);
             // 
             // DeliveryTime_lbl
             // 
@@ -223,6 +224,7 @@ namespace OfferHelperV1
             this.Controls.Add(this.Name_lbl);
             this.Name = "EditProductForm";
             this.Text = "EditProductForm";
+            this.Load += new System.EventHandler(this.EditProductForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

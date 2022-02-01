@@ -19,6 +19,8 @@ namespace OfferHelperV1
         {
             item1 = curItem;
             InitializeComponent();
+            Type_cmbBx.DataSource = Enum.GetValues(typeof(TypeOfProduct));
+            Type_cmbBx.SelectedItem = TypeOfProduct.Miscs;
         }
 
         private void Save_btn_Click(object sender, EventArgs e)
@@ -79,6 +81,16 @@ namespace OfferHelperV1
             }
             return newProduct;
 
+        }
+
+        private void EditProductForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Type_cmbBx_SelectedValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
