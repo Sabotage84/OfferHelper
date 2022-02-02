@@ -85,7 +85,20 @@ namespace OfferHelperV1
 
         private void EditProductForm_Load(object sender, EventArgs e)
         {
-
+            if (item1!=null)
+            {
+                ID_txtBx.Text = item1.ID.ToString();
+                Name_txtBx.Text = item1.Name;
+                Description_txtBx.Text = item1.Description;
+                DeliveryTime_txtBx.Text = item1.DeliveryTime.ToString();
+                InPrice_txtBx.Text = item1.InPrice.ToString();
+                K_txtBx.Text = item1.K.ToString();
+                Price_txtBx.Text = item1.Price.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Элемент = null");
+            }
         }
 
         private void Type_cmbBx_SelectedValueChanged(object sender, EventArgs e)
