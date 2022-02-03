@@ -38,6 +38,18 @@ namespace OfferHelperV1.ProductManager
 
         internal void Edit(Product item1, Product item2)
         {
+            if (item1==null)
+            {
+                AddProduct(item2);
+            }
+            else
+            {
+                //TODO
+            }
+        }
+
+        internal void AddProduct(Product item2)
+        {
             throw new NotImplementedException();
         }
 

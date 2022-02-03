@@ -15,9 +15,11 @@ namespace OfferHelperV1
     public partial class EditProductForm : Form
     {
         Product item1;
+        bool isadd = false;
         public EditProductForm(Product curItem)
         {
             item1 = curItem;
+            isadd = false;
             InitializeComponent();
            
         }
@@ -25,6 +27,7 @@ namespace OfferHelperV1
         public EditProductForm()
         {
             item1 = null;
+            isadd = true;
             InitializeComponent();
             
         }
@@ -33,7 +36,16 @@ namespace OfferHelperV1
         {
             ProductManagerClass pmc = new ProductManagerClass();
             Product item2 = GetNewProduct();
-            pmc.Edit(item1, item2);
+            if (isadd)
+            {
+                pmc.AddProduct(item2);
+            }
+            else
+            {
+                pmc.Edit(item1, item2);
+            }
+            
+            
         }
 
         private Product GetNewProduct()
@@ -105,7 +117,7 @@ namespace OfferHelperV1
             }
             else
             {
-                MessageBox.Show("Элемент = null");
+                MessageBox.Show("Создание нового элемента.");
             }
         }
 
