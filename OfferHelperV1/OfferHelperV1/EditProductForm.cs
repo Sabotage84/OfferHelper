@@ -44,8 +44,6 @@ namespace OfferHelperV1
             {
                 pmc.Edit(item1, item2);
             }
-            
-            
         }
 
         private Product GetNewProduct()
@@ -92,6 +90,7 @@ namespace OfferHelperV1
             }
             if (newProduct != null)
             {
+                newProduct.Name = Name_txtBx.Text;
                 newProduct.Description = Description_txtBx.Text;
                 newProduct.InPrice = int.Parse(InPrice_txtBx.Text);
                 newProduct.K = int.Parse(K_txtBx.Text);

@@ -1,6 +1,7 @@
 ﻿using OfferHelperV1.ProductClasses;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,14 +11,21 @@ namespace OfferHelperV1.ProductManager
     class ProductManagerClass
     {
         static List<Product> products = new List<Product>();
+        ObservableCollection<Server> servers = new ObservableCollection<Server>();
 
         GetProdFromXML GetLoadFromXML = new GetProdFromXML();
 
         internal List<Product> Products { get => products; set => products = value; }
+        public ObservableCollection<Server> Servers { get => servers; set => servers = value; }
 
         public ProductManagerClass()
         {
             Products = GetProducts();
+            foreach (var item in Products)
+            {
+                if (item.Type == TypeOfProduct.Server)
+                    Servers.Add((Server)item);
+            }
         }
 
         private List<Product> GetProducts()

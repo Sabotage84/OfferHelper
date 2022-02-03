@@ -14,9 +14,14 @@ namespace OfferHelperV1
 {
     public partial class OfferForm : Form
     {
+        ProductManagerClass PM;
         public OfferForm()
         {
             InitializeComponent();
+            PM = new ProductManagerClass();
+            Servers_lstBx.DataSource = PM.Servers;
+            Servers_lstBx.DisplayMember = "Name";
+            Servers_lstBx.ValueMember = "ID";
         }
 
         private void AddServerToOffer_btn_Click(object sender, EventArgs e)
