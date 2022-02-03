@@ -50,6 +50,7 @@ namespace OfferHelperV1
             this.RemoveFromOfferList_btn = new System.Windows.Forms.Button();
             this.test_btn = new System.Windows.Forms.Button();
             this.EditProduct_btn = new System.Windows.Forms.Button();
+            this.ADDEq_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -207,9 +208,9 @@ namespace OfferHelperV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(456, 459);
+            this.button1.Location = new System.Drawing.Point(529, 459);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 32);
+            this.button1.Size = new System.Drawing.Size(148, 32);
             this.button1.TabIndex = 17;
             this.button1.Text = "настройка текстов";
             this.button1.UseVisualStyleBackColor = true;
@@ -237,19 +238,30 @@ namespace OfferHelperV1
             // 
             // EditProduct_btn
             // 
-            this.EditProduct_btn.Location = new System.Drawing.Point(263, 459);
+            this.EditProduct_btn.Location = new System.Drawing.Point(398, 459);
             this.EditProduct_btn.Name = "EditProduct_btn";
-            this.EditProduct_btn.Size = new System.Drawing.Size(187, 32);
+            this.EditProduct_btn.Size = new System.Drawing.Size(125, 32);
             this.EditProduct_btn.TabIndex = 20;
-            this.EditProduct_btn.Text = "Изменить оборудование";
+            this.EditProduct_btn.Text = "Изменить";
             this.EditProduct_btn.UseVisualStyleBackColor = true;
             this.EditProduct_btn.Click += new System.EventHandler(this.EditProduct_btn_Click);
+            // 
+            // ADDEq_btn
+            // 
+            this.ADDEq_btn.Location = new System.Drawing.Point(291, 459);
+            this.ADDEq_btn.Name = "ADDEq_btn";
+            this.ADDEq_btn.Size = new System.Drawing.Size(101, 32);
+            this.ADDEq_btn.TabIndex = 21;
+            this.ADDEq_btn.Text = "Добавить";
+            this.ADDEq_btn.UseVisualStyleBackColor = true;
+            this.ADDEq_btn.Click += new System.EventHandler(this.ADDEq_btn_Click);
             // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 503);
+            this.Controls.Add(this.ADDEq_btn);
             this.Controls.Add(this.EditProduct_btn);
             this.Controls.Add(this.test_btn);
             this.Controls.Add(this.RemoveFromOfferList_btn);
@@ -301,5 +313,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.Button RemoveFromOfferList_btn;
         private System.Windows.Forms.Button test_btn;
         private System.Windows.Forms.Button EditProduct_btn;
+        private System.Windows.Forms.Button ADDEq_btn;
     }
 }

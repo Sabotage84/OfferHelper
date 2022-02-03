@@ -19,8 +19,14 @@ namespace OfferHelperV1
         {
             item1 = curItem;
             InitializeComponent();
-            Type_cmbBx.DataSource = Enum.GetValues(typeof(TypeOfProduct));
-            Type_cmbBx.SelectedItem = TypeOfProduct.Miscs;
+           
+        }
+
+        public EditProductForm()
+        {
+            item1 = null;
+            InitializeComponent();
+            
         }
 
         private void Save_btn_Click(object sender, EventArgs e)
@@ -85,6 +91,8 @@ namespace OfferHelperV1
 
         private void EditProductForm_Load(object sender, EventArgs e)
         {
+            Type_cmbBx.DataSource = Enum.GetValues(typeof(TypeOfProduct));
+            Type_cmbBx.SelectedItem = TypeOfProduct.Miscs;
             if (item1!=null)
             {
                 ID_txtBx.Text = item1.ID.ToString();

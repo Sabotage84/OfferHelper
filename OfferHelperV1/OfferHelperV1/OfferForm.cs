@@ -61,5 +61,12 @@ namespace OfferHelperV1
             EditProductForm f = new EditProductForm(p);
             f.ShowDialog();
         }
+
+        private void ADDEq_btn_Click(object sender, EventArgs e)
+        {
+            
+            EditProductForm f = new EditProductForm();
+            f.ShowDialog();
+        }
     }
 }
