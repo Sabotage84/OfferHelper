@@ -44,13 +44,22 @@ namespace OfferHelperV1.ProductManager
             }
             else
             {
-                //TODO
+                Remove(item1);
+                AddProduct(item2);
             }
+            SortByID();
+        }
+
+        private void SortByID()
+        {
+            Products.Sort();
         }
 
         internal void AddProduct(Product item2)
         {
-            throw new NotImplementedException();
+            if (!Products.Contains(item2))
+                Products.Add(item2);
+            SaveProducts(Products);
         }
 
         public Product GetProductByID(int id)

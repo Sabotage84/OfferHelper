@@ -11,7 +11,7 @@ namespace OfferHelperV1.ProductClasses
         XmlInclude(typeof(Server)),
         XmlInclude(typeof(Misc)),
         XmlType]
-    public abstract class Product
+    public abstract class Product: IComparable
     {
         int iD;
         string name;
@@ -43,6 +43,17 @@ namespace OfferHelperV1.ProductClasses
         public override int GetHashCode()
         {
             return base.GetHashCode();
+        }
+
+        public int CompareTo(object obj)
+        {
+            Product p=null;
+            if (obj != null && obj is Product)
+                p = obj as Product;
+            if (p == null)
+                return -1;
+
+            return ID.CompareTo(p.ID);
         }
 
         public Product(int dt = 60, TypeOfProduct t= TypeOfProduct.Miscs)
