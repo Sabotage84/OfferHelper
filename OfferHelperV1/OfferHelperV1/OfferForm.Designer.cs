@@ -131,6 +131,7 @@ namespace OfferHelperV1
             this.Antennas_lstBx.Name = "Antennas_lstBx";
             this.Antennas_lstBx.Size = new System.Drawing.Size(176, 132);
             this.Antennas_lstBx.TabIndex = 8;
+            this.Antennas_lstBx.SelectedIndexChanged += new System.EventHandler(this.Antennas_lstBx_SelectedIndexChanged);
             // 
             // Cables_lstBx
             // 

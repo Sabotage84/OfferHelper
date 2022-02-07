@@ -22,6 +22,9 @@ namespace OfferHelperV1
             Servers_lstBx.DataSource = PM.Servers;
             Servers_lstBx.DisplayMember = "Name";
             Servers_lstBx.ValueMember = "ID";
+            Antennas_lstBx.DataSource = PM.Antennas;
+            Antennas_lstBx.DisplayMember = "Name";
+            Antennas_lstBx.ValueMember = "ID";
         }
 
         private void AddServerToOffer_btn_Click(object sender, EventArgs e)
@@ -72,6 +75,11 @@ namespace OfferHelperV1
             
             EditProductForm f = new EditProductForm();
             f.ShowDialog();
+        }
+
+        private void Antennas_lstBx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
