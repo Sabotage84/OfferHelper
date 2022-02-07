@@ -63,13 +63,15 @@ namespace OfferHelperV1
 
             if (f == DialogResult.Yes)
             {
+                int t1 = int.Parse(ID_txtBx.Text);
+                int t2 = int.Parse(DeliveryTime_txtBx.Text);
                 switch (t)
                 {
                     case TypeOfProduct.Server:
                         newProduct = new Server(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                         break;
                     case TypeOfProduct.Antenna:
-                        newProduct = new Antenna(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
+                        newProduct = new Antenna(t1,t2);
                         break;
                     case TypeOfProduct.Cable:
                         newProduct = new Cable(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
