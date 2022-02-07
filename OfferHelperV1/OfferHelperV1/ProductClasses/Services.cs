@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OfferHelperV1.ProductClasses
 {
-    class Services:Product
+    public class Services:Product
     {
         public Services(int dt = 20, TypeOfProduct t = TypeOfProduct.Service) : base(dt, t)
         {
@@ -14,6 +14,11 @@ namespace OfferHelperV1.ProductClasses
         }
 
         public Services(int id, int dt = 20, TypeOfProduct t = TypeOfProduct.Service) : base(id, dt, t)
+        {
+
+        }
+
+        public Services()
         {
 
         }

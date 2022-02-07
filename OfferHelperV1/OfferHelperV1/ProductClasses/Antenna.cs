@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OfferHelperV1.ProductClasses
 {
-    class Antenna:Product
+    public class Antenna:Product
     {
         public Antenna(int dt = 40, TypeOfProduct t = TypeOfProduct.Antenna) :base()
         {
@@ -14,6 +14,11 @@ namespace OfferHelperV1.ProductClasses
         }
 
         public Antenna(int id, int dt = 40, TypeOfProduct t = TypeOfProduct.Antenna) : base()
+        {
+
+        }
+
+        public Antenna()
         {
 
         }

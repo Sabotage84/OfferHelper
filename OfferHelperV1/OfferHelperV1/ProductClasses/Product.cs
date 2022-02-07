@@ -10,6 +10,9 @@ namespace OfferHelperV1.ProductClasses
     [Serializable,
         XmlInclude(typeof(Server)),
         XmlInclude(typeof(Misc)),
+        XmlInclude(typeof(Antenna)),
+        XmlInclude(typeof(Cable)),
+        XmlInclude(typeof(Services)),
         XmlType]
     public abstract class Product: IComparable
     {

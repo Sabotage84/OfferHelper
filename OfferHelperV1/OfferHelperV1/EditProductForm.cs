@@ -95,6 +95,7 @@ namespace OfferHelperV1
                 newProduct.InPrice = int.Parse(InPrice_txtBx.Text);
                 newProduct.K = int.Parse(K_txtBx.Text);
                 newProduct.Price = int.Parse(Price_txtBx.Text);
+                newProduct.Type = (TypeOfProduct)Type_cmbBx.SelectedItem;
             }
             return newProduct;
 
