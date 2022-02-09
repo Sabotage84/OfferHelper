@@ -25,6 +25,9 @@ namespace OfferHelperV1
             Antennas_lstBx.DataSource = PM.Antennas;
             Antennas_lstBx.DisplayMember = "Name";
             Antennas_lstBx.ValueMember = "ID";
+            Cables_lstBx.DataSource = PM.Cables;
+            Cables_lstBx.DisplayMember = "Name";
+            Cables_lstBx.ValueMember = "ID";
         }
 
         private void AddServerToOffer_btn_Click(object sender, EventArgs e)

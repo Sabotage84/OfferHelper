@@ -71,7 +71,7 @@ namespace OfferHelperV1
                         newProduct = new Server(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                         break;
                     case TypeOfProduct.Antenna:
-                        newProduct = new Antenna(t1,t2);
+                        newProduct = new Antenna(t1,t2);//problem with ID
                         break;
                     case TypeOfProduct.Cable:
                         newProduct = new Cable(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
