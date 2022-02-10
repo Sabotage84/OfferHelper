@@ -18,7 +18,15 @@ namespace OfferHelperV1
         public OfferForm()
         {
             InitializeComponent();
+            BindListBoxes();
+
+        }
+
+        public void BindListBoxes()
+        {
             PM = new ProductManagerClass();
+            Servers_lstBx.DataSource = null;
+            Cables_lstBx.DataSource = null;
             Servers_lstBx.DataSource = PM.Servers;
             Servers_lstBx.DisplayMember = "Name";
             Servers_lstBx.ValueMember = "ID";
@@ -54,15 +62,8 @@ namespace OfferHelperV1
         private void test_btn_Click(object sender, EventArgs e)
         {
             ProductManagerClass pm = new ProductManagerClass();
-            string test1 = "";
-            foreach (var item in pm.Products)
-            {
-                test1 += item.ID + " ";
-            }
-            MessageBox.Show(test1);
-
-            pm.RemoveAt(0);
-            
+            pm.Cables.Add(new Cable(9118,"test5",TypeOfProduct.Cable));
+            BindListBoxes();
         }
 
         private void EditProduct_btn_Click(object sender, EventArgs e)
@@ -77,6 +78,7 @@ namespace OfferHelperV1
         {
             
             EditProductForm f = new EditProductForm();
+            f.Owner = this;
             f.ShowDialog();
         }
 

@@ -13,13 +13,13 @@ namespace OfferHelperV1.ProductManager
         static List<Product> products = new List<Product>();
         ObservableCollection<Server> servers = new ObservableCollection<Server>();
         ObservableCollection<Antenna> antennas = new ObservableCollection<Antenna>();
-        ObservableCollection<Cable> cables = new ObservableCollection<Cable>();
+        static ObservableCollection<Cable> cables = new ObservableCollection<Cable>();
         ObservableCollection<Misc> miscs = new ObservableCollection<Misc>();
 
 
         GetProdFromXML GetLoadFromXML = new GetProdFromXML();
 
-        internal List<Product> Products { get => products; set => products = value; }
+        internal  List<Product> Products { get => products; set => products = value; }
         public ObservableCollection<Server> Servers { get => servers; set => servers = value; }
         internal ObservableCollection<Antenna> Antennas { get => antennas; set => antennas = value; }
         internal ObservableCollection<Cable> Cables { get => cables; set => cables = value; }
@@ -31,6 +31,16 @@ namespace OfferHelperV1.ProductManager
         public ProductManagerClass()
         {
             Products = GetProducts();
+            RefreshListsOfProducts();
+        }
+
+        public void RefreshListsOfProducts()
+        {
+            Servers = new ObservableCollection<Server>();
+            Antennas = new ObservableCollection<Antenna>();
+            Cables = new ObservableCollection<Cable>();
+            AllServices = new ObservableCollection<Services>();
+            Miscs = new ObservableCollection<Misc>();
             foreach (var item in Products)
             {
                 if (item.Type == TypeOfProduct.Server)
@@ -43,7 +53,6 @@ namespace OfferHelperV1.ProductManager
                     AllServices.Add((Services)item);
                 else if (item.Type == TypeOfProduct.Miscs)
                     Miscs.Add((Misc)item);
-
             }
         }
 

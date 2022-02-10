@@ -21,5 +21,11 @@ namespace OfferHelperV1.ProductClasses
         {
 
         }
+        public Cable(int id, string name, TypeOfProduct t)
+        {
+            ID = id;
+            Name = name;
+            Type = t;
+        }
     }
 }

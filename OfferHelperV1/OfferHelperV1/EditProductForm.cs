@@ -44,6 +44,9 @@ namespace OfferHelperV1
             {
                 pmc.Edit(item1, item2);
             }
+            pmc.RefreshListsOfProducts();
+            OfferForm OF1 =  (OfferForm)Owner;
+            OF1.BindListBoxes();
             Close();
         }
 
@@ -72,7 +75,7 @@ namespace OfferHelperV1
                         newProduct = new Server(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
                         break;
                     case TypeOfProduct.Antenna:
-                        newProduct = new Antenna(t1,t2);//problem with ID
+                        newProduct = new Antenna(t1,t2);
                         break;
                     case TypeOfProduct.Cable:
                         newProduct = new Cable(int.Parse(ID_txtBx.Text), int.Parse(DeliveryTime_txtBx.Text));
