@@ -44,6 +44,7 @@ namespace OfferHelperV1
             {
                 pmc.Edit(item1, item2);
             }
+            Close();
         }
 
         private Product GetNewProduct()
@@ -126,6 +127,11 @@ namespace OfferHelperV1
         private void Type_cmbBx_SelectedValueChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void Cancel_btn_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -198,6 +198,7 @@ namespace OfferHelperV1
             this.Cancel_btn.TabIndex = 18;
             this.Cancel_btn.Text = "Отмена";
             this.Cancel_btn.UseVisualStyleBackColor = true;
+            this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
             // 
             // EditProductForm
             // 
