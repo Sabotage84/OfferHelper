@@ -27,6 +27,7 @@ namespace OfferHelperV1
             PM = new ProductManagerClass();
             Servers_lstBx.DataSource = null;
             Cables_lstBx.DataSource = null;
+            Antennas_lstBx.DataSource = null;
             Servers_lstBx.DataSource = PM.Servers;
             Servers_lstBx.DisplayMember = "Name";
             Servers_lstBx.ValueMember = "ID";
@@ -76,7 +77,6 @@ namespace OfferHelperV1
 
         private void ADDEq_btn_Click(object sender, EventArgs e)
         {
-            
             EditProductForm f = new EditProductForm();
             f.Owner = this;
             f.ShowDialog();
