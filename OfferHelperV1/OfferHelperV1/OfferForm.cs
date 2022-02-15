@@ -108,5 +108,14 @@ namespace OfferHelperV1
             f.Owner = this;
             f.ShowDialog();
         }
+
+        private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductManagerClass pm = new ProductManagerClass();
+            Product p;
+            p = (Product)Servers_lstBx.SelectedItem;
+            pm.Remove(p);
+            BindListBoxes();
+        }
     }
 }

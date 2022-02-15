@@ -293,6 +293,7 @@ namespace OfferHelperV1
             this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
             this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
             // 
             // OfferForm
             // 
