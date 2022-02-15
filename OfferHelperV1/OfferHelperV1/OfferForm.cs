@@ -99,5 +99,14 @@ namespace OfferHelperV1
                 "Вход: "+p.InPrice.ToString()+Environment.NewLine+"К = "+p.K.ToString()+Environment.NewLine+
                 "Цена: "+ p.Price+ Environment.NewLine+"Срок поставки "+p.DeliveryTime.ToString()+" рабочих дней.");
         }
+
+        private void редактироватьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product p;
+            p = (Product)Servers_lstBx.SelectedItem;
+            EditProductForm f = new EditProductForm(p);
+            f.Owner = this;
+            f.ShowDialog();
+        }
     }
 }

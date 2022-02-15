@@ -99,7 +99,7 @@ namespace OfferHelperV1
                 newProduct.Name = Name_txtBx.Text;
                 newProduct.Description = Description_txtBx.Text;
                 newProduct.InPrice = int.Parse(InPrice_txtBx.Text);
-                newProduct.K = int.Parse(K_txtBx.Text);
+                newProduct.K = double.Parse(K_txtBx.Text);
                 newProduct.Price = int.Parse(Price_txtBx.Text);
                 newProduct.Type = (TypeOfProduct)Type_cmbBx.SelectedItem;
             }
