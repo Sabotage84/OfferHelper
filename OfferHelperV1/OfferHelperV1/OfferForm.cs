@@ -19,7 +19,7 @@ namespace OfferHelperV1
         {
             InitializeComponent();
             BindListBoxes();
-
+            Servers_lstBx.ContextMenuStrip = contextMenuStrip1;
         }
 
         public void BindListBoxes()
@@ -85,6 +85,19 @@ namespace OfferHelperV1
         private void Antennas_lstBx_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void показатьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product p = Servers_lstBx.SelectedItem as Product;
+            MessageBox.Show(p.Name+Environment.NewLine+Environment.NewLine+p.Description+Environment.NewLine+
+                "Вход: "+p.InPrice.ToString()+Environment.NewLine+"К = "+p.K.ToString()+Environment.NewLine+
+                "Цена: "+ p.Price+ Environment.NewLine+"Срок поставки "+p.DeliveryTime.ToString()+" рабочих дней.");
         }
     }
 }
