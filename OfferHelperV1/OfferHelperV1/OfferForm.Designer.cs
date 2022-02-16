@@ -52,11 +52,16 @@ namespace OfferHelperV1
             this.test_btn = new System.Windows.Forms.Button();
             this.EditProduct_btn = new System.Windows.Forms.Button();
             this.ADDEq_btn = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Servsrs_cntxtMnStrp = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.показатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1.SuspendLayout();
+            this.Antennas_cntxtMnStrp = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Servsrs_cntxtMnStrp.SuspendLayout();
+            this.Antennas_cntxtMnStrp.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchALL_lbl
@@ -263,37 +268,69 @@ namespace OfferHelperV1
             this.ADDEq_btn.UseVisualStyleBackColor = true;
             this.ADDEq_btn.Click += new System.EventHandler(this.ADDEq_btn_Click);
             // 
-            // contextMenuStrip1
+            // Servsrs_cntxtMnStrp
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Servsrs_cntxtMnStrp.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Servsrs_cntxtMnStrp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.показатьToolStripMenuItem,
             this.редактироватьToolStripMenuItem,
             this.удалитьToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            this.Servsrs_cntxtMnStrp.Name = "contextMenuStrip1";
+            this.Servsrs_cntxtMnStrp.Size = new System.Drawing.Size(181, 76);
+            this.Servsrs_cntxtMnStrp.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // показатьToolStripMenuItem
             // 
             this.показатьToolStripMenuItem.Name = "показатьToolStripMenuItem";
-            this.показатьToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.показатьToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.показатьToolStripMenuItem.Text = "Показать";
             this.показатьToolStripMenuItem.Click += new System.EventHandler(this.показатьToolStripMenuItem_Click);
             // 
             // редактироватьToolStripMenuItem
             // 
             this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
-            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.редактироватьToolStripMenuItem.Text = "Редактировать";
             this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
             // 
             // удалитьToolStripMenuItem
             // 
             this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.удалитьToolStripMenuItem.Text = "Удалить";
             this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
+            // 
+            // Antennas_cntxtMnStrp
+            // 
+            this.Antennas_cntxtMnStrp.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Antennas_cntxtMnStrp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.removeToolStripMenuItem});
+            this.Antennas_cntxtMnStrp.Name = "Antennas_cntxtMnStrp";
+            this.Antennas_cntxtMnStrp.Size = new System.Drawing.Size(211, 104);
+            this.Antennas_cntxtMnStrp.Opening += new System.ComponentModel.CancelEventHandler(this.Antennas_cntxtMnStrp_Opening);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.showToolStripMenuItem.Text = "Show";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.removeToolStripMenuItem.Text = "Remove";
+            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
             // OfferForm
             // 
@@ -324,7 +361,8 @@ namespace OfferHelperV1
             this.Controls.Add(this.SearchALL_lbl);
             this.Name = "OfferForm";
             this.Text = "OfferForm";
-            this.contextMenuStrip1.ResumeLayout(false);
+            this.Servsrs_cntxtMnStrp.ResumeLayout(false);
+            this.Antennas_cntxtMnStrp.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,9 +392,13 @@ namespace OfferHelperV1
         private System.Windows.Forms.Button test_btn;
         private System.Windows.Forms.Button EditProduct_btn;
         private System.Windows.Forms.Button ADDEq_btn;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ContextMenuStrip Servsrs_cntxtMnStrp;
         private System.Windows.Forms.ToolStripMenuItem показатьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem редактироватьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem удалитьToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip Antennas_cntxtMnStrp;
+        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
     }
 }

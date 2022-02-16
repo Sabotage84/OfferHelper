@@ -19,7 +19,8 @@ namespace OfferHelperV1
         {
             InitializeComponent();
             BindListBoxes();
-            Servers_lstBx.ContextMenuStrip = contextMenuStrip1;
+            Servers_lstBx.ContextMenuStrip = Servsrs_cntxtMnStrp;
+            Antennas_lstBx.ContextMenuStrip = Antennas_cntxtMnStrp;
         }
 
         public void BindListBoxes()
@@ -114,6 +115,37 @@ namespace OfferHelperV1
             ProductManagerClass pm = new ProductManagerClass();
             Product p;
             p = (Product)Servers_lstBx.SelectedItem;
+            pm.Remove(p);
+            BindListBoxes();
+        }
+
+        private void Antennas_cntxtMnStrp_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void showToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product p = Antennas_lstBx.SelectedItem as Product;
+            MessageBox.Show(p.Name + Environment.NewLine + Environment.NewLine + p.Description + Environment.NewLine +
+                "Вход: " + p.InPrice.ToString() + Environment.NewLine + "К = " + p.K.ToString() + Environment.NewLine +
+                "Цена: " + p.Price + Environment.NewLine + "Срок поставки " + p.DeliveryTime.ToString() + " рабочих дней.");
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product p;
+            p = (Product)Antennas_lstBx.SelectedItem;
+            EditProductForm f = new EditProductForm(p);
+            f.Owner = this;
+            f.ShowDialog();
+        }
+
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductManagerClass pm = new ProductManagerClass();
+            Product p;
+            p = (Product)Antennas_lstBx.SelectedItem;
             pm.Remove(p);
             BindListBoxes();
         }
