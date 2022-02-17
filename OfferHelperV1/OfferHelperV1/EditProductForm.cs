@@ -36,13 +36,17 @@ namespace OfferHelperV1
         {
             ProductManagerClass pmc = new ProductManagerClass();
             Product item2 = GetNewProduct();
-            if (isadd)
+            if (isadd && item2!=null)
             {
                 pmc.AddProduct(item2);
             }
-            else
+            else if (!isadd && item2!=null)
             {
                 pmc.Edit(item1, item2);
+            }
+            else
+            {
+                MessageBox.Show("Неправильный элемент!");
             }
             pmc.RefreshListsOfProducts();
             OfferForm OF1 =  (OfferForm)Owner;
@@ -96,12 +100,20 @@ namespace OfferHelperV1
             }
             if (newProduct != null)
             {
-                newProduct.Name = Name_txtBx.Text;
-                newProduct.Description = Description_txtBx.Text;
-                newProduct.InPrice = int.Parse(InPrice_txtBx.Text);
-                newProduct.K = double.Parse(K_txtBx.Text);
-                newProduct.Price = int.Parse(Price_txtBx.Text);
-                newProduct.Type = (TypeOfProduct)Type_cmbBx.SelectedItem;
+                try
+                {
+                    newProduct.Name = Name_txtBx.Text;
+                    newProduct.Description = Description_txtBx.Text;
+                    newProduct.InPrice = int.Parse(InPrice_txtBx.Text);
+                    newProduct.K = double.Parse(K_txtBx.Text);
+                    newProduct.Price = int.Parse(Price_txtBx.Text);
+                    newProduct.Type = (TypeOfProduct)Type_cmbBx.SelectedItem;
+                }
+                catch
+                {
+                    MessageBox.Show("Неправильный элемент!");
+                    return null;
+                }
             }
             return newProduct;
 
