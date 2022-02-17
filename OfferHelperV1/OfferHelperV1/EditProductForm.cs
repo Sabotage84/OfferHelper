@@ -19,6 +19,7 @@ namespace OfferHelperV1
         public EditProductForm(Product curItem)
         {
             item1 = curItem;
+
             isadd = false;
             InitializeComponent();
            
@@ -125,6 +126,7 @@ namespace OfferHelperV1
             Type_cmbBx.SelectedItem = TypeOfProduct.Miscs;
             if (item1!=null)
             {
+                Type_cmbBx.SelectedItem = item1.Type;
                 ID_txtBx.Text = item1.ID.ToString();
                 Name_txtBx.Text = item1.Name;
                 Description_txtBx.Text = item1.Description;
