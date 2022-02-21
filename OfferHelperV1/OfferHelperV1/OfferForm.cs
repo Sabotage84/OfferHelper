@@ -21,6 +21,7 @@ namespace OfferHelperV1
             BindListBoxes();
             Servers_lstBx.ContextMenuStrip = Servsrs_cntxtMnStrp;
             Antennas_lstBx.ContextMenuStrip = Antennas_cntxtMnStrp;
+            Cables_lstBx.ContextMenuStrip = Cables_cntxtMnStrp;
         }
 
         public void BindListBoxes()
