@@ -97,27 +97,22 @@ namespace OfferHelperV1
         private void показатьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Product p = Servers_lstBx.SelectedItem as Product;
-            MessageBox.Show(p.Name+Environment.NewLine+Environment.NewLine+p.Description+Environment.NewLine+
-                "Вход: "+p.InPrice.ToString()+Environment.NewLine+"К = "+p.K.ToString()+Environment.NewLine+
-                "Цена: "+ p.Price+ Environment.NewLine+"Срок поставки "+p.DeliveryTime.ToString()+" рабочих дней.");
+            ShowProduct(p);
         }
 
         private void редактироватьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Product p;
             p = (Product)Servers_lstBx.SelectedItem;
-            EditProductForm f = new EditProductForm(p);
-            f.Owner = this;
-            f.ShowDialog();
+            EditProduct(p);
         }
 
         private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProductManagerClass pm = new ProductManagerClass();
+           
             Product p;
             p = (Product)Servers_lstBx.SelectedItem;
-            pm.Remove(p);
-            BindListBoxes();
+            RemoveProduct(p);
         }
 
         private void Antennas_cntxtMnStrp_Opening(object sender, CancelEventArgs e)
@@ -128,6 +123,11 @@ namespace OfferHelperV1
         private void showToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Product p = Antennas_lstBx.SelectedItem as Product;
+            ShowProduct(p);
+        }
+
+        private static void ShowProduct(Product p)
+        {
             MessageBox.Show(p.Name + Environment.NewLine + Environment.NewLine + p.Description + Environment.NewLine +
                 "Вход: " + p.InPrice.ToString() + Environment.NewLine + "К = " + p.K.ToString() + Environment.NewLine +
                 "Цена: " + p.Price + Environment.NewLine + "Срок поставки " + p.DeliveryTime.ToString() + " рабочих дней.");
@@ -137,6 +137,11 @@ namespace OfferHelperV1
         {
             Product p;
             p = (Product)Antennas_lstBx.SelectedItem;
+            EditProduct(p);
+        }
+
+        private void EditProduct(Product p)
+        {
             EditProductForm f = new EditProductForm(p);
             f.Owner = this;
             f.ShowDialog();
@@ -144,26 +149,35 @@ namespace OfferHelperV1
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProductManagerClass pm = new ProductManagerClass();
+
             Product p;
             p = (Product)Antennas_lstBx.SelectedItem;
+            RemoveProduct(p);
+        }
+
+        private void RemoveProduct(Product p)
+        {
+            ProductManagerClass pm = new ProductManagerClass();
             pm.Remove(p);
             BindListBoxes();
         }
 
         private void showToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Product p = Cables_lstBx.SelectedItem as Product;
+            ShowProduct(p);
         }
 
         private void editToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Product p = Cables_lstBx.SelectedItem as Product;
+            EditProduct(p);
         }
 
         private void removeToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Product p = Cables_lstBx.SelectedItem as Product;
+            RemoveProduct(p);
         }
     }
 }
