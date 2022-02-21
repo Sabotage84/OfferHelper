@@ -150,5 +150,20 @@ namespace OfferHelperV1
             pm.Remove(p);
             BindListBoxes();
         }
+
+        private void showToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
