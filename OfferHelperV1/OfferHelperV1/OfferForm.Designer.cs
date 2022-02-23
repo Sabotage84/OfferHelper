@@ -35,7 +35,7 @@ namespace OfferHelperV1
             this.Servers_lstBx = new System.Windows.Forms.ListBox();
             this.Servsrs_lbl = new System.Windows.Forms.Label();
             this.Recivers_lbl = new System.Windows.Forms.Label();
-            this.Recivers_lstBx = new System.Windows.Forms.ListBox();
+            this.Misc_lstBx = new System.Windows.Forms.ListBox();
             this.Antennas_lbl = new System.Windows.Forms.Label();
             this.Cables_lbl = new System.Windows.Forms.Label();
             this.Antennas_lstBx = new System.Windows.Forms.ListBox();
@@ -64,6 +64,7 @@ namespace OfferHelperV1
             this.showToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Misc_CntetMnStrp = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
             this.Cables_cntxtMnStrp.SuspendLayout();
@@ -112,14 +113,14 @@ namespace OfferHelperV1
             this.Recivers_lbl.TabIndex = 4;
             this.Recivers_lbl.Text = "Приемники";
             // 
-            // Recivers_lstBx
+            // Misc_lstBx
             // 
-            this.Recivers_lstBx.FormattingEnabled = true;
-            this.Recivers_lstBx.ItemHeight = 16;
-            this.Recivers_lstBx.Location = new System.Drawing.Point(12, 336);
-            this.Recivers_lstBx.Name = "Recivers_lstBx";
-            this.Recivers_lstBx.Size = new System.Drawing.Size(176, 148);
-            this.Recivers_lstBx.TabIndex = 5;
+            this.Misc_lstBx.FormattingEnabled = true;
+            this.Misc_lstBx.ItemHeight = 16;
+            this.Misc_lstBx.Location = new System.Drawing.Point(12, 336);
+            this.Misc_lstBx.Name = "Misc_lstBx";
+            this.Misc_lstBx.Size = new System.Drawing.Size(176, 148);
+            this.Misc_lstBx.TabIndex = 5;
             // 
             // Antennas_lbl
             // 
@@ -345,28 +346,34 @@ namespace OfferHelperV1
             this.editToolStripMenuItem1,
             this.removeToolStripMenuItem1});
             this.Cables_cntxtMnStrp.Name = "Cables_cntxtMnStrp";
-            this.Cables_cntxtMnStrp.Size = new System.Drawing.Size(211, 104);
+            this.Cables_cntxtMnStrp.Size = new System.Drawing.Size(133, 76);
             // 
             // showToolStripMenuItem1
             // 
             this.showToolStripMenuItem1.Name = "showToolStripMenuItem1";
-            this.showToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.showToolStripMenuItem1.Size = new System.Drawing.Size(132, 24);
             this.showToolStripMenuItem1.Text = "Show";
             this.showToolStripMenuItem1.Click += new System.EventHandler(this.showToolStripMenuItem1_Click);
             // 
             // editToolStripMenuItem1
             // 
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(132, 24);
             this.editToolStripMenuItem1.Text = "Edit";
             this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
             // 
             // removeToolStripMenuItem1
             // 
             this.removeToolStripMenuItem1.Name = "removeToolStripMenuItem1";
-            this.removeToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.removeToolStripMenuItem1.Size = new System.Drawing.Size(132, 24);
             this.removeToolStripMenuItem1.Text = "Remove";
             this.removeToolStripMenuItem1.Click += new System.EventHandler(this.removeToolStripMenuItem1_Click);
+            // 
+            // Misc_CntetMnStrp
+            // 
+            this.Misc_CntetMnStrp.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Misc_CntetMnStrp.Name = "Misc_CntetMnStrp";
+            this.Misc_CntetMnStrp.Size = new System.Drawing.Size(61, 4);
             // 
             // OfferForm
             // 
@@ -389,7 +396,7 @@ namespace OfferHelperV1
             this.Controls.Add(this.Antennas_lstBx);
             this.Controls.Add(this.Cables_lbl);
             this.Controls.Add(this.Antennas_lbl);
-            this.Controls.Add(this.Recivers_lstBx);
+            this.Controls.Add(this.Misc_lstBx);
             this.Controls.Add(this.Recivers_lbl);
             this.Controls.Add(this.Servsrs_lbl);
             this.Controls.Add(this.Servers_lstBx);
@@ -412,7 +419,7 @@ namespace OfferHelperV1
         private System.Windows.Forms.ListBox Servers_lstBx;
         private System.Windows.Forms.Label Servsrs_lbl;
         private System.Windows.Forms.Label Recivers_lbl;
-        private System.Windows.Forms.ListBox Recivers_lstBx;
+        private System.Windows.Forms.ListBox Misc_lstBx;
         private System.Windows.Forms.Label Antennas_lbl;
         private System.Windows.Forms.Label Cables_lbl;
         private System.Windows.Forms.ListBox Antennas_lstBx;
@@ -441,5 +448,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem1;
+        private System.Windows.Forms.ContextMenuStrip Misc_CntetMnStrp;
     }
 }

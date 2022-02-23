@@ -22,6 +22,7 @@ namespace OfferHelperV1
             Servers_lstBx.ContextMenuStrip = Servsrs_cntxtMnStrp;
             Antennas_lstBx.ContextMenuStrip = Antennas_cntxtMnStrp;
             Cables_lstBx.ContextMenuStrip = Cables_cntxtMnStrp;
+            Misc_lstBx.ContextMenuStrip = Misc_CntetMnStrp;
         }
 
         public void BindListBoxes()
@@ -30,6 +31,7 @@ namespace OfferHelperV1
             Servers_lstBx.DataSource = null;
             Cables_lstBx.DataSource = null;
             Antennas_lstBx.DataSource = null;
+            Misc_lstBx.DataSource = null;
             Servers_lstBx.DataSource = PM.Servers;
             Servers_lstBx.DisplayMember = "Name";
             Servers_lstBx.ValueMember = "ID";
@@ -39,6 +41,10 @@ namespace OfferHelperV1
             Cables_lstBx.DataSource = PM.Cables;
             Cables_lstBx.DisplayMember = "Name";
             Cables_lstBx.ValueMember = "ID";
+            Misc_lstBx.DataSource = PM.Miscs;
+            Misc_lstBx.DisplayMember = "Name";
+            Misc_lstBx.ValueMember = "ID";
+
         }
 
         private void AddServerToOffer_btn_Click(object sender, EventArgs e)
