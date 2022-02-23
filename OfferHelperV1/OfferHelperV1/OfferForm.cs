@@ -188,17 +188,20 @@ namespace OfferHelperV1
 
         private void showToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            Product p = Misc_lstBx.SelectedItem as Product;
+            ShowProduct(p);
         }
 
         private void editToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            Product p = Misc_lstBx.SelectedItem as Product;
+            EditProduct(p);
         }
 
         private void removeToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            Product p = Misc_lstBx.SelectedItem as Product;
+            RemoveProduct(p);
         }
     }
 }
