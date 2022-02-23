@@ -185,5 +185,20 @@ namespace OfferHelperV1
             Product p = Cables_lstBx.SelectedItem as Product;
             RemoveProduct(p);
         }
+
+        private void showToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
