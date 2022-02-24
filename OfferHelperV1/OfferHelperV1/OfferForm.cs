@@ -135,9 +135,16 @@ namespace OfferHelperV1
 
         private static void ShowProduct(Product p)
         {
-            MessageBox.Show(p.Name + Environment.NewLine + Environment.NewLine + p.Description + Environment.NewLine +
-                "Вход: " + p.InPrice.ToString() + Environment.NewLine + "К = " + p.K.ToString() + Environment.NewLine +
-                "Цена: " + p.Price + Environment.NewLine + "Срок поставки " + p.DeliveryTime.ToString() + " рабочих дней.");
+            if (p != null)
+            {
+                MessageBox.Show(p.Name + Environment.NewLine + Environment.NewLine + p.Description + Environment.NewLine +
+                    "Вход: " + p.InPrice.ToString() + Environment.NewLine + "К = " + p.K.ToString() + Environment.NewLine +
+                    "Цена: " + p.Price + Environment.NewLine + "Срок поставки " + p.DeliveryTime.ToString() + " рабочих дней.");
+            }
+            else
+            {
+                MessageBox.Show("Элемент не выбран!");
+            }
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
@@ -149,9 +156,16 @@ namespace OfferHelperV1
 
         private void EditProduct(Product p)
         {
-            EditProductForm f = new EditProductForm(p);
-            f.Owner = this;
-            f.ShowDialog();
+            if (p != null)
+            {
+                EditProductForm f = new EditProductForm(p);
+                f.Owner = this;
+                f.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Элемент не выбран!");
+            }
         }
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -164,9 +178,16 @@ namespace OfferHelperV1
 
         private void RemoveProduct(Product p)
         {
-            ProductManagerClass pm = new ProductManagerClass();
-            pm.Remove(p);
-            BindListBoxes();
+            if (p != null)
+            {
+                ProductManagerClass pm = new ProductManagerClass();
+                pm.Remove(p);
+                BindListBoxes();
+            }
+            else
+            {
+                MessageBox.Show("Элемент не выбран!");
+            }
         }
 
         private void showToolStripMenuItem1_Click(object sender, EventArgs e)
