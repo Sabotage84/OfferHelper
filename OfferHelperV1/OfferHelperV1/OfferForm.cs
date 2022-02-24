@@ -23,6 +23,7 @@ namespace OfferHelperV1
             Antennas_lstBx.ContextMenuStrip = Antennas_cntxtMnStrp;
             Cables_lstBx.ContextMenuStrip = Cables_cntxtMnStrp;
             Misc_lstBx.ContextMenuStrip = Misc_CntetMnStrp;
+            OfferList_lstBx.ContextMenuStrip = OfferList_CntxtMnStrp;
         }
 
         public void BindListBoxes()
@@ -202,6 +203,12 @@ namespace OfferHelperV1
         {
             Product p = Misc_lstBx.SelectedItem as Product;
             RemoveProduct(p);
+        }
+
+        private void showToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Product p = OfferList_lstBx.SelectedItem as Product;
+            ShowProduct(p);
         }
     }
 }
