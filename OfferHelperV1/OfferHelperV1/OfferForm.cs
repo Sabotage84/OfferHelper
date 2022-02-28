@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -15,6 +16,7 @@ namespace OfferHelperV1
     public partial class OfferForm : Form
     {
         ProductManagerClass PM;
+        ObservableCollection<Product> offerListOfProduct = new ObservableCollection<Product>();
         public OfferForm()
         {
             InitializeComponent();
@@ -24,6 +26,17 @@ namespace OfferHelperV1
             Cables_lstBx.ContextMenuStrip = Cables_cntxtMnStrp;
             Misc_lstBx.ContextMenuStrip = Misc_CntetMnStrp;
             OfferList_lstBx.ContextMenuStrip = OfferList_CntxtMnStrp;
+
+            RefreshOfferList();
+
+        }
+
+        private void RefreshOfferList()
+        {
+            OfferList_lstBx.DataSource = null;
+            OfferList_lstBx.DataSource = offerListOfProduct;
+            OfferList_lstBx.DisplayMember = "Name";
+            OfferList_lstBx.ValueMember = "ID";
         }
 
         public void BindListBoxes()
@@ -50,7 +63,9 @@ namespace OfferHelperV1
 
         private void AddServerToOffer_btn_Click(object sender, EventArgs e)
         {
-
+            Product p = Servers_lstBx.SelectedItem as Product;
+            offerListOfProduct.Add(p);
+            RefreshOfferList();
         }
 
         private void ReciverAddToOffer_btn_Click(object sender, EventArgs e)
