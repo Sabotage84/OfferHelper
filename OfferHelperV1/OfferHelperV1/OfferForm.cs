@@ -70,7 +70,9 @@ namespace OfferHelperV1
 
         private void ReciverAddToOffer_btn_Click(object sender, EventArgs e)
         {
-
+            Product p = Misc_lstBx.SelectedItem as Product;
+            offerListOfProduct.Add(p);
+            RefreshOfferList();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -245,6 +247,20 @@ namespace OfferHelperV1
         {
             Product p = OfferList_lstBx.SelectedItem as Product;
             ShowProduct(p);
+        }
+
+        private void AddAntenna_btn_Click(object sender, EventArgs e)
+        {
+            Product p = Antennas_lstBx.SelectedItem as Product;
+            offerListOfProduct.Add(p);
+            RefreshOfferList();
+        }
+
+        private void AddCableToOffer_btn_Click(object sender, EventArgs e)
+        {
+            Product p = Cables_lstBx.SelectedItem as Product;
+            offerListOfProduct.Add(p);
+            RefreshOfferList();
         }
     }
 }
