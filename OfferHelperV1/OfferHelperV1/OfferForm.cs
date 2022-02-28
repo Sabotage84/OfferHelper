@@ -83,7 +83,9 @@ namespace OfferHelperV1
 
         private void RemoveFromOfferList_btn_Click(object sender, EventArgs e)
         {
-
+            Product p = OfferList_lstBx.SelectedItem as Product;
+            offerListOfProduct.Remove(p);
+            RefreshOfferList();
         }
 
         private void test_btn_Click(object sender, EventArgs e)
