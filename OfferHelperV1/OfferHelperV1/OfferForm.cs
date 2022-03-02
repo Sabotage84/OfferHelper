@@ -36,18 +36,27 @@ namespace OfferHelperV1
 
         private void OfferListOfProduct_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
+            RefreshResultText();
+
+        }
+
+        private void RefreshResultText()
+        {
             string res = "";
             foreach (var item in offerListOfProduct)
             {
-                res += item.Name+Environment.NewLine + Environment.NewLine;
-                res += item.Description+ Environment.NewLine + Environment.NewLine;
-                res += "Цена " + item.Price + " евро с НДС."+ Environment.NewLine + Environment.NewLine;
+                res += item.Name + Environment.NewLine + Environment.NewLine;
+                res += item.Description + Environment.NewLine + Environment.NewLine;
+                res += "Цена " + item.Price + " евро с НДС." + Environment.NewLine + Environment.NewLine;
                 res += "Срок поставки " + item.DeliveryTime + " рабочих дней." + Environment.NewLine + Environment.NewLine;
+            }
+            if (Verification_chkBx.Checked)
+            {
+                res += "Организация поверки(получение свидетельства о поверке)" + Environment.NewLine + "500 Евро с НДС." + Environment.NewLine + Environment.NewLine;
             }
             res += textTemplates.Remark + Environment.NewLine;
             res += textTemplates.Producer + Environment.NewLine;
             ResultText_txtBx.Text = res;
-
         }
 
         private void RefreshOfferList()
@@ -282,6 +291,11 @@ namespace OfferHelperV1
             Product p = Cables_lstBx.SelectedItem as Product;
             offerListOfProduct.Add(p);
             RefreshOfferList();
+        }
+
+        private void Verification_chkBx_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshResultText();
         }
     }
 }

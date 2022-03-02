@@ -178,6 +178,7 @@ namespace OfferHelperV1
             this.Verification_chkBx.TabIndex = 10;
             this.Verification_chkBx.Text = "Поверка";
             this.Verification_chkBx.UseVisualStyleBackColor = true;
+            this.Verification_chkBx.CheckedChanged += new System.EventHandler(this.Verification_chkBx_CheckedChanged);
             // 
             // ResultText_txtBx
             // 
