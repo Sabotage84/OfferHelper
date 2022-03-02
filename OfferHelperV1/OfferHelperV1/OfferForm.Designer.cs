@@ -184,7 +184,8 @@ namespace OfferHelperV1
             this.ResultText_txtBx.Location = new System.Drawing.Point(633, 265);
             this.ResultText_txtBx.Multiline = true;
             this.ResultText_txtBx.Name = "ResultText_txtBx";
-            this.ResultText_txtBx.Size = new System.Drawing.Size(272, 188);
+            this.ResultText_txtBx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ResultText_txtBx.Size = new System.Drawing.Size(372, 219);
             this.ResultText_txtBx.TabIndex = 11;
             // 
             // ResultText_lbl
@@ -236,7 +237,7 @@ namespace OfferHelperV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(529, 459);
+            this.button1.Location = new System.Drawing.Point(466, 455);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 32);
             this.button1.TabIndex = 17;
@@ -266,7 +267,7 @@ namespace OfferHelperV1
             // 
             // EditProduct_btn
             // 
-            this.EditProduct_btn.Location = new System.Drawing.Point(398, 459);
+            this.EditProduct_btn.Location = new System.Drawing.Point(335, 455);
             this.EditProduct_btn.Name = "EditProduct_btn";
             this.EditProduct_btn.Size = new System.Drawing.Size(125, 32);
             this.EditProduct_btn.TabIndex = 20;
@@ -276,7 +277,7 @@ namespace OfferHelperV1
             // 
             // ADDEq_btn
             // 
-            this.ADDEq_btn.Location = new System.Drawing.Point(291, 459);
+            this.ADDEq_btn.Location = new System.Drawing.Point(228, 455);
             this.ADDEq_btn.Name = "ADDEq_btn";
             this.ADDEq_btn.Size = new System.Drawing.Size(101, 32);
             this.ADDEq_btn.TabIndex = 21;

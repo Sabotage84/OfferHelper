@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfferHelperV1.OfferClasses;
 using OfferHelperV1.ProductClasses;
 using OfferHelperV1.ProductManager;
 
@@ -16,6 +18,7 @@ namespace OfferHelperV1
     public partial class OfferForm : Form
     {
         ProductManagerClass PM;
+        TextTemplates textTemplates = new TextTemplates();
         ObservableCollection<Product> offerListOfProduct = new ObservableCollection<Product>();
         public OfferForm()
         {
@@ -26,8 +29,24 @@ namespace OfferHelperV1
             Cables_lstBx.ContextMenuStrip = Cables_cntxtMnStrp;
             Misc_lstBx.ContextMenuStrip = Misc_CntetMnStrp;
             OfferList_lstBx.ContextMenuStrip = OfferList_CntxtMnStrp;
-
+            offerListOfProduct.CollectionChanged += OfferListOfProduct_CollectionChanged;
             RefreshOfferList();
+
+        }
+
+        private void OfferListOfProduct_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            string res = "";
+            foreach (var item in offerListOfProduct)
+            {
+                res += item.Name+Environment.NewLine + Environment.NewLine;
+                res += item.Description+ Environment.NewLine + Environment.NewLine;
+                res += "Цена " + item.Price + " евро с НДС."+ Environment.NewLine + Environment.NewLine;
+                res += "Срок поставки " + item.DeliveryTime + " рабочих дней." + Environment.NewLine + Environment.NewLine;
+            }
+            res += textTemplates.Remark + Environment.NewLine;
+            res += textTemplates.Producer + Environment.NewLine;
+            ResultText_txtBx.Text = res;
 
         }
 
