@@ -30,5 +30,16 @@ namespace OfferHelperV1.OfferClasses
         {
 
         }
+
+        public string GetDeliveryTimeString (int dt)
+        {
+            string res="";
+            res += @"Оплата в рублях по курсу ЦБ." + Environment.NewLine;
+            res += "Склад Москва " + dt.ToString() + " рабочих дней." + Environment.NewLine;
+            res += "3 года гарантии. (Расширение гарантии до 5 лет +20% к стоимости)." + Environment.NewLine + "Паспорт на изделие. Декларация соответствия ТС (EAC).";
+            return res;
+        }
+
+
     }
 }

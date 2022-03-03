@@ -76,6 +76,7 @@ namespace OfferHelperV1
             this.Producer_chckBx = new System.Windows.Forms.CheckBox();
             this.Remark_chckBx = new System.Windows.Forms.CheckBox();
             this.VerifEx_chckBx = new System.Windows.Forms.CheckBox();
+            this.Delivery_chckBx = new System.Windows.Forms.CheckBox();
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
             this.Cables_cntxtMnStrp.SuspendLayout();
@@ -464,7 +465,7 @@ namespace OfferHelperV1
             // Producer_chckBx
             // 
             this.Producer_chckBx.AutoSize = true;
-            this.Producer_chckBx.Location = new System.Drawing.Point(633, 316);
+            this.Producer_chckBx.Location = new System.Drawing.Point(633, 348);
             this.Producer_chckBx.Name = "Producer_chckBx";
             this.Producer_chckBx.Size = new System.Drawing.Size(132, 21);
             this.Producer_chckBx.TabIndex = 26;
@@ -475,7 +476,7 @@ namespace OfferHelperV1
             // Remark_chckBx
             // 
             this.Remark_chckBx.AutoSize = true;
-            this.Remark_chckBx.Location = new System.Drawing.Point(633, 343);
+            this.Remark_chckBx.Location = new System.Drawing.Point(633, 375);
             this.Remark_chckBx.Name = "Remark_chckBx";
             this.Remark_chckBx.Size = new System.Drawing.Size(113, 21);
             this.Remark_chckBx.TabIndex = 27;
@@ -486,7 +487,7 @@ namespace OfferHelperV1
             // VerifEx_chckBx
             // 
             this.VerifEx_chckBx.AutoSize = true;
-            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 370);
+            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 402);
             this.VerifEx_chckBx.Name = "VerifEx_chckBx";
             this.VerifEx_chckBx.Size = new System.Drawing.Size(139, 21);
             this.VerifEx_chckBx.TabIndex = 28;
@@ -494,11 +495,23 @@ namespace OfferHelperV1
             this.VerifEx_chckBx.UseVisualStyleBackColor = true;
             this.VerifEx_chckBx.CheckedChanged += new System.EventHandler(this.VerifEx_chckBx_CheckedChanged);
             // 
+            // Delivery_chckBx
+            // 
+            this.Delivery_chckBx.AutoSize = true;
+            this.Delivery_chckBx.Location = new System.Drawing.Point(633, 321);
+            this.Delivery_chckBx.Name = "Delivery_chckBx";
+            this.Delivery_chckBx.Size = new System.Drawing.Size(93, 21);
+            this.Delivery_chckBx.TabIndex = 29;
+            this.Delivery_chckBx.Text = "Доставка";
+            this.Delivery_chckBx.UseVisualStyleBackColor = true;
+            this.Delivery_chckBx.CheckedChanged += new System.EventHandler(this.Delivery_chckBx_CheckedChanged);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1329, 583);
+            this.Controls.Add(this.Delivery_chckBx);
             this.Controls.Add(this.VerifEx_chckBx);
             this.Controls.Add(this.Remark_chckBx);
             this.Controls.Add(this.Producer_chckBx);
@@ -587,5 +600,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.CheckBox Producer_chckBx;
         private System.Windows.Forms.CheckBox Remark_chckBx;
         private System.Windows.Forms.CheckBox VerifEx_chckBx;
+        private System.Windows.Forms.CheckBox Delivery_chckBx;
     }
 }

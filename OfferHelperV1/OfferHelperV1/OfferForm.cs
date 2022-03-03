@@ -49,7 +49,15 @@ namespace OfferHelperV1
                 res += item.Description + Environment.NewLine + Environment.NewLine;
                 res += "Цена " + item.Price + " евро с НДС." + Environment.NewLine + Environment.NewLine;
                 res += "Срок поставки " + item.DeliveryTime + " рабочих дней." + Environment.NewLine + Environment.NewLine;
+                if (Delivery_chckBx.Checked)
+                {
+                    res += textTemplates.GetDeliveryTimeString(item.DeliveryTime) + Environment.NewLine + Environment.NewLine;
+                }
+
             }
+
+            
+
             if (Verification_chkBx.Checked)
             {
                 res += "Организация поверки(получение свидетельства о поверке)" + Environment.NewLine + "500 Евро с НДС." + Environment.NewLine + Environment.NewLine;
@@ -331,6 +339,11 @@ namespace OfferHelperV1
         }
 
         private void VerifEx_chckBx_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshResultText();
+        }
+
+        private void Delivery_chckBx_CheckedChanged(object sender, EventArgs e)
         {
             RefreshResultText();
         }
