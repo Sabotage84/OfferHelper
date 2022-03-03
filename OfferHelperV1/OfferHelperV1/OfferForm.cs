@@ -54,8 +54,19 @@ namespace OfferHelperV1
             {
                 res += "Организация поверки(получение свидетельства о поверке)" + Environment.NewLine + "500 Евро с НДС." + Environment.NewLine + Environment.NewLine;
             }
-            res += textTemplates.Remark + Environment.NewLine;
-            res += textTemplates.Producer + Environment.NewLine;
+            if (Producer_chckBx.Checked)
+            {
+                res += Environment.NewLine+textTemplates.Producer + Environment.NewLine;
+            }
+            if (Remark_chckBx.Checked)
+            {
+                res += Environment.NewLine+textTemplates.Remark + Environment.NewLine;
+            }
+            if (VerifEx_chckBx.Checked)
+            {
+                res += Environment.NewLine+textTemplates.VerificationExample + Environment.NewLine;
+            }
+            
             ResultText_txtBx.Text = res;
         }
 
@@ -307,6 +318,21 @@ namespace OfferHelperV1
         {
             Clipboard.SetText(ResultText_txtBx.Text);
             MessageBox.Show("Текст скопирован!");
+        }
+
+        private void Producer_chckBx_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshResultText();
+        }
+
+        private void Remark_chckBx_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshResultText();
+        }
+
+        private void VerifEx_chckBx_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshResultText();
         }
     }
 }

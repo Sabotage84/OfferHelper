@@ -73,6 +73,9 @@ namespace OfferHelperV1
             this.AddAntenna_btn = new System.Windows.Forms.Button();
             this.AddCableToOffer_btn = new System.Windows.Forms.Button();
             this.CopyToBuffer_btn = new System.Windows.Forms.Button();
+            this.Producer_chckBx = new System.Windows.Forms.CheckBox();
+            this.Remark_chckBx = new System.Windows.Forms.CheckBox();
+            this.VerifEx_chckBx = new System.Windows.Forms.CheckBox();
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
             this.Cables_cntxtMnStrp.SuspendLayout();
@@ -239,7 +242,7 @@ namespace OfferHelperV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(466, 455);
+            this.button1.Location = new System.Drawing.Point(669, 489);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 32);
             this.button1.TabIndex = 17;
@@ -269,7 +272,7 @@ namespace OfferHelperV1
             // 
             // EditProduct_btn
             // 
-            this.EditProduct_btn.Location = new System.Drawing.Point(335, 455);
+            this.EditProduct_btn.Location = new System.Drawing.Point(12, 539);
             this.EditProduct_btn.Name = "EditProduct_btn";
             this.EditProduct_btn.Size = new System.Drawing.Size(125, 32);
             this.EditProduct_btn.TabIndex = 20;
@@ -279,7 +282,7 @@ namespace OfferHelperV1
             // 
             // ADDEq_btn
             // 
-            this.ADDEq_btn.Location = new System.Drawing.Point(228, 455);
+            this.ADDEq_btn.Location = new System.Drawing.Point(12, 493);
             this.ADDEq_btn.Name = "ADDEq_btn";
             this.ADDEq_btn.Size = new System.Drawing.Size(101, 32);
             this.ADDEq_btn.TabIndex = 21;
@@ -458,11 +461,47 @@ namespace OfferHelperV1
             this.CopyToBuffer_btn.UseVisualStyleBackColor = true;
             this.CopyToBuffer_btn.Click += new System.EventHandler(this.CopyToBuffer_btn_Click);
             // 
+            // Producer_chckBx
+            // 
+            this.Producer_chckBx.AutoSize = true;
+            this.Producer_chckBx.Location = new System.Drawing.Point(633, 316);
+            this.Producer_chckBx.Name = "Producer_chckBx";
+            this.Producer_chckBx.Size = new System.Drawing.Size(132, 21);
+            this.Producer_chckBx.TabIndex = 26;
+            this.Producer_chckBx.Text = "Производитель";
+            this.Producer_chckBx.UseVisualStyleBackColor = true;
+            this.Producer_chckBx.CheckedChanged += new System.EventHandler(this.Producer_chckBx_CheckedChanged);
+            // 
+            // Remark_chckBx
+            // 
+            this.Remark_chckBx.AutoSize = true;
+            this.Remark_chckBx.Location = new System.Drawing.Point(633, 343);
+            this.Remark_chckBx.Name = "Remark_chckBx";
+            this.Remark_chckBx.Size = new System.Drawing.Size(113, 21);
+            this.Remark_chckBx.TabIndex = 27;
+            this.Remark_chckBx.Text = "Примечание";
+            this.Remark_chckBx.UseVisualStyleBackColor = true;
+            this.Remark_chckBx.CheckedChanged += new System.EventHandler(this.Remark_chckBx_CheckedChanged);
+            // 
+            // VerifEx_chckBx
+            // 
+            this.VerifEx_chckBx.AutoSize = true;
+            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 370);
+            this.VerifEx_chckBx.Name = "VerifEx_chckBx";
+            this.VerifEx_chckBx.Size = new System.Drawing.Size(139, 21);
+            this.VerifEx_chckBx.TabIndex = 28;
+            this.VerifEx_chckBx.Text = "Пример поверки";
+            this.VerifEx_chckBx.UseVisualStyleBackColor = true;
+            this.VerifEx_chckBx.CheckedChanged += new System.EventHandler(this.VerifEx_chckBx_CheckedChanged);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1329, 583);
+            this.Controls.Add(this.VerifEx_chckBx);
+            this.Controls.Add(this.Remark_chckBx);
+            this.Controls.Add(this.Producer_chckBx);
             this.Controls.Add(this.CopyToBuffer_btn);
             this.Controls.Add(this.AddCableToOffer_btn);
             this.Controls.Add(this.AddAntenna_btn);
@@ -545,5 +584,8 @@ namespace OfferHelperV1
         private System.Windows.Forms.Button AddAntenna_btn;
         private System.Windows.Forms.Button AddCableToOffer_btn;
         private System.Windows.Forms.Button CopyToBuffer_btn;
+        private System.Windows.Forms.CheckBox Producer_chckBx;
+        private System.Windows.Forms.CheckBox Remark_chckBx;
+        private System.Windows.Forms.CheckBox VerifEx_chckBx;
     }
 }
