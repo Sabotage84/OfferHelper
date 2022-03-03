@@ -72,6 +72,7 @@ namespace OfferHelperV1
             this.showToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.AddAntenna_btn = new System.Windows.Forms.Button();
             this.AddCableToOffer_btn = new System.Windows.Forms.Button();
+            this.CopyToBuffer_btn = new System.Windows.Forms.Button();
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
             this.Cables_cntxtMnStrp.SuspendLayout();
@@ -223,7 +224,7 @@ namespace OfferHelperV1
             this.OfferList_lstBx.ItemHeight = 16;
             this.OfferList_lstBx.Location = new System.Drawing.Point(633, 114);
             this.OfferList_lstBx.Name = "OfferList_lstBx";
-            this.OfferList_lstBx.Size = new System.Drawing.Size(184, 132);
+            this.OfferList_lstBx.Size = new System.Drawing.Size(184, 180);
             this.OfferList_lstBx.TabIndex = 15;
             // 
             // OfferList_lbl
@@ -447,11 +448,22 @@ namespace OfferHelperV1
             this.AddCableToOffer_btn.UseVisualStyleBackColor = true;
             this.AddCableToOffer_btn.Click += new System.EventHandler(this.AddCableToOffer_btn_Click);
             // 
+            // CopyToBuffer_btn
+            // 
+            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1221, 493);
+            this.CopyToBuffer_btn.Name = "CopyToBuffer_btn";
+            this.CopyToBuffer_btn.Size = new System.Drawing.Size(96, 28);
+            this.CopyToBuffer_btn.TabIndex = 25;
+            this.CopyToBuffer_btn.Text = "Копировать";
+            this.CopyToBuffer_btn.UseVisualStyleBackColor = true;
+            this.CopyToBuffer_btn.Click += new System.EventHandler(this.CopyToBuffer_btn_Click);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1329, 503);
+            this.ClientSize = new System.Drawing.Size(1329, 583);
+            this.Controls.Add(this.CopyToBuffer_btn);
             this.Controls.Add(this.AddCableToOffer_btn);
             this.Controls.Add(this.AddAntenna_btn);
             this.Controls.Add(this.ADDEq_btn);
@@ -532,5 +544,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem3;
         private System.Windows.Forms.Button AddAntenna_btn;
         private System.Windows.Forms.Button AddCableToOffer_btn;
+        private System.Windows.Forms.Button CopyToBuffer_btn;
     }
 }

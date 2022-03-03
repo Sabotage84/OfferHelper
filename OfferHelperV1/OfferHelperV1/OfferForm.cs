@@ -302,5 +302,11 @@ namespace OfferHelperV1
         {
 
         }
+
+        private void CopyToBuffer_btn_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(ResultText_txtBx.Text);
+            MessageBox.Show("Текст скопирован!");
+        }
     }
 }
