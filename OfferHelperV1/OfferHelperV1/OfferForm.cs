@@ -297,5 +297,10 @@ namespace OfferHelperV1
         {
             RefreshResultText();
         }
+
+        private void OfferList_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

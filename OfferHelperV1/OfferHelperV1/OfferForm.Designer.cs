@@ -71,7 +71,6 @@ namespace OfferHelperV1
             this.OfferList_CntxtMnStrp = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.AddAntenna_btn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.AddCableToOffer_btn = new System.Windows.Forms.Button();
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
@@ -182,17 +181,17 @@ namespace OfferHelperV1
             // 
             // ResultText_txtBx
             // 
-            this.ResultText_txtBx.Location = new System.Drawing.Point(633, 265);
+            this.ResultText_txtBx.Location = new System.Drawing.Point(823, 114);
             this.ResultText_txtBx.Multiline = true;
             this.ResultText_txtBx.Name = "ResultText_txtBx";
             this.ResultText_txtBx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ResultText_txtBx.Size = new System.Drawing.Size(372, 219);
+            this.ResultText_txtBx.Size = new System.Drawing.Size(494, 373);
             this.ResultText_txtBx.TabIndex = 11;
             // 
             // ResultText_lbl
             // 
             this.ResultText_lbl.AutoSize = true;
-            this.ResultText_lbl.Location = new System.Drawing.Point(630, 245);
+            this.ResultText_lbl.Location = new System.Drawing.Point(820, 94);
             this.ResultText_lbl.Name = "ResultText_lbl";
             this.ResultText_lbl.Size = new System.Drawing.Size(69, 17);
             this.ResultText_lbl.TabIndex = 12;
@@ -222,19 +221,20 @@ namespace OfferHelperV1
             // 
             this.OfferList_lstBx.FormattingEnabled = true;
             this.OfferList_lstBx.ItemHeight = 16;
-            this.OfferList_lstBx.Location = new System.Drawing.Point(633, 118);
+            this.OfferList_lstBx.Location = new System.Drawing.Point(633, 114);
             this.OfferList_lstBx.Name = "OfferList_lstBx";
-            this.OfferList_lstBx.Size = new System.Drawing.Size(136, 116);
+            this.OfferList_lstBx.Size = new System.Drawing.Size(184, 132);
             this.OfferList_lstBx.TabIndex = 15;
             // 
             // OfferList_lbl
             // 
             this.OfferList_lbl.AutoSize = true;
-            this.OfferList_lbl.Location = new System.Drawing.Point(630, 98);
+            this.OfferList_lbl.Location = new System.Drawing.Point(630, 94);
             this.OfferList_lbl.Name = "OfferList_lbl";
             this.OfferList_lbl.Size = new System.Drawing.Size(139, 17);
             this.OfferList_lbl.TabIndex = 16;
             this.OfferList_lbl.Text = "Оборудование в КП";
+            this.OfferList_lbl.Click += new System.EventHandler(this.OfferList_lbl_Click);
             // 
             // button1
             // 
@@ -437,15 +437,6 @@ namespace OfferHelperV1
             this.AddAntenna_btn.UseVisualStyleBackColor = true;
             this.AddAntenna_btn.Click += new System.EventHandler(this.AddAntenna_btn_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // AddCableToOffer_btn
             // 
             this.AddCableToOffer_btn.Location = new System.Drawing.Point(485, 319);
@@ -460,9 +451,8 @@ namespace OfferHelperV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 503);
+            this.ClientSize = new System.Drawing.Size(1329, 503);
             this.Controls.Add(this.AddCableToOffer_btn);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.AddAntenna_btn);
             this.Controls.Add(this.ADDEq_btn);
             this.Controls.Add(this.EditProduct_btn);
@@ -541,7 +531,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.ContextMenuStrip OfferList_CntxtMnStrp;
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem3;
         private System.Windows.Forms.Button AddAntenna_btn;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button AddCableToOffer_btn;
     }
 }
