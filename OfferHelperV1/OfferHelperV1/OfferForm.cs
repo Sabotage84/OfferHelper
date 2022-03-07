@@ -49,7 +49,7 @@ namespace OfferHelperV1
                 res += "Цена " + item.Price + " евро с НДС." + Environment.NewLine + Environment.NewLine;
                 if (Delivery_chckBx.Checked)
                 {
-                    res += textTemplates.GetDeliveryTimeString(item.DeliveryTime) + Environment.NewLine + Environment.NewLine;
+                    res += textTemplates.GetDeliveryTimeString(item.DeliveryTime, item.Type) + Environment.NewLine + Environment.NewLine;
                 }
 
             }

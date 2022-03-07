@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OfferHelperV1.ProductClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,12 +32,18 @@ namespace OfferHelperV1.OfferClasses
 
         }
 
-        public string GetDeliveryTimeString (int dt)
+        public string GetDeliveryTimeString (int dt, TypeOfProduct t)
         {
             string res="";
+
             res += @"Оплата в рублях по курсу ЦБ." + Environment.NewLine;
             res += "Склад Москва " + dt.ToString() + " рабочих дней." + Environment.NewLine;
-            res += "3 года гарантии. (Расширение гарантии до 5 лет +20% к стоимости)." + Environment.NewLine + "Паспорт на изделие. Декларация соответствия ТС (EAC).";
+            
+            if (t == TypeOfProduct.Server || t == TypeOfProduct.Reciver)
+            {
+                res += "3 года гарантии. (Расширение гарантии до 5 лет +20% к стоимости)." + Environment.NewLine + "Паспорт на изделие. Декларация соответствия ТС (EAC).";
+            }
+               
             return res;
         }
 
