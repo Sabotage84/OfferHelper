@@ -116,7 +116,7 @@ namespace OfferHelperV1
             Antennas_lstBx.DataSource = null;
             Misc_lstBx.DataSource = null;
             Servers_lstBx.DataSource = searchServers;
-            Servers_lstBx.DisplayMember = "Name";
+            Servers_lstBx.DisplayMember = "ShortName";
             Servers_lstBx.ValueMember = "ID";
             Antennas_lstBx.DataSource = PM.Antennas;
             Antennas_lstBx.DisplayMember = "Name";

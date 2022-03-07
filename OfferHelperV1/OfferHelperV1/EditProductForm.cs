@@ -104,6 +104,7 @@ namespace OfferHelperV1
                 try
                 {
                     newProduct.Name = Name_txtBx.Text;
+                    newProduct.ShortName = ShortName_txtBx.Text;
                     newProduct.Description = Description_txtBx.Text;
                     newProduct.InPrice = int.Parse(InPrice_txtBx.Text);
                     newProduct.K = double.Parse(K_txtBx.Text);

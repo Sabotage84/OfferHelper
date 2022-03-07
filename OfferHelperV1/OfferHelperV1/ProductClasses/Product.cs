@@ -18,6 +18,7 @@ namespace OfferHelperV1.ProductClasses
     {
         int iD;
         string name;
+        string shortName;
         string description;
         int inPrice;
         double k;
@@ -33,6 +34,7 @@ namespace OfferHelperV1.ProductClasses
         public int Price { get => price; set => price = value; }
         public int DeliveryTime { get => deliveryTime; set => deliveryTime = value; }
         public TypeOfProduct Type { get => type; set => type = value; }
+        public string ShortName { get => shortName; set => shortName = value; }
 
         public override bool Equals(object obj)
         {

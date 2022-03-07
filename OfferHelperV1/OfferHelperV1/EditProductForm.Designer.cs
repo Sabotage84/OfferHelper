@@ -47,6 +47,8 @@ namespace OfferHelperV1
             this.DeliveryTime_txtBx = new System.Windows.Forms.TextBox();
             this.Save_btn = new System.Windows.Forms.Button();
             this.Cancel_btn = new System.Windows.Forms.Button();
+            this.ShortName_lbl = new System.Windows.Forms.Label();
+            this.ShortName_txtBx = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Name_lbl
@@ -60,7 +62,7 @@ namespace OfferHelperV1
             // 
             // Name_txtBx
             // 
-            this.Name_txtBx.Location = new System.Drawing.Point(28, 44);
+            this.Name_txtBx.Location = new System.Drawing.Point(28, 49);
             this.Name_txtBx.Name = "Name_txtBx";
             this.Name_txtBx.Size = new System.Drawing.Size(272, 22);
             this.Name_txtBx.TabIndex = 1;
@@ -68,7 +70,7 @@ namespace OfferHelperV1
             // ID_lbl
             // 
             this.ID_lbl.AutoSize = true;
-            this.ID_lbl.Location = new System.Drawing.Point(25, 92);
+            this.ID_lbl.Location = new System.Drawing.Point(25, 134);
             this.ID_lbl.Name = "ID_lbl";
             this.ID_lbl.Size = new System.Drawing.Size(21, 17);
             this.ID_lbl.TabIndex = 2;
@@ -76,7 +78,7 @@ namespace OfferHelperV1
             // 
             // ID_txtBx
             // 
-            this.ID_txtBx.Location = new System.Drawing.Point(28, 112);
+            this.ID_txtBx.Location = new System.Drawing.Point(28, 159);
             this.ID_txtBx.Name = "ID_txtBx";
             this.ID_txtBx.Size = new System.Drawing.Size(272, 22);
             this.ID_txtBx.TabIndex = 3;
@@ -84,7 +86,7 @@ namespace OfferHelperV1
             // Description_lbl
             // 
             this.Description_lbl.AutoSize = true;
-            this.Description_lbl.Location = new System.Drawing.Point(25, 164);
+            this.Description_lbl.Location = new System.Drawing.Point(25, 203);
             this.Description_lbl.Name = "Description_lbl";
             this.Description_lbl.Size = new System.Drawing.Size(74, 17);
             this.Description_lbl.TabIndex = 4;
@@ -92,7 +94,7 @@ namespace OfferHelperV1
             // 
             // Description_txtBx
             // 
-            this.Description_txtBx.Location = new System.Drawing.Point(28, 184);
+            this.Description_txtBx.Location = new System.Drawing.Point(28, 223);
             this.Description_txtBx.Multiline = true;
             this.Description_txtBx.Name = "Description_txtBx";
             this.Description_txtBx.Size = new System.Drawing.Size(438, 120);
@@ -182,7 +184,7 @@ namespace OfferHelperV1
             // 
             // Save_btn
             // 
-            this.Save_btn.Location = new System.Drawing.Point(456, 335);
+            this.Save_btn.Location = new System.Drawing.Point(491, 312);
             this.Save_btn.Name = "Save_btn";
             this.Save_btn.Size = new System.Drawing.Size(95, 31);
             this.Save_btn.TabIndex = 17;
@@ -192,7 +194,7 @@ namespace OfferHelperV1
             // 
             // Cancel_btn
             // 
-            this.Cancel_btn.Location = new System.Drawing.Point(563, 335);
+            this.Cancel_btn.Location = new System.Drawing.Point(592, 312);
             this.Cancel_btn.Name = "Cancel_btn";
             this.Cancel_btn.Size = new System.Drawing.Size(95, 31);
             this.Cancel_btn.TabIndex = 18;
@@ -200,11 +202,29 @@ namespace OfferHelperV1
             this.Cancel_btn.UseVisualStyleBackColor = true;
             this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
             // 
+            // ShortName_lbl
+            // 
+            this.ShortName_lbl.AutoSize = true;
+            this.ShortName_lbl.Location = new System.Drawing.Point(25, 79);
+            this.ShortName_lbl.Name = "ShortName_lbl";
+            this.ShortName_lbl.Size = new System.Drawing.Size(62, 17);
+            this.ShortName_lbl.TabIndex = 19;
+            this.ShortName_lbl.Text = "Артикул";
+            // 
+            // ShortName_txtBx
+            // 
+            this.ShortName_txtBx.Location = new System.Drawing.Point(28, 104);
+            this.ShortName_txtBx.Name = "ShortName_txtBx";
+            this.ShortName_txtBx.Size = new System.Drawing.Size(272, 22);
+            this.ShortName_txtBx.TabIndex = 20;
+            // 
             // EditProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 392);
+            this.Controls.Add(this.ShortName_txtBx);
+            this.Controls.Add(this.ShortName_lbl);
             this.Controls.Add(this.Cancel_btn);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.DeliveryTime_txtBx);
@@ -251,5 +271,7 @@ namespace OfferHelperV1
         private System.Windows.Forms.TextBox DeliveryTime_txtBx;
         private System.Windows.Forms.Button Save_btn;
         private System.Windows.Forms.Button Cancel_btn;
+        private System.Windows.Forms.Label ShortName_lbl;
+        private System.Windows.Forms.TextBox ShortName_txtBx;
     }
 }
