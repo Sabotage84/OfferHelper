@@ -77,6 +77,7 @@ namespace OfferHelperV1
             this.Remark_chckBx = new System.Windows.Forms.CheckBox();
             this.VerifEx_chckBx = new System.Windows.Forms.CheckBox();
             this.Delivery_chckBx = new System.Windows.Forms.CheckBox();
+            this.ResetOffer_btn = new System.Windows.Forms.Button();
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
             this.Cables_cntxtMnStrp.SuspendLayout();
@@ -253,7 +254,7 @@ namespace OfferHelperV1
             // 
             // RemoveFromOfferList_btn
             // 
-            this.RemoveFromOfferList_btn.Location = new System.Drawing.Point(587, 150);
+            this.RemoveFromOfferList_btn.Location = new System.Drawing.Point(633, 300);
             this.RemoveFromOfferList_btn.Name = "RemoveFromOfferList_btn";
             this.RemoveFromOfferList_btn.Size = new System.Drawing.Size(40, 34);
             this.RemoveFromOfferList_btn.TabIndex = 18;
@@ -454,9 +455,9 @@ namespace OfferHelperV1
             // 
             // CopyToBuffer_btn
             // 
-            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1221, 493);
+            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1209, 493);
             this.CopyToBuffer_btn.Name = "CopyToBuffer_btn";
-            this.CopyToBuffer_btn.Size = new System.Drawing.Size(96, 28);
+            this.CopyToBuffer_btn.Size = new System.Drawing.Size(108, 28);
             this.CopyToBuffer_btn.TabIndex = 25;
             this.CopyToBuffer_btn.Text = "Копировать";
             this.CopyToBuffer_btn.UseVisualStyleBackColor = true;
@@ -465,7 +466,7 @@ namespace OfferHelperV1
             // Producer_chckBx
             // 
             this.Producer_chckBx.AutoSize = true;
-            this.Producer_chckBx.Location = new System.Drawing.Point(633, 348);
+            this.Producer_chckBx.Location = new System.Drawing.Point(633, 390);
             this.Producer_chckBx.Name = "Producer_chckBx";
             this.Producer_chckBx.Size = new System.Drawing.Size(132, 21);
             this.Producer_chckBx.TabIndex = 26;
@@ -476,7 +477,7 @@ namespace OfferHelperV1
             // Remark_chckBx
             // 
             this.Remark_chckBx.AutoSize = true;
-            this.Remark_chckBx.Location = new System.Drawing.Point(633, 375);
+            this.Remark_chckBx.Location = new System.Drawing.Point(633, 417);
             this.Remark_chckBx.Name = "Remark_chckBx";
             this.Remark_chckBx.Size = new System.Drawing.Size(113, 21);
             this.Remark_chckBx.TabIndex = 27;
@@ -487,7 +488,7 @@ namespace OfferHelperV1
             // VerifEx_chckBx
             // 
             this.VerifEx_chckBx.AutoSize = true;
-            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 402);
+            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 444);
             this.VerifEx_chckBx.Name = "VerifEx_chckBx";
             this.VerifEx_chckBx.Size = new System.Drawing.Size(139, 21);
             this.VerifEx_chckBx.TabIndex = 28;
@@ -498,7 +499,7 @@ namespace OfferHelperV1
             // Delivery_chckBx
             // 
             this.Delivery_chckBx.AutoSize = true;
-            this.Delivery_chckBx.Location = new System.Drawing.Point(633, 321);
+            this.Delivery_chckBx.Location = new System.Drawing.Point(633, 363);
             this.Delivery_chckBx.Name = "Delivery_chckBx";
             this.Delivery_chckBx.Size = new System.Drawing.Size(93, 21);
             this.Delivery_chckBx.TabIndex = 29;
@@ -506,11 +507,22 @@ namespace OfferHelperV1
             this.Delivery_chckBx.UseVisualStyleBackColor = true;
             this.Delivery_chckBx.CheckedChanged += new System.EventHandler(this.Delivery_chckBx_CheckedChanged);
             // 
+            // ResetOffer_btn
+            // 
+            this.ResetOffer_btn.Location = new System.Drawing.Point(679, 300);
+            this.ResetOffer_btn.Name = "ResetOffer_btn";
+            this.ResetOffer_btn.Size = new System.Drawing.Size(93, 34);
+            this.ResetOffer_btn.TabIndex = 30;
+            this.ResetOffer_btn.Text = "Сбросить";
+            this.ResetOffer_btn.UseVisualStyleBackColor = true;
+            this.ResetOffer_btn.Click += new System.EventHandler(this.ResetOffer_btn_Click);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1329, 583);
+            this.Controls.Add(this.ResetOffer_btn);
             this.Controls.Add(this.Delivery_chckBx);
             this.Controls.Add(this.VerifEx_chckBx);
             this.Controls.Add(this.Remark_chckBx);
@@ -601,5 +613,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.CheckBox Remark_chckBx;
         private System.Windows.Forms.CheckBox VerifEx_chckBx;
         private System.Windows.Forms.CheckBox Delivery_chckBx;
+        private System.Windows.Forms.Button ResetOffer_btn;
     }
 }

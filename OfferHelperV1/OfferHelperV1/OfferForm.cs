@@ -37,7 +37,6 @@ namespace OfferHelperV1
         private void OfferListOfProduct_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             RefreshResultText();
-
         }
 
         private void RefreshResultText()
@@ -48,7 +47,6 @@ namespace OfferHelperV1
                 res += item.Name + Environment.NewLine + Environment.NewLine;
                 res += item.Description + Environment.NewLine + Environment.NewLine;
                 res += "Цена " + item.Price + " евро с НДС." + Environment.NewLine + Environment.NewLine;
-                res += "Срок поставки " + item.DeliveryTime + " рабочих дней." + Environment.NewLine + Environment.NewLine;
                 if (Delivery_chckBx.Checked)
                 {
                     res += textTemplates.GetDeliveryTimeString(item.DeliveryTime) + Environment.NewLine + Environment.NewLine;
@@ -346,6 +344,18 @@ namespace OfferHelperV1
         private void Delivery_chckBx_CheckedChanged(object sender, EventArgs e)
         {
             RefreshResultText();
+        }
+
+        private void ResetOffer_btn_Click(object sender, EventArgs e)
+        {
+            Producer_chckBx.Checked = false;
+            Remark_chckBx.Checked = false;
+            VerifEx_chckBx.Checked = false;
+            Delivery_chckBx.Checked = false;
+            Verification_chkBx.Checked = false;
+            offerListOfProduct.Clear();
+            RefreshOfferList();
+
         }
     }
 }
