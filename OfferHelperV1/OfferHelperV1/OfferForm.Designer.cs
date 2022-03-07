@@ -100,6 +100,7 @@ namespace OfferHelperV1
             this.SearchAll_txtBx.Name = "SearchAll_txtBx";
             this.SearchAll_txtBx.Size = new System.Drawing.Size(176, 22);
             this.SearchAll_txtBx.TabIndex = 1;
+            this.SearchAll_txtBx.TextChanged += new System.EventHandler(this.SearchAll_txtBx_TextChanged);
             // 
             // Servers_lstBx
             // 

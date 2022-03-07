@@ -20,9 +20,12 @@ namespace OfferHelperV1
         ProductManagerClass PM;
         TextTemplates textTemplates = new TextTemplates();
         ObservableCollection<Product> offerListOfProduct = new ObservableCollection<Product>();
+        ObservableCollection<Server> searchServers = new ObservableCollection<Server>();
         public OfferForm()
         {
             InitializeComponent();
+            PM = new ProductManagerClass();
+            ServersListHandler(PM.Servers, SearchAll_txtBx.Text);
             BindListBoxes();
             Servers_lstBx.ContextMenuStrip = Servsrs_cntxtMnStrp;
             Antennas_lstBx.ContextMenuStrip = Antennas_cntxtMnStrp;
@@ -31,7 +34,28 @@ namespace OfferHelperV1
             OfferList_lstBx.ContextMenuStrip = OfferList_CntxtMnStrp;
             offerListOfProduct.CollectionChanged += OfferListOfProduct_CollectionChanged;
             RefreshOfferList();
+            
+        }
 
+        private void ServersListHandler(ObservableCollection<Server> defServers, string searchString)
+        {
+            searchServers = new ObservableCollection<Server>();
+            if (string.IsNullOrEmpty(searchString))
+            {
+                foreach (var item in defServers)
+                {
+                    if (item!=null)
+                        searchServers.Add(item);
+                }
+            }
+            else
+            {
+                foreach (var item in defServers)
+                {
+                    if (item != null && item.Name.ToLower().Contains(searchString.ToLower()))
+                        searchServers.Add(item);
+                }
+            }
         }
 
         private void OfferListOfProduct_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -86,12 +110,12 @@ namespace OfferHelperV1
 
         public void BindListBoxes()
         {
-            PM = new ProductManagerClass();
+            
             Servers_lstBx.DataSource = null;
             Cables_lstBx.DataSource = null;
             Antennas_lstBx.DataSource = null;
             Misc_lstBx.DataSource = null;
-            Servers_lstBx.DataSource = PM.Servers;
+            Servers_lstBx.DataSource = searchServers;
             Servers_lstBx.DisplayMember = "Name";
             Servers_lstBx.ValueMember = "ID";
             Antennas_lstBx.DataSource = PM.Antennas;
@@ -356,6 +380,12 @@ namespace OfferHelperV1
             offerListOfProduct.Clear();
             RefreshOfferList();
 
+        }
+
+        private void SearchAll_txtBx_TextChanged(object sender, EventArgs e)
+        {
+            ServersListHandler(PM.Servers, SearchAll_txtBx.Text);
+            BindListBoxes();
         }
     }
 }
