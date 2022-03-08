@@ -125,7 +125,7 @@ namespace OfferHelperV1
             Cables_lstBx.DisplayMember = "Name";
             Cables_lstBx.ValueMember = "ID";
             Misc_lstBx.DataSource = PM.Miscs;
-            Misc_lstBx.DisplayMember = "Name";
+            Misc_lstBx.DisplayMember = "ShortName";
             Misc_lstBx.ValueMember = "ID";
 
         }
@@ -225,7 +225,7 @@ namespace OfferHelperV1
         {
             if (p != null)
             {
-                MessageBox.Show(p.Name + Environment.NewLine + Environment.NewLine + p.Description + Environment.NewLine +
+                MessageBox.Show(p.Name + Environment.NewLine + Environment.NewLine+"Артикул: " + p.ShortName + Environment.NewLine + p.Description + Environment.NewLine +
                     "Вход: " + p.InPrice.ToString() + Environment.NewLine + "К = " + p.K.ToString() + Environment.NewLine +
                     "Цена: " + p.Price + Environment.NewLine + "Срок поставки " + p.DeliveryTime.ToString() + " рабочих дней.");
             }

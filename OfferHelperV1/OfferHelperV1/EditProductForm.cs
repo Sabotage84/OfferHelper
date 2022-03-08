@@ -129,6 +129,7 @@ namespace OfferHelperV1
             {
                 Type_cmbBx.SelectedItem = item1.Type;
                 ID_txtBx.Text = item1.ID.ToString();
+                ShortName_txtBx.Text = item1.ShortName;
                 Name_txtBx.Text = item1.Name;
                 Description_txtBx.Text = item1.Description;
                 DeliveryTime_txtBx.Text = item1.DeliveryTime.ToString();
