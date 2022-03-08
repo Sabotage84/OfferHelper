@@ -51,7 +51,9 @@ namespace OfferHelperV1
             }
             pmc.RefreshListsOfProducts();
             OfferForm OF1 =  (OfferForm)Owner;
+            OF1.ServersListHandler(pmc.Servers, "");
             OF1.BindListBoxes();
+
             Close();
         }
 

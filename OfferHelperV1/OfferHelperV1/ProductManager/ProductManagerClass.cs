@@ -11,10 +11,10 @@ namespace OfferHelperV1.ProductManager
     class ProductManagerClass
     {
         static List<Product> products = new List<Product>();
-        ObservableCollection<Server> servers = new ObservableCollection<Server>();
-        ObservableCollection<Antenna> antennas = new ObservableCollection<Antenna>();
+        static ObservableCollection<Server> servers = new ObservableCollection<Server>();
+        static ObservableCollection<Antenna> antennas = new ObservableCollection<Antenna>();
         static ObservableCollection<Cable> cables = new ObservableCollection<Cable>();
-        ObservableCollection<Misc> miscs = new ObservableCollection<Misc>();
+        static ObservableCollection<Misc> miscs = new ObservableCollection<Misc>();
 
 
         GetProdFromXML GetLoadFromXML = new GetProdFromXML();

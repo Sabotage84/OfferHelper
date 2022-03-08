@@ -37,7 +37,7 @@ namespace OfferHelperV1
             
         }
 
-        private void ServersListHandler(ObservableCollection<Server> defServers, string searchString)
+        public void ServersListHandler(ObservableCollection<Server> defServers, string searchString)
         {
             searchServers = new ObservableCollection<Server>();
             if (string.IsNullOrEmpty(searchString))
