@@ -119,10 +119,10 @@ namespace OfferHelperV1
             Servers_lstBx.DisplayMember = "ShortName";
             Servers_lstBx.ValueMember = "ID";
             Antennas_lstBx.DataSource = PM.Antennas;
-            Antennas_lstBx.DisplayMember = "Name";
+            Antennas_lstBx.DisplayMember = "ShortName";
             Antennas_lstBx.ValueMember = "ID";
             Cables_lstBx.DataSource = PM.Cables;
-            Cables_lstBx.DisplayMember = "Name";
+            Cables_lstBx.DisplayMember = "ShortName";
             Cables_lstBx.ValueMember = "ID";
             Misc_lstBx.DataSource = PM.Miscs;
             Misc_lstBx.DisplayMember = "ShortName";
