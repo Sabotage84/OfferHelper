@@ -78,6 +78,7 @@ namespace OfferHelperV1
             this.VerifEx_chckBx = new System.Windows.Forms.CheckBox();
             this.Delivery_chckBx = new System.Windows.Forms.CheckBox();
             this.ResetOffer_btn = new System.Windows.Forms.Button();
+            this.Cancel_btn = new System.Windows.Forms.Button();
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
             this.Cables_cntxtMnStrp.SuspendLayout();
@@ -518,11 +519,22 @@ namespace OfferHelperV1
             this.ResetOffer_btn.UseVisualStyleBackColor = true;
             this.ResetOffer_btn.Click += new System.EventHandler(this.ResetOffer_btn_Click);
             // 
+            // Cancel_btn
+            // 
+            this.Cancel_btn.Location = new System.Drawing.Point(1209, 539);
+            this.Cancel_btn.Name = "Cancel_btn";
+            this.Cancel_btn.Size = new System.Drawing.Size(108, 32);
+            this.Cancel_btn.TabIndex = 31;
+            this.Cancel_btn.Text = "Отмена";
+            this.Cancel_btn.UseVisualStyleBackColor = true;
+            this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
+            // 
             // OfferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1329, 583);
+            this.Controls.Add(this.Cancel_btn);
             this.Controls.Add(this.ResetOffer_btn);
             this.Controls.Add(this.Delivery_chckBx);
             this.Controls.Add(this.VerifEx_chckBx);
@@ -615,5 +627,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.CheckBox VerifEx_chckBx;
         private System.Windows.Forms.CheckBox Delivery_chckBx;
         private System.Windows.Forms.Button ResetOffer_btn;
+        private System.Windows.Forms.Button Cancel_btn;
     }
 }

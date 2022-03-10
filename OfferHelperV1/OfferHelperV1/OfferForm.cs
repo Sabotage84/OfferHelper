@@ -387,5 +387,10 @@ namespace OfferHelperV1
             ServersListHandler(PM.Servers, SearchAll_txtBx.Text);
             BindListBoxes();
         }
+
+        private void Cancel_btn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
