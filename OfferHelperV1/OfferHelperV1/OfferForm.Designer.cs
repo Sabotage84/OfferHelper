@@ -99,10 +99,11 @@ namespace OfferHelperV1
             // 
             // SearchAll_txtBx
             // 
-            this.SearchAll_txtBx.Location = new System.Drawing.Point(12, 58);
+            this.SearchAll_txtBx.Location = new System.Drawing.Point(12, 86);
             this.SearchAll_txtBx.Name = "SearchAll_txtBx";
             this.SearchAll_txtBx.Size = new System.Drawing.Size(176, 22);
             this.SearchAll_txtBx.TabIndex = 1;
+            this.SearchAll_txtBx.Text = "Поиск";
             this.SearchAll_txtBx.TextChanged += new System.EventHandler(this.SearchAll_txtBx_TextChanged);
             // 
             // Servers_lstBx
@@ -117,7 +118,7 @@ namespace OfferHelperV1
             // Servsrs_lbl
             // 
             this.Servsrs_lbl.AutoSize = true;
-            this.Servsrs_lbl.Location = new System.Drawing.Point(14, 94);
+            this.Servsrs_lbl.Location = new System.Drawing.Point(12, 66);
             this.Servsrs_lbl.Name = "Servsrs_lbl";
             this.Servsrs_lbl.Size = new System.Drawing.Size(66, 17);
             this.Servsrs_lbl.TabIndex = 3;
@@ -126,7 +127,7 @@ namespace OfferHelperV1
             // Recivers_lbl
             // 
             this.Recivers_lbl.AutoSize = true;
-            this.Recivers_lbl.Location = new System.Drawing.Point(14, 392);
+            this.Recivers_lbl.Location = new System.Drawing.Point(12, 369);
             this.Recivers_lbl.Name = "Recivers_lbl";
             this.Recivers_lbl.Size = new System.Drawing.Size(82, 17);
             this.Recivers_lbl.TabIndex = 4;
@@ -248,7 +249,7 @@ namespace OfferHelperV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(669, 489);
+            this.button1.Location = new System.Drawing.Point(633, 471);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 32);
             this.button1.TabIndex = 17;
@@ -268,7 +269,7 @@ namespace OfferHelperV1
             // 
             // test_btn
             // 
-            this.test_btn.Location = new System.Drawing.Point(717, 38);
+            this.test_btn.Location = new System.Drawing.Point(475, 58);
             this.test_btn.Name = "test_btn";
             this.test_btn.Size = new System.Drawing.Size(75, 23);
             this.test_btn.TabIndex = 19;
@@ -542,10 +543,11 @@ namespace OfferHelperV1
             // 
             // SearchMisc_txtBx
             // 
-            this.SearchMisc_txtBx.Location = new System.Drawing.Point(12, 353);
+            this.SearchMisc_txtBx.Location = new System.Drawing.Point(12, 389);
             this.SearchMisc_txtBx.Name = "SearchMisc_txtBx";
             this.SearchMisc_txtBx.Size = new System.Drawing.Size(176, 22);
             this.SearchMisc_txtBx.TabIndex = 33;
+            this.SearchMisc_txtBx.Text = "Поиск";
             this.SearchMisc_txtBx.TextChanged += new System.EventHandler(this.SearchMisc_txtBx_TextChanged);
             // 
             // OfferForm

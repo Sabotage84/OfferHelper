@@ -42,7 +42,7 @@ namespace OfferHelperV1
         public void ServersListHandler(ObservableCollection<Server> defServers, string searchString)
         {
             searchServers = new ObservableCollection<Server>();
-            if (string.IsNullOrEmpty(searchString))
+            if (string.IsNullOrEmpty(searchString) || searchString == "Поиск")
             {
                 foreach (var item in defServers)
                 {
@@ -63,7 +63,7 @@ namespace OfferHelperV1
         public void MiscListHandler(ObservableCollection<Misc> defMisc, string searchString)
         {
             searchMisc = new ObservableCollection<Misc>();
-            if (string.IsNullOrEmpty(searchString))
+            if (string.IsNullOrEmpty(searchString) || searchString=="Поиск")
             {
                 foreach (var item in defMisc)
                 {
