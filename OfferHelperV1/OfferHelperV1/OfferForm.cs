@@ -392,5 +392,10 @@ namespace OfferHelperV1
         {
             Close();
         }
+
+        private void SearchMisc_txtBx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
