@@ -21,11 +21,13 @@ namespace OfferHelperV1
         TextTemplates textTemplates = new TextTemplates();
         ObservableCollection<Product> offerListOfProduct = new ObservableCollection<Product>();
         ObservableCollection<Server> searchServers = new ObservableCollection<Server>();
+        ObservableCollection<Misc> searchMisc = new ObservableCollection<Misc>();
         public OfferForm()
         {
             InitializeComponent();
             PM = new ProductManagerClass();
             ServersListHandler(PM.Servers, SearchAll_txtBx.Text);
+            MiscListHandler(PM.Miscs, SearchMisc_txtBx.Text);
             BindListBoxes();
             Servers_lstBx.ContextMenuStrip = Servsrs_cntxtMnStrp;
             Antennas_lstBx.ContextMenuStrip = Antennas_cntxtMnStrp;
@@ -54,6 +56,27 @@ namespace OfferHelperV1
                 {
                     if (item != null && item.Name.ToLower().Contains(searchString.ToLower()))
                         searchServers.Add(item);
+                }
+            }
+        }
+
+        public void MiscListHandler(ObservableCollection<Misc> defMisc, string searchString)
+        {
+            searchMisc = new ObservableCollection<Misc>();
+            if (string.IsNullOrEmpty(searchString))
+            {
+                foreach (var item in defMisc)
+                {
+                    if (item != null)
+                        searchMisc.Add(item);
+                }
+            }
+            else
+            {
+                foreach (var item in defMisc)
+                {
+                    if (item != null && item.Name.ToLower().Contains(searchString.ToLower()))
+                        searchMisc.Add(item);
                 }
             }
         }
@@ -124,7 +147,7 @@ namespace OfferHelperV1
             Cables_lstBx.DataSource = PM.Cables;
             Cables_lstBx.DisplayMember = "ShortName";
             Cables_lstBx.ValueMember = "ID";
-            Misc_lstBx.DataSource = PM.Miscs;
+            Misc_lstBx.DataSource = searchMisc;
             Misc_lstBx.DisplayMember = "ShortName";
             Misc_lstBx.ValueMember = "ID";
 
@@ -395,7 +418,8 @@ namespace OfferHelperV1
 
         private void SearchMisc_txtBx_TextChanged(object sender, EventArgs e)
         {
-
+            MiscListHandler(PM.Miscs, SearchMisc_txtBx.Text);
+            BindListBoxes();
         }
     }
 }
