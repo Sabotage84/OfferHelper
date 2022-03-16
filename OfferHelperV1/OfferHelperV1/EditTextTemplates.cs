@@ -30,7 +30,12 @@ namespace OfferHelperV1
 
         private void SaveEditTextTemplates_btn_Click(object sender, EventArgs e)
         {
-            tt.SaveTemplates(tt.strings);
+            string[] st = new string[4];
+            st[0] = Producer_txtBx.Text;
+            st[1] = Remark_txtBx.Text;
+            st[2] = VerificationExample_txtBx.Text;
+            st[3] = DeliveryText_txtBx.Text;
+            tt.SaveTemplates(st);
         }
 
         private void CancelEditTextTemplates_btn_Click(object sender, EventArgs e)
