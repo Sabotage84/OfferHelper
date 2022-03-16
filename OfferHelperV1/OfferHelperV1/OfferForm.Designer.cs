@@ -30,7 +30,6 @@ namespace OfferHelperV1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.SearchServsrs_lbl = new System.Windows.Forms.Label();
             this.SearchAll_txtBx = new System.Windows.Forms.TextBox();
             this.Servers_lstBx = new System.Windows.Forms.ListBox();
             this.Servsrs_lbl = new System.Windows.Forms.Label();
@@ -79,7 +78,6 @@ namespace OfferHelperV1
             this.Delivery_chckBx = new System.Windows.Forms.CheckBox();
             this.ResetOffer_btn = new System.Windows.Forms.Button();
             this.Cancel_btn = new System.Windows.Forms.Button();
-            this.SearchMisc_lbl = new System.Windows.Forms.Label();
             this.SearchMisc_txtBx = new System.Windows.Forms.TextBox();
             this.Servsrs_cntxtMnStrp.SuspendLayout();
             this.Antennas_cntxtMnStrp.SuspendLayout();
@@ -88,18 +86,9 @@ namespace OfferHelperV1
             this.OfferList_CntxtMnStrp.SuspendLayout();
             this.SuspendLayout();
             // 
-            // SearchServsrs_lbl
-            // 
-            this.SearchServsrs_lbl.AutoSize = true;
-            this.SearchServsrs_lbl.Location = new System.Drawing.Point(12, 38);
-            this.SearchServsrs_lbl.Name = "SearchServsrs_lbl";
-            this.SearchServsrs_lbl.Size = new System.Drawing.Size(48, 17);
-            this.SearchServsrs_lbl.TabIndex = 0;
-            this.SearchServsrs_lbl.Text = "Поиск";
-            // 
             // SearchAll_txtBx
             // 
-            this.SearchAll_txtBx.Location = new System.Drawing.Point(12, 86);
+            this.SearchAll_txtBx.Location = new System.Drawing.Point(12, 91);
             this.SearchAll_txtBx.Name = "SearchAll_txtBx";
             this.SearchAll_txtBx.Size = new System.Drawing.Size(176, 22);
             this.SearchAll_txtBx.TabIndex = 1;
@@ -129,9 +118,9 @@ namespace OfferHelperV1
             this.Recivers_lbl.AutoSize = true;
             this.Recivers_lbl.Location = new System.Drawing.Point(12, 369);
             this.Recivers_lbl.Name = "Recivers_lbl";
-            this.Recivers_lbl.Size = new System.Drawing.Size(82, 17);
+            this.Recivers_lbl.Size = new System.Drawing.Size(118, 17);
             this.Recivers_lbl.TabIndex = 4;
-            this.Recivers_lbl.Text = "Приемники";
+            this.Recivers_lbl.Text = "Приемники и пр.";
             // 
             // Misc_lstBx
             // 
@@ -524,22 +513,13 @@ namespace OfferHelperV1
             // 
             // Cancel_btn
             // 
-            this.Cancel_btn.Location = new System.Drawing.Point(1209, 539);
+            this.Cancel_btn.Location = new System.Drawing.Point(1095, 493);
             this.Cancel_btn.Name = "Cancel_btn";
             this.Cancel_btn.Size = new System.Drawing.Size(108, 32);
             this.Cancel_btn.TabIndex = 31;
             this.Cancel_btn.Text = "Отмена";
             this.Cancel_btn.UseVisualStyleBackColor = true;
             this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
-            // 
-            // SearchMisc_lbl
-            // 
-            this.SearchMisc_lbl.AutoSize = true;
-            this.SearchMisc_lbl.Location = new System.Drawing.Point(12, 333);
-            this.SearchMisc_lbl.Name = "SearchMisc_lbl";
-            this.SearchMisc_lbl.Size = new System.Drawing.Size(48, 17);
-            this.SearchMisc_lbl.TabIndex = 32;
-            this.SearchMisc_lbl.Text = "Поиск";
             // 
             // SearchMisc_txtBx
             // 
@@ -554,9 +534,8 @@ namespace OfferHelperV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1329, 700);
+            this.ClientSize = new System.Drawing.Size(1329, 587);
             this.Controls.Add(this.SearchMisc_txtBx);
-            this.Controls.Add(this.SearchMisc_lbl);
             this.Controls.Add(this.Cancel_btn);
             this.Controls.Add(this.ResetOffer_btn);
             this.Controls.Add(this.Delivery_chckBx);
@@ -587,7 +566,6 @@ namespace OfferHelperV1
             this.Controls.Add(this.Servsrs_lbl);
             this.Controls.Add(this.Servers_lstBx);
             this.Controls.Add(this.SearchAll_txtBx);
-            this.Controls.Add(this.SearchServsrs_lbl);
             this.Name = "OfferForm";
             this.Text = "OfferForm";
             this.Servsrs_cntxtMnStrp.ResumeLayout(false);
@@ -601,8 +579,6 @@ namespace OfferHelperV1
         }
 
         #endregion
-
-        private System.Windows.Forms.Label SearchServsrs_lbl;
         private System.Windows.Forms.TextBox SearchAll_txtBx;
         private System.Windows.Forms.ListBox Servers_lstBx;
         private System.Windows.Forms.Label Servsrs_lbl;
@@ -651,7 +627,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.CheckBox Delivery_chckBx;
         private System.Windows.Forms.Button ResetOffer_btn;
         private System.Windows.Forms.Button Cancel_btn;
-        private System.Windows.Forms.Label SearchMisc_lbl;
         private System.Windows.Forms.TextBox SearchMisc_txtBx;
     }
 }

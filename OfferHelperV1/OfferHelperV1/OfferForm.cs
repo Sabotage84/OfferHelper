@@ -182,9 +182,8 @@ namespace OfferHelperV1
 
         private void test_btn_Click(object sender, EventArgs e)
         {
-            ProductManagerClass pm = new ProductManagerClass();
-            pm.Cables.Add(new Cable(9118,"test5",TypeOfProduct.Cable));
-            BindListBoxes();
+            TextTemplates tt = new TextTemplates();
+            tt.SaveTemplates(tt.strings);
         }
 
         private void EditProduct_btn_Click(object sender, EventArgs e)
