@@ -183,7 +183,7 @@ namespace OfferHelperV1
         private void test_btn_Click(object sender, EventArgs e)
         {
             TextTemplates tt = new TextTemplates();
-            tt.SaveTemplates(tt.strings);
+            tt.SaveTemplates(TextTemplates.strings);
         }
 
         private void EditProduct_btn_Click(object sender, EventArgs e)

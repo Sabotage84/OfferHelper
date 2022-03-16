@@ -36,6 +36,7 @@ namespace OfferHelperV1
             st[2] = VerificationExample_txtBx.Text;
             st[3] = DeliveryText_txtBx.Text;
             tt.SaveTemplates(st);
+            Close();
         }
 
         private void CancelEditTextTemplates_btn_Click(object sender, EventArgs e)
