@@ -14,13 +14,13 @@ namespace OfferHelperV1.OfferClasses
     {
         XmlSerializer formatter = new XmlSerializer(typeof(string[]));
 
-        string producer;
+        static string producer;
 
-        string remark;
+        static string remark;
 
-        string verificationExample;
+        static string verificationExample;
 
-        string deliveryText;
+        static string deliveryText;
         public static string[] strings;
         public TextTemplates()
         {
