@@ -121,7 +121,7 @@ namespace OfferHelperV1
             // 
             // CancelEditTextTemplates_btn
             // 
-            this.CancelEditTextTemplates_btn.Location = new System.Drawing.Point(676, 484);
+            this.CancelEditTextTemplates_btn.Location = new System.Drawing.Point(660, 484);
             this.CancelEditTextTemplates_btn.Name = "CancelEditTextTemplates_btn";
             this.CancelEditTextTemplates_btn.Size = new System.Drawing.Size(94, 28);
             this.CancelEditTextTemplates_btn.TabIndex = 9;
@@ -133,7 +133,7 @@ namespace OfferHelperV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 524);
+            this.ClientSize = new System.Drawing.Size(772, 543);
             this.Controls.Add(this.CancelEditTextTemplates_btn);
             this.Controls.Add(this.SaveEditTextTemplates_btn);
             this.Controls.Add(this.DeliveryText_lbl);
@@ -144,6 +144,8 @@ namespace OfferHelperV1
             this.Controls.Add(this.VerificationExample_lbl);
             this.Controls.Add(this.Producer_txtBx);
             this.Controls.Add(this.Producer_lbl);
+            this.MaximumSize = new System.Drawing.Size(790, 590);
+            this.MinimumSize = new System.Drawing.Size(790, 590);
             this.Name = "EditTextTemplates";
             this.Text = "EditTextTemplates";
             this.Load += new System.EventHandler(this.EditTextTemplates_Load);

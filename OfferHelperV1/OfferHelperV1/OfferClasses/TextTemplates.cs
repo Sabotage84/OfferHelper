@@ -21,6 +21,7 @@ namespace OfferHelperV1.OfferClasses
         static string verificationExample;
 
         static string deliveryText;
+
         public static string[] strings;
         public TextTemplates()
         {

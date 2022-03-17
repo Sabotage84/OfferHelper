@@ -88,7 +88,7 @@ namespace OfferHelperV1
             // 
             // SearchAll_txtBx
             // 
-            this.SearchAll_txtBx.Location = new System.Drawing.Point(12, 91);
+            this.SearchAll_txtBx.Location = new System.Drawing.Point(12, 40);
             this.SearchAll_txtBx.Name = "SearchAll_txtBx";
             this.SearchAll_txtBx.Size = new System.Drawing.Size(247, 22);
             this.SearchAll_txtBx.TabIndex = 1;
@@ -99,7 +99,7 @@ namespace OfferHelperV1
             // 
             this.Servers_lstBx.FormattingEnabled = true;
             this.Servers_lstBx.ItemHeight = 16;
-            this.Servers_lstBx.Location = new System.Drawing.Point(12, 114);
+            this.Servers_lstBx.Location = new System.Drawing.Point(12, 63);
             this.Servers_lstBx.Name = "Servers_lstBx";
             this.Servers_lstBx.Size = new System.Drawing.Size(247, 180);
             this.Servers_lstBx.TabIndex = 2;
@@ -107,7 +107,7 @@ namespace OfferHelperV1
             // Servsrs_lbl
             // 
             this.Servsrs_lbl.AutoSize = true;
-            this.Servsrs_lbl.Location = new System.Drawing.Point(12, 66);
+            this.Servsrs_lbl.Location = new System.Drawing.Point(12, 15);
             this.Servsrs_lbl.Name = "Servsrs_lbl";
             this.Servsrs_lbl.Size = new System.Drawing.Size(66, 17);
             this.Servsrs_lbl.TabIndex = 3;
@@ -116,7 +116,7 @@ namespace OfferHelperV1
             // Recivers_lbl
             // 
             this.Recivers_lbl.AutoSize = true;
-            this.Recivers_lbl.Location = new System.Drawing.Point(12, 369);
+            this.Recivers_lbl.Location = new System.Drawing.Point(12, 297);
             this.Recivers_lbl.Name = "Recivers_lbl";
             this.Recivers_lbl.Size = new System.Drawing.Size(118, 17);
             this.Recivers_lbl.TabIndex = 4;
@@ -126,7 +126,7 @@ namespace OfferHelperV1
             // 
             this.Misc_lstBx.FormattingEnabled = true;
             this.Misc_lstBx.ItemHeight = 16;
-            this.Misc_lstBx.Location = new System.Drawing.Point(12, 412);
+            this.Misc_lstBx.Location = new System.Drawing.Point(12, 340);
             this.Misc_lstBx.Name = "Misc_lstBx";
             this.Misc_lstBx.Size = new System.Drawing.Size(247, 148);
             this.Misc_lstBx.TabIndex = 5;
@@ -134,7 +134,7 @@ namespace OfferHelperV1
             // Antennas_lbl
             // 
             this.Antennas_lbl.AutoSize = true;
-            this.Antennas_lbl.Location = new System.Drawing.Point(346, 94);
+            this.Antennas_lbl.Location = new System.Drawing.Point(353, 15);
             this.Antennas_lbl.Name = "Antennas_lbl";
             this.Antennas_lbl.Size = new System.Drawing.Size(66, 17);
             this.Antennas_lbl.TabIndex = 6;
@@ -143,7 +143,7 @@ namespace OfferHelperV1
             // Cables_lbl
             // 
             this.Cables_lbl.AutoSize = true;
-            this.Cables_lbl.Location = new System.Drawing.Point(346, 274);
+            this.Cables_lbl.Location = new System.Drawing.Point(353, 195);
             this.Cables_lbl.Name = "Cables_lbl";
             this.Cables_lbl.Size = new System.Drawing.Size(57, 17);
             this.Cables_lbl.TabIndex = 7;
@@ -153,7 +153,7 @@ namespace OfferHelperV1
             // 
             this.Antennas_lstBx.FormattingEnabled = true;
             this.Antennas_lstBx.ItemHeight = 16;
-            this.Antennas_lstBx.Location = new System.Drawing.Point(349, 114);
+            this.Antennas_lstBx.Location = new System.Drawing.Point(356, 35);
             this.Antennas_lstBx.Name = "Antennas_lstBx";
             this.Antennas_lstBx.Size = new System.Drawing.Size(176, 132);
             this.Antennas_lstBx.TabIndex = 8;
@@ -163,7 +163,7 @@ namespace OfferHelperV1
             // 
             this.Cables_lstBx.FormattingEnabled = true;
             this.Cables_lstBx.ItemHeight = 16;
-            this.Cables_lstBx.Location = new System.Drawing.Point(349, 294);
+            this.Cables_lstBx.Location = new System.Drawing.Point(356, 215);
             this.Cables_lstBx.Name = "Cables_lstBx";
             this.Cables_lstBx.Size = new System.Drawing.Size(176, 100);
             this.Cables_lstBx.TabIndex = 9;
@@ -171,7 +171,7 @@ namespace OfferHelperV1
             // Verification_chkBx
             // 
             this.Verification_chkBx.AutoSize = true;
-            this.Verification_chkBx.Location = new System.Drawing.Point(349, 405);
+            this.Verification_chkBx.Location = new System.Drawing.Point(15, 249);
             this.Verification_chkBx.Name = "Verification_chkBx";
             this.Verification_chkBx.Size = new System.Drawing.Size(86, 21);
             this.Verification_chkBx.TabIndex = 10;
@@ -181,7 +181,7 @@ namespace OfferHelperV1
             // 
             // ResultText_txtBx
             // 
-            this.ResultText_txtBx.Location = new System.Drawing.Point(823, 114);
+            this.ResultText_txtBx.Location = new System.Drawing.Point(823, 63);
             this.ResultText_txtBx.Multiline = true;
             this.ResultText_txtBx.Name = "ResultText_txtBx";
             this.ResultText_txtBx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -191,7 +191,7 @@ namespace OfferHelperV1
             // ResultText_lbl
             // 
             this.ResultText_lbl.AutoSize = true;
-            this.ResultText_lbl.Location = new System.Drawing.Point(820, 94);
+            this.ResultText_lbl.Location = new System.Drawing.Point(820, 43);
             this.ResultText_lbl.Name = "ResultText_lbl";
             this.ResultText_lbl.Size = new System.Drawing.Size(69, 17);
             this.ResultText_lbl.TabIndex = 12;
@@ -199,7 +199,7 @@ namespace OfferHelperV1
             // 
             // AddServerToOffer_btn
             // 
-            this.AddServerToOffer_btn.Location = new System.Drawing.Point(265, 150);
+            this.AddServerToOffer_btn.Location = new System.Drawing.Point(265, 99);
             this.AddServerToOffer_btn.Name = "AddServerToOffer_btn";
             this.AddServerToOffer_btn.Size = new System.Drawing.Size(35, 34);
             this.AddServerToOffer_btn.TabIndex = 13;
@@ -209,7 +209,7 @@ namespace OfferHelperV1
             // 
             // ReciverAddToOffer_btn
             // 
-            this.ReciverAddToOffer_btn.Location = new System.Drawing.Point(265, 471);
+            this.ReciverAddToOffer_btn.Location = new System.Drawing.Point(265, 399);
             this.ReciverAddToOffer_btn.Name = "ReciverAddToOffer_btn";
             this.ReciverAddToOffer_btn.Size = new System.Drawing.Size(35, 34);
             this.ReciverAddToOffer_btn.TabIndex = 14;
@@ -221,7 +221,7 @@ namespace OfferHelperV1
             // 
             this.OfferList_lstBx.FormattingEnabled = true;
             this.OfferList_lstBx.ItemHeight = 16;
-            this.OfferList_lstBx.Location = new System.Drawing.Point(633, 114);
+            this.OfferList_lstBx.Location = new System.Drawing.Point(633, 63);
             this.OfferList_lstBx.Name = "OfferList_lstBx";
             this.OfferList_lstBx.Size = new System.Drawing.Size(184, 180);
             this.OfferList_lstBx.TabIndex = 15;
@@ -229,7 +229,7 @@ namespace OfferHelperV1
             // OfferList_lbl
             // 
             this.OfferList_lbl.AutoSize = true;
-            this.OfferList_lbl.Location = new System.Drawing.Point(630, 94);
+            this.OfferList_lbl.Location = new System.Drawing.Point(630, 43);
             this.OfferList_lbl.Name = "OfferList_lbl";
             this.OfferList_lbl.Size = new System.Drawing.Size(139, 17);
             this.OfferList_lbl.TabIndex = 16;
@@ -238,7 +238,7 @@ namespace OfferHelperV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(633, 471);
+            this.button1.Location = new System.Drawing.Point(633, 420);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 32);
             this.button1.TabIndex = 17;
@@ -248,7 +248,7 @@ namespace OfferHelperV1
             // 
             // RemoveFromOfferList_btn
             // 
-            this.RemoveFromOfferList_btn.Location = new System.Drawing.Point(633, 300);
+            this.RemoveFromOfferList_btn.Location = new System.Drawing.Point(633, 249);
             this.RemoveFromOfferList_btn.Name = "RemoveFromOfferList_btn";
             this.RemoveFromOfferList_btn.Size = new System.Drawing.Size(40, 34);
             this.RemoveFromOfferList_btn.TabIndex = 18;
@@ -258,7 +258,7 @@ namespace OfferHelperV1
             // 
             // test_btn
             // 
-            this.test_btn.Location = new System.Drawing.Point(475, 58);
+            this.test_btn.Location = new System.Drawing.Point(334, 473);
             this.test_btn.Name = "test_btn";
             this.test_btn.Size = new System.Drawing.Size(75, 23);
             this.test_btn.TabIndex = 19;
@@ -268,7 +268,7 @@ namespace OfferHelperV1
             // 
             // EditProduct_btn
             // 
-            this.EditProduct_btn.Location = new System.Drawing.Point(472, 469);
+            this.EditProduct_btn.Location = new System.Drawing.Point(522, 473);
             this.EditProduct_btn.Name = "EditProduct_btn";
             this.EditProduct_btn.Size = new System.Drawing.Size(125, 32);
             this.EditProduct_btn.TabIndex = 20;
@@ -278,7 +278,7 @@ namespace OfferHelperV1
             // 
             // ADDEq_btn
             // 
-            this.ADDEq_btn.Location = new System.Drawing.Point(334, 469);
+            this.ADDEq_btn.Location = new System.Drawing.Point(415, 473);
             this.ADDEq_btn.Name = "ADDEq_btn";
             this.ADDEq_btn.Size = new System.Drawing.Size(101, 32);
             this.ADDEq_btn.TabIndex = 21;
@@ -294,28 +294,28 @@ namespace OfferHelperV1
             this.редактироватьToolStripMenuItem,
             this.удалитьToolStripMenuItem});
             this.Servsrs_cntxtMnStrp.Name = "contextMenuStrip1";
-            this.Servsrs_cntxtMnStrp.Size = new System.Drawing.Size(181, 76);
+            this.Servsrs_cntxtMnStrp.Size = new System.Drawing.Size(133, 76);
             this.Servsrs_cntxtMnStrp.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // показатьToolStripMenuItem
             // 
             this.показатьToolStripMenuItem.Name = "показатьToolStripMenuItem";
-            this.показатьToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.показатьToolStripMenuItem.Text = "Показать";
+            this.показатьToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.показатьToolStripMenuItem.Text = "Show";
             this.показатьToolStripMenuItem.Click += new System.EventHandler(this.показатьToolStripMenuItem_Click);
             // 
             // редактироватьToolStripMenuItem
             // 
             this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
-            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.редактироватьToolStripMenuItem.Text = "Редактировать";
+            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.редактироватьToolStripMenuItem.Text = "Edit";
             this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
             // 
             // удалитьToolStripMenuItem
             // 
             this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.удалитьToolStripMenuItem.Text = "Remove";
             this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
             // 
             // Antennas_cntxtMnStrp
@@ -429,7 +429,7 @@ namespace OfferHelperV1
             // 
             // AddAntenna_btn
             // 
-            this.AddAntenna_btn.Location = new System.Drawing.Point(532, 150);
+            this.AddAntenna_btn.Location = new System.Drawing.Point(539, 71);
             this.AddAntenna_btn.Name = "AddAntenna_btn";
             this.AddAntenna_btn.Size = new System.Drawing.Size(38, 34);
             this.AddAntenna_btn.TabIndex = 22;
@@ -439,7 +439,7 @@ namespace OfferHelperV1
             // 
             // AddCableToOffer_btn
             // 
-            this.AddCableToOffer_btn.Location = new System.Drawing.Point(532, 319);
+            this.AddCableToOffer_btn.Location = new System.Drawing.Point(539, 240);
             this.AddCableToOffer_btn.Name = "AddCableToOffer_btn";
             this.AddCableToOffer_btn.Size = new System.Drawing.Size(38, 31);
             this.AddCableToOffer_btn.TabIndex = 24;
@@ -449,9 +449,9 @@ namespace OfferHelperV1
             // 
             // CopyToBuffer_btn
             // 
-            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1209, 493);
+            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1209, 442);
             this.CopyToBuffer_btn.Name = "CopyToBuffer_btn";
-            this.CopyToBuffer_btn.Size = new System.Drawing.Size(108, 28);
+            this.CopyToBuffer_btn.Size = new System.Drawing.Size(108, 32);
             this.CopyToBuffer_btn.TabIndex = 25;
             this.CopyToBuffer_btn.Text = "Копировать";
             this.CopyToBuffer_btn.UseVisualStyleBackColor = true;
@@ -460,7 +460,7 @@ namespace OfferHelperV1
             // Producer_chckBx
             // 
             this.Producer_chckBx.AutoSize = true;
-            this.Producer_chckBx.Location = new System.Drawing.Point(633, 390);
+            this.Producer_chckBx.Location = new System.Drawing.Point(633, 339);
             this.Producer_chckBx.Name = "Producer_chckBx";
             this.Producer_chckBx.Size = new System.Drawing.Size(132, 21);
             this.Producer_chckBx.TabIndex = 26;
@@ -471,7 +471,7 @@ namespace OfferHelperV1
             // Remark_chckBx
             // 
             this.Remark_chckBx.AutoSize = true;
-            this.Remark_chckBx.Location = new System.Drawing.Point(633, 417);
+            this.Remark_chckBx.Location = new System.Drawing.Point(633, 366);
             this.Remark_chckBx.Name = "Remark_chckBx";
             this.Remark_chckBx.Size = new System.Drawing.Size(113, 21);
             this.Remark_chckBx.TabIndex = 27;
@@ -482,7 +482,7 @@ namespace OfferHelperV1
             // VerifEx_chckBx
             // 
             this.VerifEx_chckBx.AutoSize = true;
-            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 444);
+            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 393);
             this.VerifEx_chckBx.Name = "VerifEx_chckBx";
             this.VerifEx_chckBx.Size = new System.Drawing.Size(139, 21);
             this.VerifEx_chckBx.TabIndex = 28;
@@ -493,7 +493,7 @@ namespace OfferHelperV1
             // Delivery_chckBx
             // 
             this.Delivery_chckBx.AutoSize = true;
-            this.Delivery_chckBx.Location = new System.Drawing.Point(633, 363);
+            this.Delivery_chckBx.Location = new System.Drawing.Point(633, 312);
             this.Delivery_chckBx.Name = "Delivery_chckBx";
             this.Delivery_chckBx.Size = new System.Drawing.Size(93, 21);
             this.Delivery_chckBx.TabIndex = 29;
@@ -503,7 +503,7 @@ namespace OfferHelperV1
             // 
             // ResetOffer_btn
             // 
-            this.ResetOffer_btn.Location = new System.Drawing.Point(679, 300);
+            this.ResetOffer_btn.Location = new System.Drawing.Point(679, 249);
             this.ResetOffer_btn.Name = "ResetOffer_btn";
             this.ResetOffer_btn.Size = new System.Drawing.Size(93, 34);
             this.ResetOffer_btn.TabIndex = 30;
@@ -513,7 +513,7 @@ namespace OfferHelperV1
             // 
             // Cancel_btn
             // 
-            this.Cancel_btn.Location = new System.Drawing.Point(1095, 493);
+            this.Cancel_btn.Location = new System.Drawing.Point(1095, 442);
             this.Cancel_btn.Name = "Cancel_btn";
             this.Cancel_btn.Size = new System.Drawing.Size(108, 32);
             this.Cancel_btn.TabIndex = 31;
@@ -523,7 +523,7 @@ namespace OfferHelperV1
             // 
             // SearchMisc_txtBx
             // 
-            this.SearchMisc_txtBx.Location = new System.Drawing.Point(12, 389);
+            this.SearchMisc_txtBx.Location = new System.Drawing.Point(12, 317);
             this.SearchMisc_txtBx.Name = "SearchMisc_txtBx";
             this.SearchMisc_txtBx.Size = new System.Drawing.Size(247, 22);
             this.SearchMisc_txtBx.TabIndex = 33;
@@ -534,7 +534,7 @@ namespace OfferHelperV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1329, 587);
+            this.ClientSize = new System.Drawing.Size(1332, 538);
             this.Controls.Add(this.SearchMisc_txtBx);
             this.Controls.Add(this.Cancel_btn);
             this.Controls.Add(this.ResetOffer_btn);
@@ -566,6 +566,8 @@ namespace OfferHelperV1
             this.Controls.Add(this.Servsrs_lbl);
             this.Controls.Add(this.Servers_lstBx);
             this.Controls.Add(this.SearchAll_txtBx);
+            this.MaximumSize = new System.Drawing.Size(1350, 585);
+            this.MinimumSize = new System.Drawing.Size(1350, 585);
             this.Name = "OfferForm";
             this.Text = "OfferForm";
             this.Servsrs_cntxtMnStrp.ResumeLayout(false);

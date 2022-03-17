@@ -230,6 +230,9 @@ namespace OfferHelperV1
             Product p;
             p = (Product)Servers_lstBx.SelectedItem;
             RemoveProduct(p);
+            ServersListHandler(PM.Servers, "");
+            MiscListHandler(PM.Miscs, "");
+            BindListBoxes();
         }
 
         private void Antennas_cntxtMnStrp_Opening(object sender, CancelEventArgs e)
@@ -284,6 +287,7 @@ namespace OfferHelperV1
             Product p;
             p = (Product)Antennas_lstBx.SelectedItem;
             RemoveProduct(p);
+            BindListBoxes();
         }
 
         private void RemoveProduct(Product p)
@@ -292,6 +296,7 @@ namespace OfferHelperV1
             {
                 ProductManagerClass pm = new ProductManagerClass();
                 pm.Remove(p);
+                pm.RefreshListsOfProducts();
                 BindListBoxes();
             }
             else
@@ -316,6 +321,7 @@ namespace OfferHelperV1
         {
             Product p = Cables_lstBx.SelectedItem as Product;
             RemoveProduct(p);
+            BindListBoxes();
         }
 
         private void showToolStripMenuItem2_Click(object sender, EventArgs e)
