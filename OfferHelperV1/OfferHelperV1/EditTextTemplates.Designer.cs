@@ -115,7 +115,7 @@ namespace OfferHelperV1
             this.SaveEditTextTemplates_btn.Name = "SaveEditTextTemplates_btn";
             this.SaveEditTextTemplates_btn.Size = new System.Drawing.Size(94, 28);
             this.SaveEditTextTemplates_btn.TabIndex = 8;
-            this.SaveEditTextTemplates_btn.Text = "Сохронить";
+            this.SaveEditTextTemplates_btn.Text = "Сохранить";
             this.SaveEditTextTemplates_btn.UseVisualStyleBackColor = true;
             this.SaveEditTextTemplates_btn.Click += new System.EventHandler(this.SaveEditTextTemplates_btn_Click);
             // 

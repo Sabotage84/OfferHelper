@@ -88,11 +88,12 @@ namespace OfferHelperV1
                 try
                 {
                     t2 = int.Parse(DeliveryTime_txtBx.Text);
-                    return null;
+                    
                 }
                 catch
                 {
                     MessageBox.Show("Неверный формат срока поставки!");
+                    return null;
                 }
                
                 switch (t)
