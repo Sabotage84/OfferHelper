@@ -49,7 +49,6 @@ namespace OfferHelperV1
             this.button1 = new System.Windows.Forms.Button();
             this.RemoveFromOfferList_btn = new System.Windows.Forms.Button();
             this.test_btn = new System.Windows.Forms.Button();
-            this.EditProduct_btn = new System.Windows.Forms.Button();
             this.ADDEq_btn = new System.Windows.Forms.Button();
             this.Servsrs_cntxtMnStrp = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.показатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -181,17 +180,17 @@ namespace OfferHelperV1
             // 
             // ResultText_txtBx
             // 
-            this.ResultText_txtBx.Location = new System.Drawing.Point(823, 63);
+            this.ResultText_txtBx.Location = new System.Drawing.Point(823, 41);
             this.ResultText_txtBx.Multiline = true;
             this.ResultText_txtBx.Name = "ResultText_txtBx";
             this.ResultText_txtBx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ResultText_txtBx.Size = new System.Drawing.Size(494, 373);
+            this.ResultText_txtBx.Size = new System.Drawing.Size(494, 409);
             this.ResultText_txtBx.TabIndex = 11;
             // 
             // ResultText_lbl
             // 
             this.ResultText_lbl.AutoSize = true;
-            this.ResultText_lbl.Location = new System.Drawing.Point(820, 43);
+            this.ResultText_lbl.Location = new System.Drawing.Point(820, 21);
             this.ResultText_lbl.Name = "ResultText_lbl";
             this.ResultText_lbl.Size = new System.Drawing.Size(69, 17);
             this.ResultText_lbl.TabIndex = 12;
@@ -221,7 +220,7 @@ namespace OfferHelperV1
             // 
             this.OfferList_lstBx.FormattingEnabled = true;
             this.OfferList_lstBx.ItemHeight = 16;
-            this.OfferList_lstBx.Location = new System.Drawing.Point(633, 63);
+            this.OfferList_lstBx.Location = new System.Drawing.Point(633, 41);
             this.OfferList_lstBx.Name = "OfferList_lstBx";
             this.OfferList_lstBx.Size = new System.Drawing.Size(184, 180);
             this.OfferList_lstBx.TabIndex = 15;
@@ -229,7 +228,7 @@ namespace OfferHelperV1
             // OfferList_lbl
             // 
             this.OfferList_lbl.AutoSize = true;
-            this.OfferList_lbl.Location = new System.Drawing.Point(630, 43);
+            this.OfferList_lbl.Location = new System.Drawing.Point(630, 21);
             this.OfferList_lbl.Name = "OfferList_lbl";
             this.OfferList_lbl.Size = new System.Drawing.Size(139, 17);
             this.OfferList_lbl.TabIndex = 16;
@@ -238,7 +237,7 @@ namespace OfferHelperV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(633, 420);
+            this.button1.Location = new System.Drawing.Point(633, 398);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 32);
             this.button1.TabIndex = 17;
@@ -248,7 +247,7 @@ namespace OfferHelperV1
             // 
             // RemoveFromOfferList_btn
             // 
-            this.RemoveFromOfferList_btn.Location = new System.Drawing.Point(633, 249);
+            this.RemoveFromOfferList_btn.Location = new System.Drawing.Point(633, 227);
             this.RemoveFromOfferList_btn.Name = "RemoveFromOfferList_btn";
             this.RemoveFromOfferList_btn.Size = new System.Drawing.Size(40, 34);
             this.RemoveFromOfferList_btn.TabIndex = 18;
@@ -258,29 +257,19 @@ namespace OfferHelperV1
             // 
             // test_btn
             // 
-            this.test_btn.Location = new System.Drawing.Point(334, 473);
+            this.test_btn.Location = new System.Drawing.Point(984, 456);
             this.test_btn.Name = "test_btn";
-            this.test_btn.Size = new System.Drawing.Size(75, 23);
+            this.test_btn.Size = new System.Drawing.Size(94, 32);
             this.test_btn.TabIndex = 19;
             this.test_btn.Text = "TEST";
             this.test_btn.UseVisualStyleBackColor = true;
             this.test_btn.Click += new System.EventHandler(this.test_btn_Click);
             // 
-            // EditProduct_btn
-            // 
-            this.EditProduct_btn.Location = new System.Drawing.Point(522, 473);
-            this.EditProduct_btn.Name = "EditProduct_btn";
-            this.EditProduct_btn.Size = new System.Drawing.Size(125, 32);
-            this.EditProduct_btn.TabIndex = 20;
-            this.EditProduct_btn.Text = "Изменить";
-            this.EditProduct_btn.UseVisualStyleBackColor = true;
-            this.EditProduct_btn.Click += new System.EventHandler(this.EditProduct_btn_Click);
-            // 
             // ADDEq_btn
             // 
-            this.ADDEq_btn.Location = new System.Drawing.Point(415, 473);
+            this.ADDEq_btn.Location = new System.Drawing.Point(356, 382);
             this.ADDEq_btn.Name = "ADDEq_btn";
-            this.ADDEq_btn.Size = new System.Drawing.Size(101, 32);
+            this.ADDEq_btn.Size = new System.Drawing.Size(176, 51);
             this.ADDEq_btn.TabIndex = 21;
             this.ADDEq_btn.Text = "Добавить";
             this.ADDEq_btn.UseVisualStyleBackColor = true;
@@ -449,7 +438,7 @@ namespace OfferHelperV1
             // 
             // CopyToBuffer_btn
             // 
-            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1209, 442);
+            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1198, 456);
             this.CopyToBuffer_btn.Name = "CopyToBuffer_btn";
             this.CopyToBuffer_btn.Size = new System.Drawing.Size(108, 32);
             this.CopyToBuffer_btn.TabIndex = 25;
@@ -460,7 +449,7 @@ namespace OfferHelperV1
             // Producer_chckBx
             // 
             this.Producer_chckBx.AutoSize = true;
-            this.Producer_chckBx.Location = new System.Drawing.Point(633, 339);
+            this.Producer_chckBx.Location = new System.Drawing.Point(633, 317);
             this.Producer_chckBx.Name = "Producer_chckBx";
             this.Producer_chckBx.Size = new System.Drawing.Size(132, 21);
             this.Producer_chckBx.TabIndex = 26;
@@ -471,7 +460,7 @@ namespace OfferHelperV1
             // Remark_chckBx
             // 
             this.Remark_chckBx.AutoSize = true;
-            this.Remark_chckBx.Location = new System.Drawing.Point(633, 366);
+            this.Remark_chckBx.Location = new System.Drawing.Point(633, 344);
             this.Remark_chckBx.Name = "Remark_chckBx";
             this.Remark_chckBx.Size = new System.Drawing.Size(113, 21);
             this.Remark_chckBx.TabIndex = 27;
@@ -482,7 +471,7 @@ namespace OfferHelperV1
             // VerifEx_chckBx
             // 
             this.VerifEx_chckBx.AutoSize = true;
-            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 393);
+            this.VerifEx_chckBx.Location = new System.Drawing.Point(633, 371);
             this.VerifEx_chckBx.Name = "VerifEx_chckBx";
             this.VerifEx_chckBx.Size = new System.Drawing.Size(139, 21);
             this.VerifEx_chckBx.TabIndex = 28;
@@ -493,7 +482,7 @@ namespace OfferHelperV1
             // Delivery_chckBx
             // 
             this.Delivery_chckBx.AutoSize = true;
-            this.Delivery_chckBx.Location = new System.Drawing.Point(633, 312);
+            this.Delivery_chckBx.Location = new System.Drawing.Point(633, 290);
             this.Delivery_chckBx.Name = "Delivery_chckBx";
             this.Delivery_chckBx.Size = new System.Drawing.Size(93, 21);
             this.Delivery_chckBx.TabIndex = 29;
@@ -503,7 +492,7 @@ namespace OfferHelperV1
             // 
             // ResetOffer_btn
             // 
-            this.ResetOffer_btn.Location = new System.Drawing.Point(679, 249);
+            this.ResetOffer_btn.Location = new System.Drawing.Point(679, 227);
             this.ResetOffer_btn.Name = "ResetOffer_btn";
             this.ResetOffer_btn.Size = new System.Drawing.Size(93, 34);
             this.ResetOffer_btn.TabIndex = 30;
@@ -513,7 +502,7 @@ namespace OfferHelperV1
             // 
             // Cancel_btn
             // 
-            this.Cancel_btn.Location = new System.Drawing.Point(1095, 442);
+            this.Cancel_btn.Location = new System.Drawing.Point(1084, 456);
             this.Cancel_btn.Name = "Cancel_btn";
             this.Cancel_btn.Size = new System.Drawing.Size(108, 32);
             this.Cancel_btn.TabIndex = 31;
@@ -546,7 +535,6 @@ namespace OfferHelperV1
             this.Controls.Add(this.AddCableToOffer_btn);
             this.Controls.Add(this.AddAntenna_btn);
             this.Controls.Add(this.ADDEq_btn);
-            this.Controls.Add(this.EditProduct_btn);
             this.Controls.Add(this.test_btn);
             this.Controls.Add(this.RemoveFromOfferList_btn);
             this.Controls.Add(this.button1);
@@ -600,7 +588,6 @@ namespace OfferHelperV1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button RemoveFromOfferList_btn;
         private System.Windows.Forms.Button test_btn;
-        private System.Windows.Forms.Button EditProduct_btn;
         private System.Windows.Forms.Button ADDEq_btn;
         private System.Windows.Forms.ContextMenuStrip Servsrs_cntxtMnStrp;
         private System.Windows.Forms.ToolStripMenuItem показатьToolStripMenuItem;

@@ -154,7 +154,6 @@ namespace OfferHelperV1
             Misc_lstBx.DataSource = searchMisc;
             Misc_lstBx.DisplayMember = "ShortName";
             Misc_lstBx.ValueMember = "ID";
-
         }
 
         private void AddServerToOffer_btn_Click(object sender, EventArgs e)
