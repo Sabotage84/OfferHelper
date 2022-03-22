@@ -36,7 +36,6 @@ namespace OfferHelperV1
             OfferList_lstBx.ContextMenuStrip = OfferList_CntxtMnStrp;
             offerListOfProduct.CollectionChanged += OfferListOfProduct_CollectionChanged;
             RefreshOfferList();
-            
         }
 
         public void ServersListHandler(ObservableCollection<Server> defServers, string searchString)
@@ -98,7 +97,6 @@ namespace OfferHelperV1
                 {
                     res += textTemplates.GetDeliveryTimeString(item.DeliveryTime, item.Type) + Environment.NewLine + Environment.NewLine;
                 }
-
             }
             
 
@@ -162,14 +160,20 @@ namespace OfferHelperV1
         private void AddServerToOffer_btn_Click(object sender, EventArgs e)
         {
             Product p = Servers_lstBx.SelectedItem as Product;
-            offerListOfProduct.Add(p);
+            if (!offerListOfProduct.Contains(p))
+            {
+                offerListOfProduct.Add(p);
+            }
             RefreshOfferList();
         }
 
         private void ReciverAddToOffer_btn_Click(object sender, EventArgs e)
         {
             Product p = Misc_lstBx.SelectedItem as Product;
-            offerListOfProduct.Add(p);
+            if (!offerListOfProduct.Contains(p))
+            {
+                offerListOfProduct.Add(p);
+            }
             RefreshOfferList();
         }
 
@@ -357,14 +361,20 @@ namespace OfferHelperV1
         private void AddAntenna_btn_Click(object sender, EventArgs e)
         {
             Product p = Antennas_lstBx.SelectedItem as Product;
-            offerListOfProduct.Add(p);
+            if (!offerListOfProduct.Contains(p))
+            {
+                offerListOfProduct.Add(p);
+            }
             RefreshOfferList();
         }
 
         private void AddCableToOffer_btn_Click(object sender, EventArgs e)
         {
             Product p = Cables_lstBx.SelectedItem as Product;
-            offerListOfProduct.Add(p);
+            if (!offerListOfProduct.Contains(p))
+            {
+                offerListOfProduct.Add(p);
+            }
             RefreshOfferList();
         }
 
