@@ -164,7 +164,7 @@ namespace OfferHelperV1
             this.Cables_lstBx.ItemHeight = 16;
             this.Cables_lstBx.Location = new System.Drawing.Point(356, 215);
             this.Cables_lstBx.Name = "Cables_lstBx";
-            this.Cables_lstBx.Size = new System.Drawing.Size(176, 100);
+            this.Cables_lstBx.Size = new System.Drawing.Size(176, 132);
             this.Cables_lstBx.TabIndex = 9;
             // 
             // Verification_chkBx
@@ -257,7 +257,7 @@ namespace OfferHelperV1
             // 
             // test_btn
             // 
-            this.test_btn.Location = new System.Drawing.Point(984, 456);
+            this.test_btn.Location = new System.Drawing.Point(823, 456);
             this.test_btn.Name = "test_btn";
             this.test_btn.Size = new System.Drawing.Size(94, 32);
             this.test_btn.TabIndex = 19;
@@ -418,7 +418,7 @@ namespace OfferHelperV1
             // 
             // AddAntenna_btn
             // 
-            this.AddAntenna_btn.Location = new System.Drawing.Point(539, 71);
+            this.AddAntenna_btn.Location = new System.Drawing.Point(538, 81);
             this.AddAntenna_btn.Name = "AddAntenna_btn";
             this.AddAntenna_btn.Size = new System.Drawing.Size(38, 34);
             this.AddAntenna_btn.TabIndex = 22;
@@ -428,7 +428,7 @@ namespace OfferHelperV1
             // 
             // AddCableToOffer_btn
             // 
-            this.AddCableToOffer_btn.Location = new System.Drawing.Point(539, 240);
+            this.AddCableToOffer_btn.Location = new System.Drawing.Point(538, 267);
             this.AddCableToOffer_btn.Name = "AddCableToOffer_btn";
             this.AddCableToOffer_btn.Size = new System.Drawing.Size(38, 31);
             this.AddCableToOffer_btn.TabIndex = 24;
@@ -438,7 +438,7 @@ namespace OfferHelperV1
             // 
             // CopyToBuffer_btn
             // 
-            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1198, 456);
+            this.CopyToBuffer_btn.Location = new System.Drawing.Point(1209, 456);
             this.CopyToBuffer_btn.Name = "CopyToBuffer_btn";
             this.CopyToBuffer_btn.Size = new System.Drawing.Size(108, 32);
             this.CopyToBuffer_btn.TabIndex = 25;
@@ -502,7 +502,7 @@ namespace OfferHelperV1
             // 
             // Cancel_btn
             // 
-            this.Cancel_btn.Location = new System.Drawing.Point(1084, 456);
+            this.Cancel_btn.Location = new System.Drawing.Point(1095, 456);
             this.Cancel_btn.Name = "Cancel_btn";
             this.Cancel_btn.Size = new System.Drawing.Size(108, 32);
             this.Cancel_btn.TabIndex = 31;
