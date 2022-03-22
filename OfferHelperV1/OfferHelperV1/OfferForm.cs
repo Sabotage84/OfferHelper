@@ -100,12 +100,18 @@ namespace OfferHelperV1
                 }
 
             }
-
             
 
             if (Verification_chkBx.Checked)
             {
-                res += "Организация поверки(получение свидетельства о поверке)" + Environment.NewLine + "500 Евро с НДС." + Environment.NewLine + Environment.NewLine;
+                foreach (var item in offerListOfProduct)
+                {
+                    if (item.Name.Contains("HQ") || item.Name.Contains("DHQ") || item.Name.Contains("MRS"))
+                    {
+                        res += "Организация поверки(получение свидетельства о поверке)" + Environment.NewLine + "500 Евро с НДС." + Environment.NewLine + Environment.NewLine;
+                        break;
+                    }
+                }
             }
             if (Producer_chckBx.Checked)
             {
